@@ -1,0 +1,1 @@
+Renderers=24; Materials=17; UVs=OK; AlbedoNormals=OK; ExternalMaterialRemaps=OK

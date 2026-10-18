@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Table - light oak satin finish",
+    "maps": {
+      "albedo": "Assets/Blender/OakSteelTable/Textures/Oak_BaseColor.png",
+      "normal": "Assets/Blender/OakSteelTable/Textures/Oak_Normal.png",
+      "roughness": "Assets/Blender/OakSteelTable/Textures/Oak_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/OakSteelTable/Textures/Oak_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Table - dark bronze powder coated steel",
+    "maps": {
+      "albedo": "Assets/Blender/OakSteelTable/Textures/PowderCoat_BaseColor.png",
+      "normal": "Assets/Blender/OakSteelTable/Textures/PowderCoat_Normal.png",
+      "roughness": "Assets/Blender/OakSteelTable/Textures/PowderCoat_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/OakSteelTable/Textures/PowderCoat_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Table - black rubber foot pads",
+    "color": [
+      0.017,
+      0.015,
+      0.012
+    ],
+    "metallic": 0,
+    "roughness": 0.88
+  },
+  {
+    "name": "Table - blackened mounting hardware",
+    "color": [
+      0.09,
+      0.08,
+      0.065
+    ],
+    "metallic": 0.8,
+    "roughness": 0.35
+  }
+]

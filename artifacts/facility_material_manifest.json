@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Facility | dirty glass 0",
+    "family": "Glass",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Glass_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Glass_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Glass_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Glass_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | dirty glass 1",
+    "family": "Glass",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Glass_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Glass_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Glass_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Glass_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | dirty glass 2",
+    "family": "Glass",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Glass_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Glass_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Glass_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Glass_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | dirty glass 3",
+    "family": "Glass",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Glass_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Glass_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Glass_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Glass_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | dirty glass 4",
+    "family": "Glass",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Glass_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Glass_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Glass_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Glass_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | faded safety markings",
+    "family": "Paint",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Paint_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Paint_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Paint_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Paint_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | moss 0",
+    "family": "Moss",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Moss_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Moss_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Moss_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Moss_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | moss 1",
+    "family": "Moss",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Moss_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Moss_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Moss_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Moss_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | moss 2",
+    "family": "Moss",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Moss_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Moss_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Moss_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Moss_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | moss 3",
+    "family": "Moss",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Moss_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Moss_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Moss_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Moss_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | old asphalt roof membrane",
+    "family": "Roof",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Roof_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Roof_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Roof_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Roof_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | oxidised window frames",
+    "family": "Metal",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Metal_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Metal_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Metal_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Metal_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | rain stains 0",
+    "family": "Dark",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Dark_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Dark_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Dark_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Dark_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | rain stains 1",
+    "family": "Dark",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Dark_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Dark_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Dark_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Dark_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | rain stains 2",
+    "family": "Dark",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Dark_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Dark_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Dark_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Dark_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | rusted iron",
+    "family": "Rust",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Rust_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Rust_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Rust_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Rust_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | spalled dark concrete",
+    "family": "Concrete",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Concrete_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Concrete_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Concrete_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Concrete_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | unlit interiors and fractures",
+    "family": "Dark",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Dark_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Dark_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Dark_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Dark_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | weathered HVAC steel",
+    "family": "Metal",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Metal_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Metal_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Metal_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Metal_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | weathered limestone concrete",
+    "family": "Concrete",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/Concrete_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/Concrete_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/Concrete_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/Concrete_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Facility | integrated moss damp concrete",
+    "family": "DampConcrete",
+    "tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "maps": {
+      "albedo": "Assets/Blender/ResearchFacility/Textures/DampConcrete_BaseColor.png",
+      "normal": "Assets/Blender/ResearchFacility/Textures/DampConcrete_Normal.png",
+      "roughness": "Assets/Blender/ResearchFacility/Textures/DampConcrete_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/ResearchFacility/Textures/DampConcrete_MetallicSmoothness.png"
+    }
+  }
+]

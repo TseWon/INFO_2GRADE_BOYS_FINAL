@@ -1,0 +1,19 @@
+{
+  "removed_overlay_objects": [
+    "A - five-storey outer research wing | peeling surfaces and rain streaks",
+    "A - five-storey outer research wing | facade moss",
+    "B - four-storey inner laboratories | peeling surfaces and rain streaks",
+    "B - four-storey inner laboratories | facade moss",
+    "C - central circular research core | peeling surfaces and rain streaks",
+    "C - central circular research core | facade moss",
+    "E - roof stains moss and cracked surfacing",
+    "F - clinging moss and ivy at damp wall joints",
+    "H - layered facade moss colonies",
+    "H - deep rain trails and damaged concrete",
+    "I - dense moss around damp facade joints"
+  ],
+  "removed_exact_duplicate_faces": 752,
+  "mesh_count": 24,
+  "texture_families": 9,
+  "texture_files": 36
+}
