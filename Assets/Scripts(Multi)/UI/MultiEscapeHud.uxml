@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="MultiEscapeHud.uss" />
+    <ui:VisualElement name="hudRoot" class="escape-hud" picking-mode="Ignore">
+        <ui:VisualElement class="header blocks-world">
+            <ui:VisualElement>
+                <ui:Label text="FACILITY  /  RESTRAINT TEST 01" class="eyebrow" />
+                <ui:Label name="roleLabel" class="role" />
+            </ui:VisualElement>
+            <ui:Label name="timerLabel" text="60" class="timer" />
+            <ui:VisualElement>
+                <ui:Label name="heartsA" class="hearts" />
+                <ui:Label name="heartsB" class="hearts" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="spacer" picking-mode="Ignore" />
+        <ui:VisualElement class="footer blocks-world">
+            <ui:Label name="statusLabel" class="status" />
+            <ui:Label name="hintLabel" class="hint" />
+            <ui:VisualElement class="toolbar">
+                <ui:Button name="switchButton" text="TAB  /  SWITCH ROLE" class="control" focusable="false" />
+                <ui:Button name="restartButton" text="R  /  RESTART" class="control" focusable="false" />
+                <ui:Button name="leaveButton" text="LEAVE ROOM" class="control hidden" focusable="false" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="noticeLabel" class="notice" picking-mode="Ignore" />
+        <ui:Label name="crosshair" text="+" class="crosshair hidden" picking-mode="Ignore" />
+        <ui:VisualElement name="modal" class="modal blocks-world">
+            <ui:VisualElement class="card">
+                <ui:Label text="TWO ROLES. ONE WAY OUT." class="eyebrow" />
+                <ui:Label name="modalTitle" text="RELEASE THE RESTRAINTS" class="title" />
+                <ui:Label name="modalBody" class="body" />
+                <ui:VisualElement name="connectionControls" class="connection-controls">
+                    <ui:Button name="hostButton" text="HOST / PLAYER A" class="control" focusable="false" />
+                    <ui:TextField name="addressField" label="Host IPv4" value="192.168.0.10" class="address-field" />
+                    <ui:Button name="joinButton" text="JOIN / PLAYER B" class="control" focusable="false" />
+                </ui:VisualElement>
+                <ui:Label name="connectionLabel" class="body connection-status" />
+                <ui:Button name="startButton" text="SPACE  /  START" class="control" focusable="false" />
+                <ui:Button name="lobbyLeaveButton" text="LEAVE / CANCEL" class="control hidden" focusable="false" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
