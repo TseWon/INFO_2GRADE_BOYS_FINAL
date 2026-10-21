@@ -1,0 +1,1 @@
+{ meshes = 9, vertices = 135828, blendedVertices = 20594, materials = 9, bones = 17 }

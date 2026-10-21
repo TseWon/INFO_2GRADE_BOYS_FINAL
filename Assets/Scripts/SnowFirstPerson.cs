@@ -15,11 +15,14 @@ public class SnowFirstPerson : MonoBehaviour
     float verticalSpeed, pitch;
     Vector2 smoothLook;
     Vector3 spawn;
+    Vector3 eyeOffset;
+    public bool thirdPerson;
 
     void Awake()
     {
         motor = GetComponent<CharacterController>();
         spawn = transform.position;
+        eyeOffset = viewCamera.transform.localPosition;
         if (visual != null)
             foreach (var r in visual.GetComponentsInChildren<Renderer>())
                 r.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
@@ -33,6 +36,7 @@ public class SnowFirstPerson : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.V)) SetThirdPerson(!thirdPerson);
         if (Input.GetKeyDown(KeyCode.Escape)) SetCapture(false);
         else if (Input.GetMouseButtonDown(0)) SetCapture(true);
         if (Cursor.lockState != CursorLockMode.Locked) { Move(Vector2.zero, false, Time.deltaTime); return; }
@@ -64,11 +68,28 @@ public class SnowFirstPerson : MonoBehaviour
     }
     void LateUpdate()
     {
+        if (thirdPerson)
+        {
+            Vector3 origin = transform.TransformPoint(eyeOffset);
+            Vector3 backwards = -viewCamera.transform.forward;
+            float distance = 2.8f;
+            foreach (var hit in Physics.SphereCastAll(origin, .15f, backwards, distance, ~0, QueryTriggerInteraction.Ignore))
+                if (!hit.transform.IsChildOf(transform)) distance = Mathf.Min(distance, Mathf.Max(.1f, hit.distance - .08f));
+            viewCamera.transform.position = origin + backwards * distance;
+        }
+        else viewCamera.transform.localPosition = eyeOffset;
         if (snowfall != null)
         {
             snowfall.transform.position = transform.position + new Vector3(-5, 9, 8);
             snowfall.transform.rotation = Quaternion.identity;
         }
+    }
+    public void SetThirdPerson(bool value)
+    {
+        thirdPerson = value;
+        if (visual != null)
+            foreach (var r in visual.GetComponentsInChildren<Renderer>())
+                r.shadowCastingMode = value ? ShadowCastingMode.On : ShadowCastingMode.ShadowsOnly;
     }
     void OnDisable() { SetCapture(false); }
 }

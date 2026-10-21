@@ -1,0 +1,31 @@
+{
+  "pipes": {
+    "2.0": 17,
+    "1.5": 12
+  },
+  "joints": {
+    "3": 10,
+    "4": 6,
+    "2": 2
+  },
+  "connected_nodes": 18,
+  "joint_direction_check": "passed: 4-way = orthogonal T plus perpendicular socket",
+  "open_side": "F-G both upper and lower",
+  "nominal_dimensions_m": {
+    "booth_1": [
+      2,
+      1.5,
+      2
+    ],
+    "booth_2": [
+      2,
+      1.5,
+      2
+    ],
+    "booth_3": [
+      1.5,
+      1.5,
+      2
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Soldier_Camouflage",
+    "color": [
+      0.46000000834465027,
+      0.44999998807907104,
+      0.33000001311302185
+    ],
+    "roughness": 0.8299999833106995,
+    "metallic": 0.0,
+    "maps": {
+      "albedo": "Assets/Blender/TacticalSoldier/Textures/Soldier_Camouflage_BaseColor.png",
+      "normal": "Assets/Blender/TacticalSoldier/Textures/Soldier_Camouflage_Normal.png",
+      "roughness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Camouflage_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Camouflage_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Soldier_Cordura",
+    "color": [
+      0.3499999940395355,
+      0.3199999928474426,
+      0.2199999988079071
+    ],
+    "roughness": 0.8799999952316284,
+    "metallic": 0.0,
+    "maps": {
+      "albedo": "Assets/Blender/TacticalSoldier/Textures/Soldier_Cordura_BaseColor.png",
+      "normal": "Assets/Blender/TacticalSoldier/Textures/Soldier_Cordura_Normal.png",
+      "roughness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Cordura_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Cordura_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Soldier_GoggleLens",
+    "color": [
+      0.012000000104308128,
+      0.02199999988079071,
+      0.02500000037252903
+    ],
+    "roughness": 0.11999999731779099,
+    "metallic": 0.3499999940395355
+  },
+  {
+    "name": "Soldier_Helmet",
+    "color": [
+      0.3400000035762787,
+      0.3400000035762787,
+      0.25999999046325684
+    ],
+    "roughness": 0.7200000286102295,
+    "metallic": 0.05000000074505806
+  },
+  {
+    "name": "Soldier_Leather",
+    "color": [
+      0.27000001072883606,
+      0.23000000417232513,
+      0.1599999964237213
+    ],
+    "roughness": 0.75,
+    "metallic": 0.0,
+    "maps": {
+      "albedo": "Assets/Blender/TacticalSoldier/Textures/Soldier_Leather_BaseColor.png",
+      "normal": "Assets/Blender/TacticalSoldier/Textures/Soldier_Leather_Normal.png",
+      "roughness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Leather_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Leather_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Soldier_Mask",
+    "color": [
+      0.03500000014901161,
+      0.041999999433755875,
+      0.03799999877810478
+    ],
+    "roughness": 0.9100000262260437,
+    "metallic": 0.0,
+    "maps": {
+      "albedo": "Assets/Blender/TacticalSoldier/Textures/Soldier_Mask_BaseColor.png",
+      "normal": "Assets/Blender/TacticalSoldier/Textures/Soldier_Mask_Normal.png",
+      "roughness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Mask_Roughness.png",
+      "metallicSmoothness": "Assets/Blender/TacticalSoldier/Textures/Soldier_Mask_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "Soldier_Metal",
+    "color": [
+      0.10999999940395355,
+      0.11999999731779099,
+      0.10499999672174454
+    ],
+    "roughness": 0.38999998569488525,
+    "metallic": 0.6499999761581421
+  },
+  {
+    "name": "Soldier_Rubber",
+    "color": [
+      0.02500000037252903,
+      0.029999999329447746,
+      0.027000000700354576
+    ],
+    "roughness": 0.7599999904632568,
+    "metallic": 0.0
+  },
+  {
+    "name": "Soldier_Stitching",
+    "color": [
+      0.49000000953674316,
+      0.46000000834465027,
+      0.3400000035762787
+    ],
+    "roughness": 0.8500000238418579,
+    "metallic": 0.0
+  }
+]
