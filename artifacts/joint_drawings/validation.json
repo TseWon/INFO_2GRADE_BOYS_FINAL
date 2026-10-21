@@ -3,9 +3,9 @@
     "id": "J2",
     "title": "2구 조인트",
     "dimensions_mm": [
-      60.0,
-      30.0,
-      60.0
+      58.5,
+      27.0,
+      58.5
     ],
     "ports": 2,
     "directions": [
@@ -25,18 +25,19 @@
       45
     ],
     "socket_ID_mm": 25.5,
-    "OD_mm": 30,
+    "OD_mm": 27,
+    "socket_wall_mm": 0.75,
     "insertion_depth_mm": 30,
     "nonmanifold_edges": 0,
-    "volume_mm3": 31953.066901084614
+    "volume_mm3": 20147.79766903997
   },
   {
     "id": "J3E",
-    "title": "3구 (1) - 300mm 연장형",
+    "title": "3구 (1) - 30mm 연장형",
     "dimensions_mm": [
-      360.0,
-      60.0,
-      60.0
+      88.5,
+      58.5,
+      58.5
     ],
     "ports": 3,
     "directions": [
@@ -57,23 +58,24 @@
       ]
     ],
     "mouths_from_origin_mm": [
-      345,
+      75,
       45,
       45
     ],
     "socket_ID_mm": 25.5,
-    "OD_mm": 30,
+    "OD_mm": 27,
+    "socket_wall_mm": 0.75,
     "insertion_depth_mm": 30,
     "nonmanifold_edges": 0,
-    "volume_mm3": 157268.4728819232
+    "volume_mm3": 31923.75926949837
   },
   {
     "id": "J3",
     "title": "3구 (2) - 기본형",
     "dimensions_mm": [
-      60.0,
-      60.0,
-      60.0
+      58.5,
+      58.5,
+      58.5
     ],
     "ports": 3,
     "directions": [
@@ -99,18 +101,19 @@
       45
     ],
     "socket_ID_mm": 25.5,
-    "OD_mm": 30,
+    "OD_mm": 27,
+    "socket_wall_mm": 0.75,
     "insertion_depth_mm": 30,
     "nonmanifold_edges": 0,
-    "volume_mm3": 39647.9093082695
+    "volume_mm3": 24184.326561047244
   },
   {
     "id": "J4",
     "title": "4구 조인트",
     "dimensions_mm": [
       90.0,
-      60.0,
-      60.0
+      58.5,
+      58.5
     ],
     "ports": 4,
     "directions": [
@@ -142,9 +145,10 @@
       45
     ],
     "socket_ID_mm": 25.5,
-    "OD_mm": 30,
+    "OD_mm": 27,
+    "socket_wall_mm": 0.75,
     "insertion_depth_mm": 30,
     "nonmanifold_edges": 0,
-    "volume_mm3": 47342.70397247852
+    "volume_mm3": 28220.812400828563
   }
 ]
