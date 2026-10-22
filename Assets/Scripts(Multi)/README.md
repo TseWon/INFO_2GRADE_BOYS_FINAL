@@ -129,3 +129,15 @@ Unity에서는 `Assets/Scene/MultiScene1.unity`를 열고 Play하면 같은 접�
 씬 생성 코드는 `artifacts/BuildMultiEscapePrototype.cs`, 초기 배치 조정은 `artifacts/TuneMultiEscapePrototype.cs`에 보관했습니다. 생성기는 중복 배치를 막기 위해 이미 프로토타입이 있는 씬에서는 실행을 거부합니다. 현재 씬에서 다시 실행할 필요는 없습니다.
 
 LAN 검증: `artifacts/TestMultiEscapeLan.cs`는 에디터 호스트와 별도 Development Player 클라이언트 사이에서 실제 네트워크 연결, 역할 제한, 정답/타이머/HP, 물리 버튼 레이캐스트, 다이얼, 탈출, 위치/고개 복제, 재시작, 실패, 양쪽 연결 종료와 재접속을 확인합니다. Development Player에 `-escape-join 127.0.0.1 -escape-lan-probe <절대 경로>/artifacts/lan-client.json`을 전달한 뒤 Play 모드 에디터에서 `TestMultiEscapeLan.Run`을 실행합니다. `MultiEscapeLanProbe`는 명시적 테스트 인자가 있을 때만 작동하며 Release 빌드에서는 제외됩니다. 이전 `TestMultiEscapePrototype`은 네트워크 연결 전의 로컬 프로토타입용 테스트입니다.
+
+## electric_chair 에셋 적용 (2026-10-23)
+
+- `Assets/Blender/electric_chair.blend` 모델을 `MultiScene1`과 `FacilityEscapePrototype.prefab`의 Chair_A / Chair_B에 연결했습니다. 각 의자의 `ElectricChair_Asset`이 원본 모델의 프리팹 인스턴스입니다.
+- 기존 `Visual_ReplaceWithChairAsset`은 비활성화했고, 임시 구속장치 큐브의 Renderer/Collider를 껐습니다. 논리 참조는 보존했습니다.
+- 모델의 손목 가죽끈·버클은 색상 잠금 해제 시 숨겨지고, 몸통/발목 끈과 머리 전극은 탈출 시 해제됩니다. 재시작 시 모두 복구됩니다. 기존 `MultiEscapeView`의 배열에 연결하므로 네트워크 상태에 따라 양쪽에서 동일하게 동작합니다.
+- 머리 전극을 0.24m 높이고 `HelmetMount_Extension` 지지대를 추가해 기존 1.8m 카메라의 시야를 확보했습니다. 원본 .blend 파일은 수정하지 않았습니다.
+- `ElectricChair_Collision`은 좌석·등받이·팔걸이·다리의 단순 충돌체입니다. 원본 모델의 모든 작은 부품에 MeshCollider를 추가하지 않습니다.
+- Unity에 임포트된 Standard 머티리얼을 사용합니다. Blender 노드 기반 절차적 무늬까지 동일하게 재현하려면 별도의 텍스처 베이크가 필요합니다.
+- 적용 도구: `artifacts/ApplyElectricChair.cs`. 검증: `artifacts/CheckElectricChair.cs`의 실제 레이캐스트 및 구속장치 해제/복구 검사. 최종 실행에서 35개 검사 통과(랜덤 다이얼 정답에 따라 회전 횟수와 검사 수가 달라집니다).
+
+에임 포인터: HUD 중앙에 검은 테두리의 흰 십자선과 점을 표시합니다. 두 역할 모두 플레이 및 탈출 후 이동 중에 보이며, Esc로 커서를 풀어도 유지됩니다. 대기/실패 화면에서는 숨깁니다. 모든 포인터 요소는 PickingMode.Ignore로 버튼 클릭과 중앙 레이캐스트를 가로막지 않습니다.

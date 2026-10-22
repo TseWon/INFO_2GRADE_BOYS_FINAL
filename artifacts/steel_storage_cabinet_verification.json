@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "file": "C:\\Users\\PLUS\\UNITY_PROJECT\\INFO_2GRADE_BOYS_FINAL\\Assets\\Blender\\steel_storage_cabinet.blend",
+  "bytes": 1556158,
+  "mesh_objects": 183,
+  "packed_reference": true,
+  "door_pivots_and_handle_parenting": true,
+  "actual_handle_cutouts": true,
+  "uv_layers": true,
+  "studio_excluded": true
+}

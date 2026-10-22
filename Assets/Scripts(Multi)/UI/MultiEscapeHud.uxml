@@ -23,7 +23,13 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:Label name="noticeLabel" class="notice" picking-mode="Ignore" />
-        <ui:Label name="crosshair" text="+" class="crosshair hidden" picking-mode="Ignore" />
+        <ui:VisualElement name="crosshair" class="crosshair hidden" picking-mode="Ignore">
+            <ui:VisualElement class="aim-mark aim-top" picking-mode="Ignore" />
+            <ui:VisualElement class="aim-mark aim-bottom" picking-mode="Ignore" />
+            <ui:VisualElement class="aim-mark aim-left" picking-mode="Ignore" />
+            <ui:VisualElement class="aim-mark aim-right" picking-mode="Ignore" />
+            <ui:VisualElement class="aim-mark aim-dot" picking-mode="Ignore" />
+        </ui:VisualElement>
         <ui:VisualElement name="modal" class="modal blocks-world">
             <ui:VisualElement class="card">
                 <ui:Label text="TWO ROLES. ONE WAY OUT." class="eyebrow" />

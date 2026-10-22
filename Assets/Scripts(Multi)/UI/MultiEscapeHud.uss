@@ -63,11 +63,19 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    margin-top: -12px;
-    font-size: 22px;
-    -unity-text-align: middle-center;
-    color: white;
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+    margin-top: -16px;
 }
+.aim-mark {
+    position: absolute;
+    background-color: white;
+    border-width: 1px;
+    border-color: rgb(15, 15, 15);
+}
+.aim-top { left: 14px; top: 0; width: 4px; height: 10px; }
+.aim-bottom { left: 14px; top: 22px; width: 4px; height: 10px; }
+.aim-left { left: 0; top: 14px; width: 10px; height: 4px; }
+.aim-right { left: 22px; top: 14px; width: 10px; height: 4px; }
+.aim-dot { left: 13px; top: 13px; width: 6px; height: 6px; border-radius: 3px; }

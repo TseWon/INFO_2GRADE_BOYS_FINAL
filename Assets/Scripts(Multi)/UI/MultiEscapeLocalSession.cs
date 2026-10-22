@@ -99,7 +99,7 @@ namespace FacilityEscape
                 (Input.GetKeyDown(KeyCode.Space) && game.Rules != null && !game.Rules.IsRunning))) StartRound();
 #endif
             if (noticeLabel != null) noticeLabel.text = Time.realtimeSinceStartupAsDouble < noticeUntil ? notice : "";
-            crosshair?.EnableInClassList("hidden", !MouseCaptured || !CanLook());
+            crosshair?.EnableInClassList("hidden", !CanLook());
         }
 
         private bool CanLook() => game != null && game.Rules != null &&
@@ -112,7 +112,7 @@ namespace FacilityEscape
             UnityEngine.Cursor.visible = !captured;
             if (playerA != null) playerA.SuppressMouseForTwoFrames();
             if (playerB != null) playerB.SuppressMouseForTwoFrames();
-            crosshair?.EnableInClassList("hidden", !captured || !CanLook());
+            crosshair?.EnableInClassList("hidden", !CanLook());
         }
 
         public void StartRound()
