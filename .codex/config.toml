@@ -1,0 +1,16 @@
+
+[mcp_servers.unity]
+command = "C:\\Infotherapy Booth Project\\MG\\INFO_2GRADE_BOYS_FINAL\\.tools\\unity-cli\\bin\\unity.exe"
+args = ["mcp","--project-path","C:\\Infotherapy Booth Project\\MG\\INFO_2GRADE_BOYS_FINAL"]
+
+[sandbox_workspace_write]
+network_access = true
+
+[features.network_proxy]
+enabled = true
+allow_local_binding = false
+
+[features.network_proxy.domains]
+localhost = "allow"
+"127.0.0.1" = "allow"
+"::1" = "allow"
