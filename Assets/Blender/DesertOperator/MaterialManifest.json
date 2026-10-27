@@ -1,0 +1,169 @@
+[
+  {
+    "name": "DO_Balaclava",
+    "baseColor": [
+      0.054999999701976776,
+      0.05999999865889549,
+      0.052000001072883606,
+      1.0
+    ],
+    "roughness": 0.9200000166893005,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Balaclava_BaseColor.png",
+      "Normal": "Textures/DO_Balaclava_Normal.png",
+      "Roughness": "Textures/DO_Balaclava_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Balaclava_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Boot_Suede",
+    "baseColor": [
+      0.5299999713897705,
+      0.4350000023841858,
+      0.30000001192092896,
+      1.0
+    ],
+    "roughness": 0.8500000238418579,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Boot_Suede_BaseColor.png",
+      "Normal": "Textures/DO_Boot_Suede_Normal.png",
+      "Roughness": "Textures/DO_Boot_Suede_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Boot_Suede_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Composite",
+    "baseColor": [
+      0.4000000059604645,
+      0.36500000953674316,
+      0.25999999046325684,
+      1.0
+    ],
+    "roughness": 0.699999988079071,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Composite_BaseColor.png",
+      "Normal": "Textures/DO_Composite_Normal.png",
+      "Roughness": "Textures/DO_Composite_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Composite_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Coyote_Cordura",
+    "baseColor": [
+      0.4699999988079071,
+      0.4050000011920929,
+      0.2750000059604645,
+      1.0
+    ],
+    "roughness": 0.8500000238418579,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Coyote_Cordura_BaseColor.png",
+      "Normal": "Textures/DO_Coyote_Cordura_Normal.png",
+      "Roughness": "Textures/DO_Coyote_Cordura_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Coyote_Cordura_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Desert_Ripstop",
+    "baseColor": [
+      0.6200000047683716,
+      0.5899999737739563,
+      0.49000000953674316,
+      1.0
+    ],
+    "roughness": 0.8100000023841858,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Desert_Ripstop_BaseColor.png",
+      "Normal": "Textures/DO_Desert_Ripstop_Normal.png",
+      "Roughness": "Textures/DO_Desert_Ripstop_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Desert_Ripstop_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Hardware",
+    "baseColor": [
+      0.0949999988079071,
+      0.08500000089406967,
+      0.06499999761581421,
+      1.0
+    ],
+    "roughness": 0.47999998927116394,
+    "metallic": 0.6499999761581421,
+    "maps": {}
+  },
+  {
+    "name": "DO_Rubber",
+    "baseColor": [
+      0.014000000432133675,
+      0.017000000923871994,
+      0.013000000268220901,
+      1.0
+    ],
+    "roughness": 0.7200000286102295,
+    "metallic": 0.0,
+    "maps": {}
+  },
+  {
+    "name": "DO_Seam_Thread",
+    "baseColor": [
+      0.1599999964237213,
+      0.12600000202655792,
+      0.06400000303983688,
+      1.0
+    ],
+    "roughness": 0.8399999737739563,
+    "metallic": 0.0,
+    "maps": {}
+  },
+  {
+    "name": "DO_Smoked_Lens",
+    "baseColor": [
+      0.006000000052154064,
+      0.008999999612569809,
+      0.00800000037997961,
+      1.0
+    ],
+    "roughness": 0.15000000596046448,
+    "metallic": 0.25,
+    "maps": {}
+  },
+  {
+    "name": "DO_Velcro",
+    "baseColor": [
+      0.23999999463558197,
+      0.23499999940395355,
+      0.1899999976158142,
+      1.0
+    ],
+    "roughness": 0.9599999785423279,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Velcro_BaseColor.png",
+      "Normal": "Textures/DO_Velcro_Normal.png",
+      "Roughness": "Textures/DO_Velcro_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Velcro_MetallicSmoothness.png"
+    }
+  },
+  {
+    "name": "DO_Webbing",
+    "baseColor": [
+      0.5699999928474426,
+      0.5099999904632568,
+      0.375,
+      1.0
+    ],
+    "roughness": 0.8399999737739563,
+    "metallic": 0.0,
+    "maps": {
+      "BaseColor": "Textures/DO_Webbing_BaseColor.png",
+      "Normal": "Textures/DO_Webbing_Normal.png",
+      "Roughness": "Textures/DO_Webbing_Roughness.png",
+      "MetallicSmoothness": "Textures/DO_Webbing_MetallicSmoothness.png"
+    }
+  }
+]

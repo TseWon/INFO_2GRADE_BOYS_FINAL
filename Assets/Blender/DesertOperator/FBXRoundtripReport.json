@@ -1,0 +1,24 @@
+{
+  "mesh_count": 28,
+  "bones": 49,
+  "all_have_uv": true,
+  "all_skinned": true,
+  "texture_files_exist": true,
+  "lods": [
+    {
+      "file": "DesertOperator.fbx",
+      "triangles": 121052,
+      "renderers": 28
+    },
+    {
+      "file": "DesertOperator_LOD1.fbx",
+      "triangles": 50820,
+      "renderers": 28
+    },
+    {
+      "file": "DesertOperator_LOD2.fbx",
+      "triangles": 19466,
+      "renderers": 28
+    }
+  ]
+}

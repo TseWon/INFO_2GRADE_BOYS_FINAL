@@ -1,0 +1,553 @@
+{
+  "backup": "C:\\Users\\user\\OneDrive\\문서\\GitHub\\INFO_2GRADE_BOYS_FINAL\\artifacts/backups/DesertOperator_before_body_proportions_20261027.blend",
+  "checks": [
+    {
+      "object": "Outsoles_and_Glove_Reinforcement",
+      "vertex_count": 1860,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "Uniform_Ripstop",
+      "vertex_count": 20293,
+      "vertex_count_unchanged": true,
+      "weights_identical": false,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.07559689493205494,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0,
+      "pelvis_weights_intentionally_reblended": 2039,
+      "shoulder_weights_intentionally_reblended": 2095,
+      "weight_sum_max_error": 7.748603820800781e-07
+    },
+    {
+      "object": "Gloves_and_Boot_Uppers",
+      "vertex_count": 7564,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "TorsoEquipment_Coyote_Cordura",
+      "vertex_count": 1312,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.033000007459949424,
+      "nonmanifold_edges_before": 64,
+      "nonmanifold_edges_after": 64
+    },
+    {
+      "object": "TorsoEquipment_Webbing",
+      "vertex_count": 664,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.033000007459949424,
+      "nonmanifold_edges_before": 112,
+      "nonmanifold_edges_after": 112
+    },
+    {
+      "object": "LimbEquipment_Webbing",
+      "vertex_count": 2904,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.02377805060346067,
+      "nonmanifold_edges_before": 704,
+      "nonmanifold_edges_after": 704
+    },
+    {
+      "object": "Details_DO_Seam_Thread",
+      "vertex_count": 1520,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.025266662241148857,
+      "nonmanifold_edges_before": 1488,
+      "nonmanifold_edges_after": 1488
+    },
+    {
+      "object": "TorsoEquipment_Hardware",
+      "vertex_count": 192,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "TorsoEquipment_Seam_Thread",
+      "vertex_count": 96,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.033000007459949424,
+      "nonmanifold_edges_before": 48,
+      "nonmanifold_edges_after": 48
+    },
+    {
+      "object": "TorsoEquipment_Rubber",
+      "vertex_count": 56,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 32,
+      "nonmanifold_edges_after": 32
+    },
+    {
+      "object": "BeltEquipment_Coyote_Cordura",
+      "vertex_count": 1792,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "Quick_release_buckle",
+      "vertex_count": 96,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "Buckle_inset",
+      "vertex_count": 96,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "BeltEquipment_Webbing",
+      "vertex_count": 192,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "LimbEquipment_Desert_Ripstop",
+      "vertex_count": 1652,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.005252877613445461,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "LimbEquipment_Rubber",
+      "vertex_count": 489,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0011164694792793954,
+      "nonmanifold_edges_before": 64,
+      "nonmanifold_edges_after": 64
+    },
+    {
+      "object": "LimbEquipment_Coyote_Cordura",
+      "vertex_count": 1412,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0036879692422946723,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "LimbEquipment_Composite",
+      "vertex_count": 1220,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.002637698291928725,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "Details_DO_Hardware",
+      "vertex_count": 2147,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "HeadEquipment_Balaclava",
+      "vertex_count": 3960,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 80,
+      "nonmanifold_edges_after": 80
+    },
+    {
+      "object": "Helmet_cloth_cover",
+      "vertex_count": 2560,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "HeadEquipment_Composite",
+      "vertex_count": 2028,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 16,
+      "nonmanifold_edges_after": 16
+    },
+    {
+      "object": "HeadEquipment_Rubber",
+      "vertex_count": 2540,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 48,
+      "nonmanifold_edges_after": 48
+    },
+    {
+      "object": "HeadEquipment_Hardware",
+      "vertex_count": 336,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 32,
+      "nonmanifold_edges_after": 32
+    },
+    {
+      "object": "HeadEquipment_Coyote_Cordura",
+      "vertex_count": 64,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 32,
+      "nonmanifold_edges_after": 32
+    },
+    {
+      "object": "HeadEquipment_Velcro",
+      "vertex_count": 384,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    },
+    {
+      "object": "Goggle_smoked_lens",
+      "vertex_count": 14,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 14,
+      "nonmanifold_edges_after": 14
+    },
+    {
+      "object": "Uniform_stand_collar",
+      "vertex_count": 560,
+      "vertex_count_unchanged": true,
+      "weights_identical": true,
+      "uv_identical": true,
+      "max_vertex_displacement_m": 0.0,
+      "nonmanifold_edges_before": 0,
+      "nonmanifold_edges_after": 0
+    }
+  ],
+  "bone_rest_preserved": true,
+  "body_sections": [
+    {
+      "section": "waist",
+      "height_m": 1.06,
+      "before": {
+        "width_m": 0.32655493915081024,
+        "front_y": -0.10880720615386963,
+        "back_y": 0.11617523431777954,
+        "depth_m": 0.22498244047164917
+      },
+      "after": {
+        "width_m": 0.32655493915081024,
+        "front_y": -0.10880842059850693,
+        "back_y": 0.11959683150053024,
+        "depth_m": 0.22840525209903717
+      }
+    },
+    {
+      "section": "pelvis",
+      "height_m": 0.94,
+      "before": {
+        "width_m": 0.4026351869106293,
+        "front_y": -0.11279261857271194,
+        "back_y": 0.14722156524658203,
+        "depth_m": 0.260014183819294
+      },
+      "after": {
+        "width_m": 0.40260888636112213,
+        "front_y": -0.10535173863172531,
+        "back_y": 0.17299914360046387,
+        "depth_m": 0.2783508822321892
+      }
+    },
+    {
+      "section": "seat",
+      "height_m": 0.88,
+      "before": {
+        "width_m": 0.42265141010284424,
+        "front_y": -0.10394095629453659,
+        "back_y": 0.13879969716072083,
+        "depth_m": 0.24274065345525742
+      },
+      "after": {
+        "width_m": 0.4272727072238922,
+        "front_y": -0.09853657335042953,
+        "back_y": 0.17766107618808746,
+        "depth_m": 0.276197649538517
+      }
+    },
+    {
+      "section": "upper_thigh",
+      "height_m": 0.79,
+      "before": {
+        "width_m": 0.4196486324071884,
+        "front_y": -0.09665275365114212,
+        "back_y": 0.13200928270816803,
+        "depth_m": 0.22866203635931015
+      },
+      "after": {
+        "width_m": 0.4182840883731842,
+        "front_y": -0.09659279137849808,
+        "back_y": 0.15900717675685883,
+        "depth_m": 0.2555999681353569
+      }
+    },
+    {
+      "section": "knee",
+      "height_m": 0.53,
+      "before": {
+        "width_m": 0.3799495995044708,
+        "front_y": -0.08302125334739685,
+        "back_y": 0.08360253274440765,
+        "depth_m": 0.1666237860918045
+      },
+      "after": {
+        "width_m": 0.37718042731285095,
+        "front_y": -0.08143649995326996,
+        "back_y": 0.0833747386932373,
+        "depth_m": 0.16481123864650726
+      }
+    },
+    {
+      "section": "calf",
+      "height_m": 0.4,
+      "before": {
+        "width_m": 0.39069342613220215,
+        "front_y": -0.06044371426105499,
+        "back_y": 0.10885975509881973,
+        "depth_m": 0.16930346935987473
+      },
+      "after": {
+        "width_m": 0.3769158571958542,
+        "front_y": -0.05539759248495102,
+        "back_y": 0.11333180218935013,
+        "depth_m": 0.16872939467430115
+      }
+    }
+  ],
+  "pose_check": [
+    {
+      "object": "Outsoles_and_Glove_Reinforcement",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.000235660434029
+    },
+    {
+      "object": "Uniform_Ripstop",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 4.196698965329874
+    },
+    {
+      "object": "Gloves_and_Boot_Uppers",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 39.22506979419542
+    },
+    {
+      "object": "TorsoEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "TorsoEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "LimbEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000906809183758
+    },
+    {
+      "object": "Details_DO_Seam_Thread",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.000158157064911
+    },
+    {
+      "object": "TorsoEquipment_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000066622550576
+    },
+    {
+      "object": "TorsoEquipment_Seam_Thread",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "TorsoEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "BeltEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "Quick_release_buckle",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.00000959944972
+    },
+    {
+      "object": "Buckle_inset",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000174614451687
+    },
+    {
+      "object": "BeltEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000488888129042
+    },
+    {
+      "object": "LimbEquipment_Desert_Ripstop",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0001359565171017
+    },
+    {
+      "object": "LimbEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000820164353783
+    },
+    {
+      "object": "LimbEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000933524935145
+    },
+    {
+      "object": "LimbEquipment_Composite",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000245870533582
+    },
+    {
+      "object": "Details_DO_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0000325953964595
+    },
+    {
+      "object": "HeadEquipment_Balaclava",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "Helmet_cloth_cover",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "HeadEquipment_Composite",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "HeadEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "HeadEquipment_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "HeadEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "HeadEquipment_Velcro",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "Goggle_smoked_lens",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    },
+    {
+      "object": "Uniform_stand_collar",
+      "invalid_vertices": 0,
+      "max_edge_stretch_ratio": 1.0
+    }
+  ],
+  "export": {
+    "mesh_count": 28,
+    "bones": 49,
+    "all_have_uv": true,
+    "all_skinned": true,
+    "texture_files_exist": true,
+    "lods": [
+      {
+        "file": "DesertOperator.fbx",
+        "triangles": 112626,
+        "renderers": 28
+      },
+      {
+        "file": "DesertOperator_LOD1.fbx",
+        "triangles": 47280,
+        "renderers": 28
+      },
+      {
+        "file": "DesertOperator_LOD2.fbx",
+        "triangles": 18282,
+        "renderers": 28
+      }
+    ]
+  }
+}

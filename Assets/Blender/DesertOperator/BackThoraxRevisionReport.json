@@ -1,0 +1,669 @@
+{
+  "revision": "back-thorax-20261027",
+  "backup": "artifacts/backups/DesertOperator_before_back_thorax_20261027.blend",
+  "objects": [
+    {
+      "name": "Outsoles_and_Glove_Reinforcement",
+      "vertices_before": 1860,
+      "vertices_after": 1860,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵",
+        "UVMap"
+      ],
+      "materials": [
+        "DO_Rubber"
+      ]
+    },
+    {
+      "name": "Uniform_Ripstop",
+      "vertices_before": 20293,
+      "vertices_after": 22472,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.030333783054783695,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Desert_Ripstop"
+      ]
+    },
+    {
+      "name": "Gloves_and_Boot_Uppers",
+      "vertices_before": 7564,
+      "vertices_after": 7564,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0030393183131821313,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Boot_Suede"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Coyote_Cordura",
+      "vertices_before": 1312,
+      "vertices_after": 3346,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.06551428884267807,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Coyote_Cordura"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Webbing",
+      "vertices_before": 664,
+      "vertices_after": 664,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.08018837869167328,
+      "boundary_edges": 112,
+      "nonmanifold_edges": 112,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Webbing"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Webbing",
+      "vertices_before": 2904,
+      "vertices_after": 2904,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.05482574552297592,
+      "boundary_edges": 704,
+      "nonmanifold_edges": 704,
+      "uv_layers": [
+        "UV 맵",
+        "UVMap"
+      ],
+      "materials": [
+        "DO_Webbing"
+      ]
+    },
+    {
+      "name": "Details_DO_Seam_Thread",
+      "vertices_before": 1520,
+      "vertices_after": 1520,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.04896686226129532,
+      "boundary_edges": 1488,
+      "nonmanifold_edges": 1488,
+      "uv_layers": [
+        "UV 맵",
+        "UVMap"
+      ],
+      "materials": [
+        "DO_Seam_Thread"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Hardware",
+      "vertices_before": 192,
+      "vertices_after": 192,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Hardware"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Seam_Thread",
+      "vertices_before": 96,
+      "vertices_after": 96,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.02978120744228363,
+      "boundary_edges": 48,
+      "nonmanifold_edges": 48,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Seam_Thread"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Rubber",
+      "vertices_before": 56,
+      "vertices_after": 56,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.03447138517056902,
+      "boundary_edges": 32,
+      "nonmanifold_edges": 32,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Rubber"
+      ]
+    },
+    {
+      "name": "BeltEquipment_Coyote_Cordura",
+      "vertices_before": 1792,
+      "vertices_after": 1792,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UVMap",
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Coyote_Cordura"
+      ]
+    },
+    {
+      "name": "Quick_release_buckle",
+      "vertices_before": 96,
+      "vertices_after": 96,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Hardware"
+      ]
+    },
+    {
+      "name": "Buckle_inset",
+      "vertices_before": 96,
+      "vertices_after": 96,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Rubber"
+      ]
+    },
+    {
+      "name": "BeltEquipment_Webbing",
+      "vertices_before": 192,
+      "vertices_after": 192,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Webbing"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Desert_Ripstop",
+      "vertices_before": 1652,
+      "vertices_after": 1652,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵",
+        "UVMap"
+      ],
+      "materials": [
+        "DO_Desert_Ripstop"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Rubber",
+      "vertices_before": 489,
+      "vertices_after": 489,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 64,
+      "nonmanifold_edges": 64,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Rubber"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Coyote_Cordura",
+      "vertices_before": 1412,
+      "vertices_after": 1412,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Coyote_Cordura"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Composite",
+      "vertices_before": 1220,
+      "vertices_after": 1220,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Composite"
+      ]
+    },
+    {
+      "name": "Details_DO_Hardware",
+      "vertices_before": 2147,
+      "vertices_after": 2147,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Hardware"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Balaclava",
+      "vertices_before": 3960,
+      "vertices_after": 3960,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 80,
+      "nonmanifold_edges": 80,
+      "uv_layers": [
+        "UVMap",
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Balaclava"
+      ]
+    },
+    {
+      "name": "Helmet_cloth_cover",
+      "vertices_before": 2560,
+      "vertices_after": 2560,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Desert_Ripstop"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Composite",
+      "vertices_before": 2028,
+      "vertices_after": 2028,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 16,
+      "nonmanifold_edges": 16,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Composite"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Rubber",
+      "vertices_before": 2540,
+      "vertices_after": 2540,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 48,
+      "nonmanifold_edges": 48,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Rubber"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Hardware",
+      "vertices_before": 336,
+      "vertices_after": 336,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 32,
+      "nonmanifold_edges": 32,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Hardware"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Coyote_Cordura",
+      "vertices_before": 64,
+      "vertices_after": 64,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 32,
+      "nonmanifold_edges": 32,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Coyote_Cordura"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Velcro",
+      "vertices_before": 384,
+      "vertices_after": 384,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Velcro"
+      ]
+    },
+    {
+      "name": "Goggle_smoked_lens",
+      "vertices_before": 14,
+      "vertices_after": 14,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 14,
+      "nonmanifold_edges": 14,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Smoked_Lens"
+      ]
+    },
+    {
+      "name": "Uniform_stand_collar",
+      "vertices_before": 560,
+      "vertices_after": 560,
+      "existing_vertex_weight_max_delta": 0.0,
+      "max_existing_vertex_displacement_m": 0.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "uv_layers": [
+        "UV 맵"
+      ],
+      "materials": [
+        "DO_Desert_Ripstop"
+      ]
+    }
+  ],
+  "remaining_limits": [
+    "Large shoulder rotations, deep squat, aiming and full animation clips not verified.",
+    "Existing finger skinning still needs grip-specific weight correction."
+  ],
+  "bones_preserved": true,
+  "pants_vertices": 10658,
+  "pants_max_position_change_m": 0.0,
+  "boots_unchanged": true,
+  "plate_clearance_samples": [
+    {
+      "side": "front",
+      "samples": 239,
+      "min_clearance_mm": 7.378488779067993,
+      "max_clearance_mm": 15.190690755844116,
+      "median_thickness_mm": 41.9999361038208
+    },
+    {
+      "side": "back",
+      "samples": 239,
+      "min_clearance_mm": 7.444173097610474,
+      "max_clearance_mm": 19.316941499710083,
+      "median_thickness_mm": 39.99999165534973
+    }
+  ],
+  "thorax_ray_sections": [
+    {
+      "x": 0,
+      "z": 1.2,
+      "depth_m": 0.24946293234825134
+    },
+    {
+      "x": 0.1,
+      "z": 1.2,
+      "depth_m": 0.2155037224292755
+    },
+    {
+      "x": 0.15,
+      "z": 1.2,
+      "depth_m": 0.16300836205482483
+    },
+    {
+      "x": 0,
+      "z": 1.3,
+      "depth_m": 0.27739468216896057
+    },
+    {
+      "x": 0.1,
+      "z": 1.3,
+      "depth_m": 0.2564181387424469
+    },
+    {
+      "x": 0.15,
+      "z": 1.3,
+      "depth_m": 0.22216713428497314
+    },
+    {
+      "x": 0,
+      "z": 1.4,
+      "depth_m": 0.2875062823295593
+    },
+    {
+      "x": 0.1,
+      "z": 1.4,
+      "depth_m": 0.2757848799228668
+    },
+    {
+      "x": 0.15,
+      "z": 1.4,
+      "depth_m": 0.23565813899040222
+    }
+  ],
+  "pose_checks": [
+    {
+      "object": "Outsoles_and_Glove_Reinforcement",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.000235660434029
+    },
+    {
+      "object": "Uniform_Ripstop",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 4.205068405142019
+    },
+    {
+      "object": "Gloves_and_Boot_Uppers",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 38.04080245959754
+    },
+    {
+      "object": "TorsoEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "TorsoEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "LimbEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000906809183758
+    },
+    {
+      "object": "Details_DO_Seam_Thread",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.000158157064911
+    },
+    {
+      "object": "TorsoEquipment_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000066622550576
+    },
+    {
+      "object": "TorsoEquipment_Seam_Thread",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "TorsoEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "BeltEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "Quick_release_buckle",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.00000959944972
+    },
+    {
+      "object": "Buckle_inset",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000174614451687
+    },
+    {
+      "object": "BeltEquipment_Webbing",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000488888129042
+    },
+    {
+      "object": "LimbEquipment_Desert_Ripstop",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0001359565171017
+    },
+    {
+      "object": "LimbEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000820164353783
+    },
+    {
+      "object": "LimbEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000933524935145
+    },
+    {
+      "object": "LimbEquipment_Composite",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000245870533582
+    },
+    {
+      "object": "Details_DO_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0000325953964595
+    },
+    {
+      "object": "HeadEquipment_Balaclava",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "Helmet_cloth_cover",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "HeadEquipment_Composite",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "HeadEquipment_Rubber",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "HeadEquipment_Hardware",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "HeadEquipment_Coyote_Cordura",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "HeadEquipment_Velcro",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "Goggle_smoked_lens",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    },
+    {
+      "object": "Uniform_stand_collar",
+      "invalid_vertices": 0,
+      "max_edge_stretch": 1.0
+    }
+  ],
+  "export": {
+    "mesh_count": 28,
+    "bones": 49,
+    "all_have_uv": true,
+    "all_skinned": true,
+    "texture_files_exist": true,
+    "lods": [
+      {
+        "file": "DesertOperator.fbx",
+        "triangles": 121052,
+        "renderers": 28
+      },
+      {
+        "file": "DesertOperator_LOD1.fbx",
+        "triangles": 50820,
+        "renderers": 28
+      },
+      {
+        "file": "DesertOperator_LOD2.fbx",
+        "triangles": 19466,
+        "renderers": 28
+      }
+    ]
+  }
+}

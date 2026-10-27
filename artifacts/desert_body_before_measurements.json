@@ -1,0 +1,481 @@
+{
+  "source": "C:\\Users\\user\\OneDrive\\\ubb38\uc11c\\GitHub\\INFO_2GRADE_BOYS_FINAL\\Assets\\Blender\\DesertOperator\\DesertOperator.blend",
+  "backup": "C:\\Users\\user\\OneDrive\\\ubb38\uc11c\\GitHub\\INFO_2GRADE_BOYS_FINAL\\artifacts\\backups\\DesertOperator_before_body_proportions_20261027.blend",
+  "objects": [
+    {
+      "name": "Outsoles_and_Glove_Reinforcement",
+      "type": "MESH",
+      "vertices": 1860,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "DesertOperator_Rig",
+      "type": "ARMATURE",
+      "vertices": null,
+      "parent": null,
+      "modifiers": []
+    },
+    {
+      "name": "Uniform_Ripstop",
+      "type": "MESH",
+      "vertices": 20293,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Gloves_and_Boot_Uppers",
+      "type": "MESH",
+      "vertices": 7564,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Coyote_Cordura",
+      "type": "MESH",
+      "vertices": 1312,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Webbing",
+      "type": "MESH",
+      "vertices": 664,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Webbing",
+      "type": "MESH",
+      "vertices": 2904,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Details_DO_Seam_Thread",
+      "type": "MESH",
+      "vertices": 1520,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Hardware",
+      "type": "MESH",
+      "vertices": 192,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Seam_Thread",
+      "type": "MESH",
+      "vertices": 96,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "TorsoEquipment_Rubber",
+      "type": "MESH",
+      "vertices": 56,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "BeltEquipment_Coyote_Cordura",
+      "type": "MESH",
+      "vertices": 1792,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Quick_release_buckle",
+      "type": "MESH",
+      "vertices": 96,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Buckle_inset",
+      "type": "MESH",
+      "vertices": 96,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "BeltEquipment_Webbing",
+      "type": "MESH",
+      "vertices": 192,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Desert_Ripstop",
+      "type": "MESH",
+      "vertices": 1652,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Rubber",
+      "type": "MESH",
+      "vertices": 489,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Coyote_Cordura",
+      "type": "MESH",
+      "vertices": 1412,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "LimbEquipment_Composite",
+      "type": "MESH",
+      "vertices": 1220,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Details_DO_Hardware",
+      "type": "MESH",
+      "vertices": 2147,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Balaclava",
+      "type": "MESH",
+      "vertices": 3960,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Helmet_cloth_cover",
+      "type": "MESH",
+      "vertices": 2560,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Composite",
+      "type": "MESH",
+      "vertices": 2028,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Rubber",
+      "type": "MESH",
+      "vertices": 2540,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Hardware",
+      "type": "MESH",
+      "vertices": 336,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Coyote_Cordura",
+      "type": "MESH",
+      "vertices": 64,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "HeadEquipment_Velcro",
+      "type": "MESH",
+      "vertices": 384,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Goggle_smoked_lens",
+      "type": "MESH",
+      "vertices": 14,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Uniform_stand_collar",
+      "type": "MESH",
+      "vertices": 560,
+      "parent": "DesertOperator_Rig",
+      "modifiers": [
+        "ARMATURE"
+      ]
+    }
+  ],
+  "body_bands": {
+    "shoulders": {
+      "width": 0.6461391746997833,
+      "front_y": -0.11831463873386383,
+      "back_y": 0.12956146895885468,
+      "depth": 0.2478761076927185,
+      "samples": 341
+    },
+    "chest": {
+      "width": 0.4344126731157303,
+      "front_y": -0.07321016490459442,
+      "back_y": 0.13273952901363373,
+      "depth": 0.20594969391822815,
+      "samples": 99
+    },
+    "waist": {
+      "width": 0.32655493915081024,
+      "front_y": -0.10880720615386963,
+      "back_y": 0.11617523431777954,
+      "depth": 0.22498244047164917,
+      "samples": 374
+    },
+    "pelvis": {
+      "width": 0.4026351869106293,
+      "front_y": -0.11279261857271194,
+      "back_y": 0.14722156524658203,
+      "depth": 0.260014183819294,
+      "samples": 111
+    },
+    "seat": {
+      "width": 0.42265141010284424,
+      "front_y": -0.10394095629453659,
+      "back_y": 0.13879969716072083,
+      "depth": 0.24274065345525742,
+      "samples": 169
+    },
+    "upper_thigh": {
+      "width": 0.4196486324071884,
+      "front_y": -0.09665275365114212,
+      "back_y": 0.13200928270816803,
+      "depth": 0.22866203635931015,
+      "samples": 128
+    },
+    "knee": {
+      "width": 0.3799495995044708,
+      "front_y": -0.08302125334739685,
+      "back_y": 0.08360253274440765,
+      "depth": 0.1666237860918045,
+      "samples": 585
+    },
+    "calf": {
+      "width": 0.39069342613220215,
+      "front_y": -0.06044371426105499,
+      "back_y": 0.10885975509881973,
+      "depth": 0.16930346935987473,
+      "samples": 202
+    }
+  },
+  "bones": {
+    "Hips": {
+      "head": [
+        0.0,
+        0.0,
+        0.8799999952316284
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        1.0399999618530273
+      ]
+    },
+    "Shoulder_L": {
+      "head": [
+        -0.06499999761581421,
+        0.0,
+        1.465000033378601
+      ],
+      "tail": [
+        -0.2150000035762787,
+        0.0,
+        1.4299999475479126
+      ]
+    },
+    "UpperArm_L": {
+      "head": [
+        -0.2150000035762787,
+        0.0,
+        1.4299999475479126
+      ],
+      "tail": [
+        -0.3100000023841858,
+        0.0,
+        1.1699999570846558
+      ]
+    },
+    "Forearm_L": {
+      "head": [
+        -0.3100000023841858,
+        0.0,
+        1.1699999570846558
+      ],
+      "tail": [
+        -0.36500000953674316,
+        -0.014000000432133675,
+        0.9549999833106995
+      ]
+    },
+    "Shoulder_R": {
+      "head": [
+        0.06499999761581421,
+        0.0,
+        1.465000033378601
+      ],
+      "tail": [
+        0.2150000035762787,
+        0.0,
+        1.4299999475479126
+      ]
+    },
+    "UpperArm_R": {
+      "head": [
+        0.2150000035762787,
+        0.0,
+        1.4299999475479126
+      ],
+      "tail": [
+        0.3100000023841858,
+        0.0,
+        1.1699999570846558
+      ]
+    },
+    "Forearm_R": {
+      "head": [
+        0.3100000023841858,
+        0.0,
+        1.1699999570846558
+      ],
+      "tail": [
+        0.36500000953674316,
+        -0.014000000432133675,
+        0.9549999833106995
+      ]
+    },
+    "Thigh_L": {
+      "head": [
+        -0.10000000149011612,
+        0.0,
+        0.9399999976158142
+      ],
+      "tail": [
+        -0.11500000208616257,
+        -0.004000000189989805,
+        0.5299999713897705
+      ]
+    },
+    "Shin_L": {
+      "head": [
+        -0.11500000208616257,
+        -0.004000000189989805,
+        0.5299999713897705
+      ],
+      "tail": [
+        -0.11999999731779099,
+        0.012000000104308128,
+        0.1599999964237213
+      ]
+    },
+    "Foot_L": {
+      "head": [
+        -0.11999999731779099,
+        0.012000000104308128,
+        0.1599999964237213
+      ],
+      "tail": [
+        -0.11999999731779099,
+        -0.1599999964237213,
+        0.07000000029802322
+      ]
+    },
+    "Thigh_R": {
+      "head": [
+        0.10000000149011612,
+        0.0,
+        0.9399999976158142
+      ],
+      "tail": [
+        0.11500000208616257,
+        -0.004000000189989805,
+        0.5299999713897705
+      ]
+    },
+    "Shin_R": {
+      "head": [
+        0.11500000208616257,
+        -0.004000000189989805,
+        0.5299999713897705
+      ],
+      "tail": [
+        0.11999999731779099,
+        0.012000000104308128,
+        0.1599999964237213
+      ]
+    },
+    "Foot_R": {
+      "head": [
+        0.11999999731779099,
+        0.012000000104308128,
+        0.1599999964237213
+      ],
+      "tail": [
+        0.11999999731779099,
+        -0.1599999964237213,
+        0.07000000029802322
+      ]
+    }
+  }
+}

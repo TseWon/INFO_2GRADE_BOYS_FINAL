@@ -1,0 +1,212 @@
+{
+  "meshes": [
+    {
+      "name": "Outsoles_and_Glove_Reinforcement",
+      "vertices": 1860,
+      "triangles": 3704,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Uniform_Ripstop",
+      "vertices": 22472,
+      "triangles": 44920,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Gloves_and_Boot_Uppers",
+      "vertices": 7564,
+      "triangles": 15112,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Coyote_Cordura",
+      "vertices": 3346,
+      "triangles": 6588,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Webbing",
+      "vertices": 664,
+      "triangles": 1204,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Webbing",
+      "vertices": 2904,
+      "triangles": 5004,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Details_DO_Seam_Thread",
+      "vertices": 1520,
+      "triangles": 1552,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Hardware",
+      "vertices": 192,
+      "triangles": 376,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Seam_Thread",
+      "vertices": 96,
+      "triangles": 144,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Rubber",
+      "vertices": 56,
+      "triangles": 80,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "BeltEquipment_Coyote_Cordura",
+      "vertices": 1792,
+      "triangles": 3516,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Quick_release_buckle",
+      "vertices": 96,
+      "triangles": 188,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Buckle_inset",
+      "vertices": 96,
+      "triangles": 188,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "BeltEquipment_Webbing",
+      "vertices": 192,
+      "triangles": 376,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Desert_Ripstop",
+      "vertices": 1652,
+      "triangles": 3280,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Rubber",
+      "vertices": 489,
+      "triangles": 898,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Coyote_Cordura",
+      "vertices": 1412,
+      "triangles": 2808,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Composite",
+      "vertices": 1220,
+      "triangles": 2432,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Details_DO_Hardware",
+      "vertices": 2147,
+      "triangles": 4134,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Balaclava",
+      "vertices": 3960,
+      "triangles": 7828,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Helmet_cloth_cover",
+      "vertices": 2560,
+      "triangles": 5116,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Composite",
+      "vertices": 2028,
+      "triangles": 4020,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Rubber",
+      "vertices": 2540,
+      "triangles": 4976,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Hardware",
+      "vertices": 336,
+      "triangles": 628,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Coyote_Cordura",
+      "vertices": 64,
+      "triangles": 96,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Velcro",
+      "vertices": 384,
+      "triangles": 752,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Goggle_smoked_lens",
+      "vertices": 14,
+      "triangles": 12,
+      "uv": true,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "Uniform_stand_collar",
+      "vertices": 560,
+      "triangles": 1120,
+      "uv": true,
+      "unweighted_vertices": 0
+    }
+  ],
+  "bones": 49,
+  "height_m": 1.8129723072052002,
+  "animations_included": false,
+  "triangles": 121052,
+  "dimensions": [
+    0.8368233144283295,
+    0.546695739030838,
+    1.8129723072052002
+  ],
+  "material_count": 11,
+  "source": "Four supplied images. Geometry is fully 3D; no image planes are included in the character export.",
+  "latest_revision": "BACK_THORAX_REVISION_20261027.md"
+}

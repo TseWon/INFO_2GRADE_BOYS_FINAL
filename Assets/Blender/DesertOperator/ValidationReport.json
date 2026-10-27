@@ -1,0 +1,165 @@
+{
+  "lods": [
+    {
+      "file": "DesertOperator.fbx",
+      "triangles": 121052,
+      "renderers": 28
+    },
+    {
+      "file": "DesertOperator_LOD1.fbx",
+      "triangles": 50820,
+      "renderers": 28
+    },
+    {
+      "file": "DesertOperator_LOD2.fbx",
+      "triangles": 19466,
+      "renderers": 28
+    }
+  ],
+  "rig_bones": 49,
+  "animation_clips": 0,
+  "deformation_checks": [
+    {
+      "name": "Outsoles_and_Glove_Reinforcement",
+      "evaluated_vertices": 1860,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Uniform_Ripstop",
+      "evaluated_vertices": 20293,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Gloves_and_Boot_Uppers",
+      "evaluated_vertices": 7564,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Coyote_Cordura",
+      "evaluated_vertices": 1312,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Webbing",
+      "evaluated_vertices": 664,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Webbing",
+      "evaluated_vertices": 2904,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Details_DO_Seam_Thread",
+      "evaluated_vertices": 1520,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Hardware",
+      "evaluated_vertices": 192,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Seam_Thread",
+      "evaluated_vertices": 96,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "TorsoEquipment_Rubber",
+      "evaluated_vertices": 56,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "BeltEquipment_Coyote_Cordura",
+      "evaluated_vertices": 1792,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Quick_release_buckle",
+      "evaluated_vertices": 96,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Buckle_inset",
+      "evaluated_vertices": 96,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "BeltEquipment_Webbing",
+      "evaluated_vertices": 192,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Desert_Ripstop",
+      "evaluated_vertices": 1652,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Rubber",
+      "evaluated_vertices": 489,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Coyote_Cordura",
+      "evaluated_vertices": 1412,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "LimbEquipment_Composite",
+      "evaluated_vertices": 1220,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Details_DO_Hardware",
+      "evaluated_vertices": 2147,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Balaclava",
+      "evaluated_vertices": 3960,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Helmet_cloth_cover",
+      "evaluated_vertices": 2560,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Composite",
+      "evaluated_vertices": 2028,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Rubber",
+      "evaluated_vertices": 2540,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Hardware",
+      "evaluated_vertices": 336,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Coyote_Cordura",
+      "evaluated_vertices": 64,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "HeadEquipment_Velcro",
+      "evaluated_vertices": 384,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Goggle_smoked_lens",
+      "evaluated_vertices": 14,
+      "invalid_vertices": 0
+    },
+    {
+      "name": "Uniform_stand_collar",
+      "evaluated_vertices": 560,
+      "invalid_vertices": 0
+    }
+  ],
+  "anatomy_revision": "2026-10-27; see AnatomyRevisionReport.json",
+  "back_thorax_revision": "2026-10-27; see BackThoraxRevisionReport.json"
+}
