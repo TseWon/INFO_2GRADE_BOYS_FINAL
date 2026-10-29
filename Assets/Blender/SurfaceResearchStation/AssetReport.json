@@ -1,0 +1,1120 @@
+{
+  "name": "Surface Research Station",
+  "units": "meters",
+  "reference_interpretation": "Compact single-storey surface facility inferred from door-scale; no reliable numerical blueprint scale.",
+  "meshes": [
+    {
+      "name": "Command_Access__Shell__Graphite",
+      "vertices": 344,
+      "triangles": 660,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Shell__IvoryPaint",
+      "vertices": 4186,
+      "triangles": 8062,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Shell__RoofAlloy",
+      "vertices": 448,
+      "triangles": 864,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Shell__SmokedGlazing",
+      "vertices": 308,
+      "triangles": 588,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Shell__Graphite",
+      "vertices": 824,
+      "triangles": 1592,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Shell__IvoryPaint",
+      "vertices": 4872,
+      "triangles": 9396,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Shell__RoofAlloy",
+      "vertices": 1344,
+      "triangles": 2592,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Shell__SmokedGlazing",
+      "vertices": 440,
+      "triangles": 840,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Shell__Graphite",
+      "vertices": 824,
+      "triangles": 1592,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Shell__IvoryPaint",
+      "vertices": 4872,
+      "triangles": 9396,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Shell__RoofAlloy",
+      "vertices": 1344,
+      "triangles": 2592,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Shell__SmokedGlazing",
+      "vertices": 440,
+      "triangles": 840,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Shell__Graphite",
+      "vertices": 344,
+      "triangles": 660,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Shell__IvoryPaint",
+      "vertices": 4186,
+      "triangles": 8062,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Shell__RoofAlloy",
+      "vertices": 448,
+      "triangles": 864,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Shell__SmokedGlazing",
+      "vertices": 308,
+      "triangles": 588,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Shell__Graphite",
+      "vertices": 288,
+      "triangles": 552,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Shell__IvoryPaint",
+      "vertices": 3422,
+      "triangles": 6590,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Shell__RoofAlloy",
+      "vertices": 448,
+      "triangles": 864,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Shell__SmokedGlazing",
+      "vertices": 396,
+      "triangles": 756,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Shell__Graphite",
+      "vertices": 288,
+      "triangles": 552,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Shell__IvoryPaint",
+      "vertices": 3422,
+      "triangles": 6590,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Shell__RoofAlloy",
+      "vertices": 448,
+      "triangles": 864,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Shell__SmokedGlazing",
+      "vertices": 396,
+      "triangles": 756,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Front_Link__Shell__RoofAlloy",
+      "vertices": 8,
+      "triangles": 12,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Front_Link__Shell__IvoryPaint",
+      "vertices": 24,
+      "triangles": 36,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Rear_Link__Shell__RoofAlloy",
+      "vertices": 16,
+      "triangles": 28,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Rear_Link__Shell__IvoryPaint",
+      "vertices": 48,
+      "triangles": 84,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Front_Link__Shell__RoofAlloy",
+      "vertices": 8,
+      "triangles": 12,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Front_Link__Shell__IvoryPaint",
+      "vertices": 24,
+      "triangles": 36,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Rear_Link__Shell__RoofAlloy",
+      "vertices": 16,
+      "triangles": 28,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Rear_Link__Shell__IvoryPaint",
+      "vertices": 48,
+      "triangles": 84,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Roofs__IvoryPaint",
+      "vertices": 336,
+      "triangles": 652,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Roofs__RoofAlloy",
+      "vertices": 556,
+      "triangles": 1020,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Roofs__IvoryPaint",
+      "vertices": 1729,
+      "triangles": 3352,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Roofs__RoofAlloy",
+      "vertices": 27956,
+      "triangles": 55852,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Roofs__Graphite",
+      "vertices": 96,
+      "triangles": 188,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Roofs__IvoryPaint",
+      "vertices": 1729,
+      "triangles": 3352,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Roofs__RoofAlloy",
+      "vertices": 27956,
+      "triangles": 55852,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Roofs__Graphite",
+      "vertices": 96,
+      "triangles": 188,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Roofs__IvoryPaint",
+      "vertices": 336,
+      "triangles": 652,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Roofs__RoofAlloy",
+      "vertices": 700,
+      "triangles": 1260,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Roofs__IvoryPaint",
+      "vertices": 1065,
+      "triangles": 2040,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Roofs__RoofAlloy",
+      "vertices": 5082,
+      "triangles": 10036,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Roofs__IvoryPaint",
+      "vertices": 248,
+      "triangles": 480,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Roofs__RoofAlloy",
+      "vertices": 588,
+      "triangles": 1056,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Roofs__Graphite",
+      "vertices": 472,
+      "triangles": 868,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Roofs__Gaskets",
+      "vertices": 128,
+      "triangles": 248,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Roofs__Fasteners",
+      "vertices": 184,
+      "triangles": 320,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Roofs__Graphite",
+      "vertices": 306,
+      "triangles": 560,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Roofs__Gaskets",
+      "vertices": 128,
+      "triangles": 248,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Roofs__Fasteners",
+      "vertices": 184,
+      "triangles": 320,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Roofs__Graphite",
+      "vertices": 552,
+      "triangles": 1016,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Roofs__FadedRed",
+      "vertices": 385,
+      "triangles": 720,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Roofs__Fasteners",
+      "vertices": 20,
+      "triangles": 36,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Roofs__Graphite",
+      "vertices": 552,
+      "triangles": 1016,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Roofs__FadedRed",
+      "vertices": 385,
+      "triangles": 720,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Roofs__Fasteners",
+      "vertices": 20,
+      "triangles": 36,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Decks__Graphite",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Decks__RoofAlloy",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Decks__Fasteners",
+      "vertices": 264,
+      "triangles": 504,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Decks__Graphite",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Decks__RoofAlloy",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Decks__Graphite",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Decks__RoofAlloy",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Decks__Fasteners",
+      "vertices": 264,
+      "triangles": 504,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Decks__Fasteners",
+      "vertices": 264,
+      "triangles": 504,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Decks__Fasteners",
+      "vertices": 264,
+      "triangles": 504,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_stairs__Decks__Graphite",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_stairs__Decks__RoofAlloy",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_hab_stairs__Decks__Graphite",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_hab_stairs__Decks__RoofAlloy",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_hab_stairs__Decks__Graphite",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_hab_stairs__Decks__RoofAlloy",
+      "vertices": 280,
+      "triangles": 540,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Front_Link__Decks__Graphite",
+      "vertices": 8,
+      "triangles": 12,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Rear_Link__Decks__Graphite",
+      "vertices": 16,
+      "triangles": 28,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Front_Link__Decks__Graphite",
+      "vertices": 8,
+      "triangles": 12,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Rear_Link__Decks__Graphite",
+      "vertices": 16,
+      "triangles": 28,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Rear_Shared_Foundation__Decks__Graphite",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Rear_Shared_Foundation__Decks__RoofAlloy",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__RoofAlloy",
+      "vertices": 676,
+      "triangles": 1316,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__IvoryPaint",
+      "vertices": 1187,
+      "triangles": 2334,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__Gaskets",
+      "vertices": 1392,
+      "triangles": 2776,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__Fasteners",
+      "vertices": 1988,
+      "triangles": 3628,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__SmokedGlazing",
+      "vertices": 60,
+      "triangles": 110,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__IvoryPaint",
+      "vertices": 1196,
+      "triangles": 2356,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__Gaskets",
+      "vertices": 2024,
+      "triangles": 4012,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__Fasteners",
+      "vertices": 4980,
+      "triangles": 9316,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__RoofAlloy",
+      "vertices": 1440,
+      "triangles": 2840,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__IvoryPaint",
+      "vertices": 1196,
+      "triangles": 2356,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__Gaskets",
+      "vertices": 2024,
+      "triangles": 4012,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__Fasteners",
+      "vertices": 4980,
+      "triangles": 9316,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__RoofAlloy",
+      "vertices": 1440,
+      "triangles": 2840,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__RoofAlloy",
+      "vertices": 516,
+      "triangles": 996,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__IvoryPaint",
+      "vertices": 1143,
+      "triangles": 2250,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__Gaskets",
+      "vertices": 1200,
+      "triangles": 2400,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__Fasteners",
+      "vertices": 1504,
+      "triangles": 2672,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__SmokedGlazing",
+      "vertices": 4,
+      "triangles": 2,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__RoofAlloy",
+      "vertices": 1226,
+      "triangles": 2400,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__IvoryPaint",
+      "vertices": 1780,
+      "triangles": 3496,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__Gaskets",
+      "vertices": 1576,
+      "triangles": 3148,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__Fasteners",
+      "vertices": 2416,
+      "triangles": 4400,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__SmokedGlazing",
+      "vertices": 8,
+      "triangles": 4,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__RoofAlloy",
+      "vertices": 1226,
+      "triangles": 2400,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__IvoryPaint",
+      "vertices": 1780,
+      "triangles": 3496,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__Gaskets",
+      "vertices": 1576,
+      "triangles": 3148,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__Fasteners",
+      "vertices": 2416,
+      "triangles": 4400,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__SmokedGlazing",
+      "vertices": 8,
+      "triangles": 4,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_stairs__Details__Graphite",
+      "vertices": 536,
+      "triangles": 1008,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_hab_stairs__Details__Graphite",
+      "vertices": 536,
+      "triangles": 1008,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_hab_stairs__Details__Graphite",
+      "vertices": 536,
+      "triangles": 1008,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Front_Link__Details__RoofAlloy",
+      "vertices": 700,
+      "triangles": 1372,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Rear_Link__Details__RoofAlloy",
+      "vertices": 2240,
+      "triangles": 4424,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Front_Link__Details__RoofAlloy",
+      "vertices": 700,
+      "triangles": 1372,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Rear_Link__Details__RoofAlloy",
+      "vertices": 2240,
+      "triangles": 4424,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__Graphite",
+      "vertices": 4760,
+      "triangles": 8608,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Habitat__Details__WarmLight",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__Graphite",
+      "vertices": 2264,
+      "triangles": 3144,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Laboratory__Details__FadedRed",
+      "vertices": 6750,
+      "triangles": 13452,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "West_Foundation_Walkway__Details__Graphite",
+      "vertices": 992,
+      "triangles": 1872,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__Graphite",
+      "vertices": 4924,
+      "triangles": 8840,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Habitat__Details__WarmLight",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__Graphite",
+      "vertices": 2260,
+      "triangles": 3140,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Laboratory__Details__FadedRed",
+      "vertices": 6750,
+      "triangles": 13452,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "East_Foundation_Walkway__Details__Graphite",
+      "vertices": 992,
+      "triangles": 1872,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__Graphite",
+      "vertices": 4492,
+      "triangles": 6832,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__WarmLight",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__FadedRed",
+      "vertices": 24,
+      "triangles": 44,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Command_Access__Details__Lettering",
+      "vertices": 1816,
+      "triangles": 1744,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__Graphite",
+      "vertices": 1384,
+      "triangles": 1668,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    },
+    {
+      "name": "Research_Spine__Details__WarmLight",
+      "vertices": 56,
+      "triangles": 108,
+      "uv": true,
+      "invalid_vertices": 0,
+      "zero_area_triangles": 0
+    }
+  ],
+  "lods": [
+    {
+      "file": "SurfaceResearchStation.fbx",
+      "triangles": 377080,
+      "mesh_count": 131
+    },
+    {
+      "file": "SurfaceResearchStation_LOD1.fbx",
+      "triangles": 170251,
+      "mesh_count": 131
+    }
+  ],
+  "limitations": [
+    "Exterior architecture and closed doors; working doors, furnished interiors and underground levels are not implemented.",
+    "Movement validation covers the three entrance stairs and the actual player approaching the central door; it is not an exhaustive collision audit."
+  ],
+  "bounds_min": [
+    -15.380000114440918,
+    -14.574999809265137,
+    0.0
+  ],
+  "bounds_max": [
+    15.380000114440918,
+    14.824000358581543,
+    8.024298667907715
+  ],
+  "dimensions_m": [
+    30.760000228881836,
+    29.39900016784668,
+    8.024298667907715
+  ],
+  "triangles": 377080,
+  "material_count": 9,
+  "fbx_roundtrip": {
+    "mesh_count": 131,
+    "all_have_uv": true,
+    "textures_exist": true,
+    "texture_images": 9
+  },
+  "unity_integration": {
+    "scene": "Assets/Scene/SoloScene1.unity",
+    "prefab": "Assets/Environment/SurfaceResearchStation/Prefabs/SurfaceResearchStation.prefab",
+    "original_scene_instance_removed": true,
+    "player_height_m": 1.974,
+    "controller_height_m": 1.88,
+    "main_door_clear_m": [
+      1.56,
+      2.36
+    ],
+    "dome_door_clear_m": [
+      1.25,
+      2.32
+    ],
+    "doors_resized": false,
+    "normals_corrected": true,
+    "static_mesh_colliders": 80,
+    "materials": 9,
+    "truck_overlap": false,
+    "playmode_frames": [
+      295,
+      318
+    ],
+    "actual_player_reached_landing": true,
+    "errors_during_walk": 0
+  }
+}

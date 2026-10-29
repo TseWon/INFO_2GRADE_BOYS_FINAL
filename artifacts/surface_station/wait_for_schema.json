@@ -1,0 +1,312 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "C:\\Users\\user\\OneDrive\\문서\\GitHub\\INFO_2GRADE_BOYS_FINAL"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7801
+    },
+    "commands": [
+      {
+        "name": "wait_cancel",
+        "description": "Cancel an async wait started with wait_for (async=true).",
+        "tags": [
+          "wait"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "wait_id",
+            "description": "The wait id to cancel.",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "wait_cancel",
+          "description": "Cancel an async wait started with wait_for (async=true).",
+          "properties": {
+            "wait_id": {
+              "type": "string",
+              "description": "The wait id to cancel."
+            }
+          },
+          "required": [
+            "wait_id"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.WaitForCommands.WaitCancel"
+          }
+        }
+      },
+      {
+        "name": "wait_for",
+        "description": "Wait server-side until a member condition holds, then optionally act in the same frame. Sync waits hold the exec queue (every other command waits behind them, including one the condition may depend on) — keep them short and self-contained; set async=true and poll wait_status for anything else.",
+        "tags": [
+          "wait"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "condition",
+            "description": "Condition to wait for: { member, target?, findType?, op, value }. member is a dotted path (static, or instance under target/findType); op is equals|notEquals|greaterThan|lessThan|contains|changed.",
+            "type": "WaitConditionInput",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "timeout_s",
+            "description": "Maximum seconds to wait (default 30, clamped to 0-600; must be finite).",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 30
+          },
+          {
+            "name": "poll_interval_ms",
+            "description": "How often to re-check the condition, in milliseconds (default 100, clamped to 16-5000; must be finite).",
+            "type": "Double",
+            "required": false,
+            "defaultValue": 100
+          },
+          {
+            "name": "on_met",
+            "description": "Follow-up run in the same editor frame the condition first holds: { capture: { view, source, save_path, width, height, include_image }, pause }.",
+            "type": "WaitOnMetInput",
+            "required": false,
+            "defaultValue": null
+          },
+          {
+            "name": "return_history",
+            "description": "Include the observed value/timestamp samples (a ring buffer of the last 200, so the tail near the transition is kept).",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "tolerate_missing",
+            "description": "Treat resolution failures (type/member/instance not found) as condition-not-met and retry until timeout, instead of failing fast. Enables waiting for something to exist (e.g. a spawned object via findType).",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          },
+          {
+            "name": "async",
+            "description": "Return a wait_id immediately and evaluate in the background; poll wait_status and cancel with wait_cancel. Use this for long waits and whenever the condition depends on a command you still need to issue — a sync wait blocks it.",
+            "type": "Boolean",
+            "required": false,
+            "defaultValue": false
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "wait_for",
+          "description": "Wait server-side until a member condition holds, then optionally act in the same frame. Sync waits hold the exec queue (every other command waits behind them, including one the condition may depend on) — keep them short and self-contained; set async=true and poll wait_status for anything else.",
+          "properties": {
+            "condition": {
+              "type": "object",
+              "properties": {
+                "member": {
+                  "type": "string",
+                  "description": "Dotted member path. With no target/findType it is a fully-qualified static path (e.g. \"UnityEditor.EditorApplication.isPlaying\"); with target/findType it walks instance members (e.g. \"State\" or \"Health.CurrentHealth\"). Read-only members only."
+                },
+                "target": {
+                  "type": "string",
+                  "description": "Object handle (instanceId / hierarchyPath / guid / path / globalId) to read instance members from. Omit for a static member path or to use findType."
+                },
+                "findType": {
+                  "type": "string",
+                  "description": "Fully-qualified UnityEngine.Object type name; the member walks from its first loaded instance. Alternative to target."
+                },
+                "op": {
+                  "type": "string",
+                  "description": "Comparison: equals (default) | notEquals | greaterThan | lessThan | contains (strings) | changed (met on first change from the initially observed value; needs no value). changed is for value-like members (primitives/enums/strings); content mutations inside a reference-typed member are not detected."
+                },
+                "value": {
+                  "type": "string",
+                  "description": "Comparison operand, coerced to the member's type (primitive, enum name, or string). Required for every op except 'changed'. equals/notEquals accept an EXPLICIT null (e.g. wait-until-destroyed: a destroyed leaf value observes as null); omitting the key entirely is rejected."
+                }
+              },
+              "required": [
+                "member"
+              ],
+              "additionalProperties": false,
+              "description": "Condition to wait for: { member, target?, findType?, op, value }. member is a dotted path (static, or instance under target/findType); op is equals|notEquals|greaterThan|lessThan|contains|changed."
+            },
+            "timeout_s": {
+              "type": "number",
+              "description": "Maximum seconds to wait (default 30, clamped to 0-600; must be finite).",
+              "default": 30
+            },
+            "poll_interval_ms": {
+              "type": "number",
+              "description": "How often to re-check the condition, in milliseconds (default 100, clamped to 16-5000; must be finite).",
+              "default": 100
+            },
+            "on_met": {
+              "type": "object",
+              "properties": {
+                "capture": {
+                  "type": "object",
+                  "properties": {
+                    "view": {
+                      "type": "string",
+                      "description": "Which view to capture: game (default) or scene."
+                    },
+                    "source": {
+                      "type": "string",
+                      "description": "Game view only: 'camera' (default) renders a camera and misses Screen Space - Overlay UI; 'screen' captures the composited game view incl. overlay canvases (HUDs), Play Mode only."
+                    },
+                    "save_path": {
+                      "type": "string",
+                      "description": "Project-relative path to write the PNG (e.g. Screenshots/victory.png)."
+                    },
+                    "width": {
+                      "type": "integer",
+                      "description": "Output width in px (default 1280)."
+                    },
+                    "height": {
+                      "type": "integer",
+                      "description": "Output height in px (default 720)."
+                    },
+                    "include_image": {
+                      "type": "boolean",
+                      "description": "Also return the PNG inline as base64 (default false: path-only when save_path is set)."
+                    }
+                  },
+                  "additionalProperties": false,
+                  "description": "Capture the game or scene view the moment the condition holds (reuses the capture command internals)."
+                },
+                "pause": {
+                  "type": "boolean",
+                  "description": "Pause play mode on the frame the condition holds (no-op outside play mode)."
+                }
+              },
+              "additionalProperties": false,
+              "description": "Follow-up run in the same editor frame the condition first holds: { capture: { view, source, save_path, width, height, include_image }, pause }."
+            },
+            "return_history": {
+              "type": "boolean",
+              "description": "Include the observed value/timestamp samples (a ring buffer of the last 200, so the tail near the transition is kept).",
+              "default": false
+            },
+            "tolerate_missing": {
+              "type": "boolean",
+              "description": "Treat resolution failures (type/member/instance not found) as condition-not-met and retry until timeout, instead of failing fast. Enables waiting for something to exist (e.g. a spawned object via findType).",
+              "default": false
+            },
+            "async": {
+              "type": "boolean",
+              "description": "Return a wait_id immediately and evaluate in the background; poll wait_status and cancel with wait_cancel. Use this for long waits and whenever the condition depends on a command you still need to issue — a sync wait blocks it.",
+              "default": false
+            }
+          },
+          "required": [
+            "condition"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.WaitForCommands.WaitFor"
+          }
+        }
+      },
+      {
+        "name": "wait_status",
+        "description": "Get the status/result of an async wait started with wait_for (async=true).",
+        "tags": [
+          "wait"
+        ],
+        "package": "Unity.Pipeline.Editor",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "wait_id",
+            "description": "The wait id returned by wait_for when async=true.",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "wait_status",
+          "description": "Get the status/result of an async wait started with wait_for (async=true).",
+          "properties": {
+            "wait_id": {
+              "type": "string",
+              "description": "The wait id returned by wait_for when async=true."
+            }
+          },
+          "required": [
+            "wait_id"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Editor.Commands.WaitForCommands.WaitStatus"
+          }
+        }
+      }
+    ],
+    "count": 3,
+    "total": 3,
+    "offset": 0,
+    "limit": null,
+    "search": {
+      "pattern": "wait_for",
+      "count": 3,
+      "matches": [
+        {
+          "kind": "pipeline",
+          "name": "wait_for",
+          "path": "wait_for",
+          "description": "Wait server-side until a member condition holds, then optionally act in the same frame. Sync waits hold the exec queue (every other command waits behind them, including one the condition may depend on) — keep them short and self-contained; set async=true and poll wait_status for anything else.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command wait_for"
+        },
+        {
+          "kind": "pipeline",
+          "name": "wait_cancel",
+          "path": "wait_cancel",
+          "description": "Cancel an async wait started with wait_for (async=true).",
+          "matchedOn": "description",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command wait_cancel"
+        },
+        {
+          "kind": "pipeline",
+          "name": "wait_status",
+          "path": "wait_status",
+          "description": "Get the status/result of an async wait started with wait_for (async=true).",
+          "matchedOn": "description",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command wait_status"
+        }
+      ],
+      "hint": ""
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

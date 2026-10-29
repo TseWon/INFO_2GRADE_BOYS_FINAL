@@ -1,0 +1,378 @@
+[
+  {
+    "mesh": "Command_Access__Shell__Graphite",
+    "faces_reoriented": 330
+  },
+  {
+    "mesh": "Command_Access__Shell__IvoryPaint",
+    "faces_reoriented": 4032
+  },
+  {
+    "mesh": "Command_Access__Shell__RoofAlloy",
+    "faces_reoriented": 432
+  },
+  {
+    "mesh": "Command_Access__Shell__SmokedGlazing",
+    "faces_reoriented": 294
+  },
+  {
+    "mesh": "West_Habitat__Shell__Graphite",
+    "faces_reoriented": 702
+  },
+  {
+    "mesh": "West_Habitat__Shell__IvoryPaint",
+    "faces_reoriented": 4698
+  },
+  {
+    "mesh": "West_Habitat__Shell__RoofAlloy",
+    "faces_reoriented": 1296
+  },
+  {
+    "mesh": "West_Habitat__Shell__SmokedGlazing",
+    "faces_reoriented": 420
+  },
+  {
+    "mesh": "East_Habitat__Shell__Graphite",
+    "faces_reoriented": 702
+  },
+  {
+    "mesh": "East_Habitat__Shell__IvoryPaint",
+    "faces_reoriented": 4698
+  },
+  {
+    "mesh": "East_Habitat__Shell__RoofAlloy",
+    "faces_reoriented": 1296
+  },
+  {
+    "mesh": "East_Habitat__Shell__SmokedGlazing",
+    "faces_reoriented": 420
+  },
+  {
+    "mesh": "Research_Spine__Shell__Graphite",
+    "faces_reoriented": 330
+  },
+  {
+    "mesh": "Research_Spine__Shell__IvoryPaint",
+    "faces_reoriented": 4032
+  },
+  {
+    "mesh": "Research_Spine__Shell__RoofAlloy",
+    "faces_reoriented": 432
+  },
+  {
+    "mesh": "Research_Spine__Shell__SmokedGlazing",
+    "faces_reoriented": 294
+  },
+  {
+    "mesh": "West_Laboratory__Shell__Graphite",
+    "faces_reoriented": 276
+  },
+  {
+    "mesh": "West_Laboratory__Shell__IvoryPaint",
+    "faces_reoriented": 3295
+  },
+  {
+    "mesh": "West_Laboratory__Shell__RoofAlloy",
+    "faces_reoriented": 432
+  },
+  {
+    "mesh": "West_Laboratory__Shell__SmokedGlazing",
+    "faces_reoriented": 378
+  },
+  {
+    "mesh": "East_Laboratory__Shell__Graphite",
+    "faces_reoriented": 276
+  },
+  {
+    "mesh": "East_Laboratory__Shell__IvoryPaint",
+    "faces_reoriented": 3295
+  },
+  {
+    "mesh": "East_Laboratory__Shell__RoofAlloy",
+    "faces_reoriented": 432
+  },
+  {
+    "mesh": "East_Laboratory__Shell__SmokedGlazing",
+    "faces_reoriented": 378
+  },
+  {
+    "mesh": "West_Front_Link__Shell__RoofAlloy",
+    "faces_reoriented": 6
+  },
+  {
+    "mesh": "West_Front_Link__Shell__IvoryPaint",
+    "faces_reoriented": 12
+  },
+  {
+    "mesh": "West_Rear_Link__Shell__RoofAlloy",
+    "faces_reoriented": 10
+  },
+  {
+    "mesh": "West_Rear_Link__Shell__IvoryPaint",
+    "faces_reoriented": 20
+  },
+  {
+    "mesh": "East_Front_Link__Shell__RoofAlloy",
+    "faces_reoriented": 6
+  },
+  {
+    "mesh": "East_Front_Link__Shell__IvoryPaint",
+    "faces_reoriented": 12
+  },
+  {
+    "mesh": "East_Rear_Link__Shell__RoofAlloy",
+    "faces_reoriented": 10
+  },
+  {
+    "mesh": "East_Rear_Link__Shell__IvoryPaint",
+    "faces_reoriented": 20
+  },
+  {
+    "mesh": "Command_Access__Roofs__IvoryPaint",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "Research_Spine__Roofs__IvoryPaint",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "West_Laboratory__Roofs__IvoryPaint",
+    "faces_reoriented": 108
+  },
+  {
+    "mesh": "East_Laboratory__Roofs__IvoryPaint",
+    "faces_reoriented": 108
+  },
+  {
+    "mesh": "West_Laboratory__Roofs__Graphite",
+    "faces_reoriented": 108
+  },
+  {
+    "mesh": "East_Laboratory__Roofs__Graphite",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "Command_Access__Decks__Graphite",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "Command_Access__Decks__RoofAlloy",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "Command_Access__Decks__Fasteners",
+    "faces_reoriented": 252
+  },
+  {
+    "mesh": "Research_Spine__Decks__Fasteners",
+    "faces_reoriented": 252
+  },
+  {
+    "mesh": "West_Laboratory__Decks__Fasteners",
+    "faces_reoriented": 252
+  },
+  {
+    "mesh": "East_Laboratory__Decks__Fasteners",
+    "faces_reoriented": 252
+  },
+  {
+    "mesh": "Command_stairs__Decks__Graphite",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "Command_stairs__Decks__RoofAlloy",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "West_hab_stairs__Decks__Graphite",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "West_hab_stairs__Decks__RoofAlloy",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "East_hab_stairs__Decks__Graphite",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "East_hab_stairs__Decks__RoofAlloy",
+    "faces_reoriented": 270
+  },
+  {
+    "mesh": "West_Front_Link__Decks__Graphite",
+    "faces_reoriented": 6
+  },
+  {
+    "mesh": "West_Rear_Link__Decks__Graphite",
+    "faces_reoriented": 10
+  },
+  {
+    "mesh": "East_Front_Link__Decks__Graphite",
+    "faces_reoriented": 6
+  },
+  {
+    "mesh": "East_Rear_Link__Decks__Graphite",
+    "faces_reoriented": 10
+  },
+  {
+    "mesh": "Command_Access__Details__RoofAlloy",
+    "faces_reoriented": 320
+  },
+  {
+    "mesh": "Command_Access__Details__IvoryPaint",
+    "faces_reoriented": 938
+  },
+  {
+    "mesh": "Command_Access__Details__Gaskets",
+    "faces_reoriented": 1388
+  },
+  {
+    "mesh": "Command_Access__Details__Fasteners",
+    "faces_reoriented": 648
+  },
+  {
+    "mesh": "Command_Access__Details__SmokedGlazing",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "West_Habitat__Details__IvoryPaint",
+    "faces_reoriented": 1178
+  },
+  {
+    "mesh": "West_Habitat__Details__Gaskets",
+    "faces_reoriented": 2006
+  },
+  {
+    "mesh": "West_Habitat__Details__Fasteners",
+    "faces_reoriented": 2916
+  },
+  {
+    "mesh": "West_Habitat__Details__RoofAlloy",
+    "faces_reoriented": 800
+  },
+  {
+    "mesh": "East_Habitat__Details__IvoryPaint",
+    "faces_reoriented": 1178
+  },
+  {
+    "mesh": "East_Habitat__Details__Gaskets",
+    "faces_reoriented": 2006
+  },
+  {
+    "mesh": "East_Habitat__Details__Fasteners",
+    "faces_reoriented": 2916
+  },
+  {
+    "mesh": "East_Habitat__Details__RoofAlloy",
+    "faces_reoriented": 800
+  },
+  {
+    "mesh": "Research_Spine__Details__RoofAlloy",
+    "faces_reoriented": 160
+  },
+  {
+    "mesh": "Research_Spine__Details__IvoryPaint",
+    "faces_reoriented": 896
+  },
+  {
+    "mesh": "Research_Spine__Details__Gaskets",
+    "faces_reoriented": 1200
+  },
+  {
+    "mesh": "West_Laboratory__Details__RoofAlloy",
+    "faces_reoriented": 160
+  },
+  {
+    "mesh": "West_Laboratory__Details__IvoryPaint",
+    "faces_reoriented": 1140
+  },
+  {
+    "mesh": "West_Laboratory__Details__Gaskets",
+    "faces_reoriented": 1574
+  },
+  {
+    "mesh": "West_Laboratory__Details__Fasteners",
+    "faces_reoriented": 324
+  },
+  {
+    "mesh": "East_Laboratory__Details__RoofAlloy",
+    "faces_reoriented": 160
+  },
+  {
+    "mesh": "East_Laboratory__Details__IvoryPaint",
+    "faces_reoriented": 1140
+  },
+  {
+    "mesh": "East_Laboratory__Details__Gaskets",
+    "faces_reoriented": 1574
+  },
+  {
+    "mesh": "East_Laboratory__Details__Fasteners",
+    "faces_reoriented": 324
+  },
+  {
+    "mesh": "Command_stairs__Details__Graphite",
+    "faces_reoriented": 324
+  },
+  {
+    "mesh": "West_hab_stairs__Details__Graphite",
+    "faces_reoriented": 324
+  },
+  {
+    "mesh": "East_hab_stairs__Details__Graphite",
+    "faces_reoriented": 324
+  },
+  {
+    "mesh": "West_Habitat__Details__Graphite",
+    "faces_reoriented": 1954
+  },
+  {
+    "mesh": "West_Habitat__Details__WarmLight",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "West_Laboratory__Details__Graphite",
+    "faces_reoriented": 520
+  },
+  {
+    "mesh": "West_Foundation_Walkway__Details__Graphite",
+    "faces_reoriented": 648
+  },
+  {
+    "mesh": "East_Habitat__Details__Graphite",
+    "faces_reoriented": 2030
+  },
+  {
+    "mesh": "East_Habitat__Details__WarmLight",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "East_Laboratory__Details__Graphite",
+    "faces_reoriented": 519
+  },
+  {
+    "mesh": "East_Foundation_Walkway__Details__Graphite",
+    "faces_reoriented": 648
+  },
+  {
+    "mesh": "Command_Access__Details__Graphite",
+    "faces_reoriented": 2042
+  },
+  {
+    "mesh": "Command_Access__Details__WarmLight",
+    "faces_reoriented": 54
+  },
+  {
+    "mesh": "Command_Access__Details__Lettering",
+    "faces_reoriented": 466
+  },
+  {
+    "mesh": "Research_Spine__Details__Graphite",
+    "faces_reoriented": 334
+  },
+  {
+    "mesh": "Research_Spine__Details__WarmLight",
+    "faces_reoriented": 54
+  }
+]

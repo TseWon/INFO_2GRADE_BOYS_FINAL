@@ -1,0 +1,5 @@
+Frames=295 -> 318
+ActualPlayerStairMax=0.940
+Final=(0.000, 0.940, -54.615)
+ReachedLanding=True
+ErrorsDuringWalk=0

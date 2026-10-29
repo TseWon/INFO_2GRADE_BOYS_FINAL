@@ -1,0 +1,12 @@
+Scene=Assets/Scene/SoloScene1.unity
+Backup=artifacts/backups/SoloScene1_before_station_20261029_051502.unity
+PlayerHeight=1.974
+Controller=1.88 x 0.6
+DoorMainClear=1.56 x 2.36m; DomeClear=1.25 x 2.32m; resize not required
+StationPosition=(0.00, 0.02, -42.00)
+StationBounds=Center: (0.00, 4.03, -41.88), Extents: (15.38, 4.01, 14.70)
+TruckBounds=Center: (4.10, 1.67, -66.00), Extents: (4.10, 1.66, 1.54)
+TruckOverlap=false
+Materials=9
+StaticMeshColliders=80
+OldFacilityRemoved=true
