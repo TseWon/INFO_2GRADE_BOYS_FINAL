@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "file": "C:\\Users\\PLUS\\UNITY_PROJECT\\INFO_2GRADE_BOYS_FINAL\\Assets\\Blender\\abandoned_basement_lab.blend",
+  "bytes": 3477116,
+  "mesh_objects": 1558,
+  "mesh_geometry_finite": true,
+  "uv_layers_present": true,
+  "reference_packed": true,
+  "both_stairs_present": true,
+  "observation_window_present": true,
+  "no_preview_rig_in_asset": true,
+  "installed_light_count": 10
+}
