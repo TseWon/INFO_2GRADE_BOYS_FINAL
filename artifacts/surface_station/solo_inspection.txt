@@ -1,0 +1,38 @@
+STATE playing=False compiling=False
+SCENE Assets/Scene/SoloScene1.unity dirty=True
+ROOT Directional Light pos=(0.000, 3.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(36.0, 328.0, 0.0) no renderers
+ROOT Grid pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) bounds center=(-4.500, 0.000, -4.000) size=(9.000, 0.000, 8.000) min=(-9.000, 0.000, -8.000) renderers=1
+ROOT Snow Plain - Morning pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) bounds center=(0.000, 3.368, 0.000) size=(400.000, 6.736, 400.000) min=(-200.000, 0.000, -200.000) renderers=1
+ROOT Research Facility - Snow Site pos=(0.000, 0.000, 35.000) scale=(1.000, 1.000, 1.000) rot=(270.0, 180.0, 0.0) bounds center=(-0.118, 19.299, 36.709) size=(218.761, 38.657, 173.434) min=(-109.499, -0.030, -50.008) renderers=24
+MATCH Research Facility - Snow Site pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.118, 19.299, 36.709) size=(218.761, 38.657, 173.434) min=(-109.499, -0.030, -50.008) renderers=24
+MATCH A - five-storey outer research wing | cracks and exposed rebar pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.140, 13.652, 41.197) size=(218.578, 26.757, 164.328) min=(-109.429, 0.273, -40.967) renderers=1
+MATCH A - five-storey outer research wing | floor slabs and concrete bands pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 13.502, 40.874) size=(218.160, 27.057, 164.412) min=(-109.080, -0.027, -41.332) renderers=1
+MATCH A - five-storey outer research wing | glazing and broken panes pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 14.492, 40.891) size=(218.044, 23.957, 164.260) min=(-109.022, 2.513, -41.239) renderers=1
+MATCH A - five-storey outer research wing | mullions and concrete piers pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.118, 14.002, 40.916) size=(218.761, 26.058, 165.019) min=(-109.499, 0.973, -41.593) renderers=1
+MATCH A - five-storey outer research wing | roof and parapets pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 27.652, 40.891) size=(218.160, 1.357, 164.360) min=(-109.080, 26.973, -41.289) renderers=1
+MATCH C - central circular research core | cracks and exposed rebar pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.144, 11.050, 34.818) size=(44.540, 21.515, 43.913) min=(-22.126, 0.292, 12.862) renderers=1
+MATCH C - central circular research core | floor slabs and concrete bands pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 10.900, 34.996) size=(44.160, 21.815, 44.168) min=(-22.080, -0.008, 12.912) renderers=1
+MATCH C - central circular research core | glazing and broken panes pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 11.890, 34.996) size=(44.044, 18.715, 44.051) min=(-22.022, 2.532, 12.971) renderers=1
+MATCH C - central circular research core | mullions and concrete piers pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.183, 11.400, 34.946) size=(44.600, 20.815, 44.341) min=(-22.117, 0.992, 12.775) renderers=1
+MATCH C - central circular research core | roof and parapets pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 22.450, 34.992) size=(44.160, 1.315, 44.160) min=(-22.080, 21.792, 12.912) renderers=1
+MATCH G - central research core roof pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 22.958, 34.992) size=(30.200, 2.266, 30.201) min=(-15.100, 21.825, 19.892) renderers=1
+ROOT Military Truck - Forecourt pos=(4.000, -0.008, -66.000) scale=(1.000, 1.000, 1.000) rot=(270.0, 0.0, 0.0) bounds center=(4.095, 1.670, -66.000) size=(8.190, 3.329, 3.080) min=(0.000, 0.005, -67.540) renderers=553
+ROOT Heavy Snowfall - near visibility pos=(9.000, 9.040, -71.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) no renderers
+ROOT Tactical Soldier Player pos=(14.000, 0.040, -79.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 336.0, 0.0) bounds center=(14.013, 0.920, -79.003) size=(0.870, 1.974, 0.604) min=(13.578, -0.067, -79.305) renderers=9
+CHARACTER Tactical Soldier Player height=1.88 radius=0.3 center=(0.00, 0.94, 0.00) step=0.25 scale=(1.00, 1.00, 1.00) pos=(14.00, 0.04, -79.00)
+MATCH Tactical Soldier Player pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(14.013, 0.920, -79.003) size=(0.870, 1.974, 0.604) min=(13.578, -0.067, -79.305) renderers=9
+MATCH Tactical Soldier - Player Visual pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(14.013, 0.920, -79.003) size=(0.870, 1.974, 0.604) min=(13.578, -0.067, -79.305) renderers=9
+MATCH Mesh_Soldier_Camouflage pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(14.013, 0.918, -78.984) size=(0.870, 1.331, 0.516) min=(13.578, 0.252, -79.242) renderers=1
+MATCH Mesh_Soldier_Cordura pos=(13.95, 1.33, -78.89) scale=(1.00, 1.00, 1.00) bounds center=(14.007, 1.024, -79.003) size=(0.813, 1.755, 0.604) min=(13.600, 0.147, -79.305) renderers=1
+MATCH Mesh_Soldier_GoggleLens pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(13.949, 1.714, -78.886) size=(0.193, 0.069, 0.089) min=(13.853, 1.679, -78.931) renderers=1
+MATCH Mesh_Soldier_Helmet pos=(14.06, 0.58, -78.87) scale=(1.00, 1.00, 1.00) bounds center=(13.998, 1.210, -79.007) size=(0.391, 1.394, 0.390) min=(13.803, 0.513, -79.202) renderers=1
+MATCH Mesh_Soldier_Leather pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(13.992, 0.499, -78.960) size=(0.806, 1.032, 0.494) min=(13.589, -0.017, -79.207) renderers=1
+MATCH Mesh_Soldier_Mask pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(14.005, 1.678, -79.010) size=(0.364, 0.336, 0.363) min=(13.823, 1.510, -79.192) renderers=1
+MATCH Mesh_Soldier_Metal pos=(13.95, 1.06, -78.88) scale=(1.00, 1.00, 1.00) bounds center=(13.976, 1.437, -78.958) size=(0.393, 0.805, 0.359) min=(13.780, 1.035, -79.137) renderers=1
+MATCH Mesh_Soldier_Rubber pos=(13.94, 1.06, -78.87) scale=(1.00, 1.00, 1.00) bounds center=(13.984, 0.908, -79.014) size=(0.765, 1.950, 0.578) min=(13.601, -0.067, -79.303) renderers=1
+MATCH Mesh_Soldier_Stitching pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) bounds center=(13.989, 1.273, -78.975) size=(0.448, 0.266, 0.511) min=(13.765, 1.140, -79.230) renderers=1
+MATCH TacticalSoldier_Rig pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) no renderers
+ROOT World Boundary - 188m limit pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) no renderers
+ROOT Snow Bounce - soft environment fill pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(32.0, 145.0, 0.0) no renderers
+MODEL Assets/Characters/DesertOperator/Models/DesertOperator.fbx bounds center=(0.000, 0.856, 0.004) size=(0.909, 1.926, 0.547) min=(-0.455, -0.107, -0.269) renderers=28
+MODEL Assets/Environment/SurfaceResearchStation/Models/SurfaceResearchStation.fbx bounds center=(0.000, 4.012, -0.125) size=(30.760, 8.024, 29.399) min=(-15.380, 0.000, -14.824) renderers=131

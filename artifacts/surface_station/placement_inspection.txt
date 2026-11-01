@@ -1,0 +1,14 @@
+GROUND components=Transform,MeshFilter,MeshRenderer,MeshCollider
+GROUND -16,-58=0.0000
+GROUND -16,-42=0.0000
+GROUND -16,-26=0.0000
+GROUND 0,-58=0.0000
+GROUND 0,-42=0.0000
+GROUND 0,-26=0.0000
+GROUND 16,-58=0.0000
+GROUND 16,-42=0.0000
+GROUND 16,-26=0.0000
+MODEL PART Command_Access__Shell__Graphite center=(0.00, 2.17, 8.20) size=(8.51, 2.74, 8.31) rot=(270.02, 0.00, 0.00)
+MODEL PART Command_Access__Shell__IvoryPaint center=(0.00, 3.50, 8.19) size=(8.40, 5.30, 8.22) rot=(270.02, 0.00, 0.00)
+MODEL PART Command_Access__Shell__RoofAlloy center=(0.00, 2.66, 8.20) size=(8.54, 3.61, 8.34) rot=(270.02, 0.00, 0.00)
+MODEL PART Command_Access__Shell__SmokedGlazing center=(0.00, 2.90, 8.73) size=(8.32, 1.16, 7.10) rot=(270.02, 0.00, 0.00)

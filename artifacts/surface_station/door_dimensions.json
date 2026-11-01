@@ -1,0 +1,30 @@
+[
+  {
+    "name": "West_Habitat__Airlock surround",
+    "clear_width": 1.25,
+    "clear_height": 2.32,
+    "bottom": 0.87,
+    "top": 3.19
+  },
+  {
+    "name": "East_Habitat__Airlock surround",
+    "clear_width": 1.25,
+    "clear_height": 2.32,
+    "bottom": 0.87,
+    "top": 3.19
+  },
+  {
+    "name": "Command_Access__Airlock surround.001",
+    "clear_width": 2.36,
+    "clear_height": 2.66,
+    "bottom": 0.87,
+    "top": 3.53
+  },
+  {
+    "name": "Command_Access__Airlock surround",
+    "clear_width": 1.56,
+    "clear_height": 2.36,
+    "bottom": 0.87,
+    "top": 3.23
+  }
+]

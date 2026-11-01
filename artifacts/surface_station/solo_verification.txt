@@ -1,0 +1,6 @@
+Scene=Assets/Scene/SoloScene1.unity
+OldExists=False
+Shaders=SR_Fasteners:Standard:errors=False,SR_Graphite:Environment/Surface Station Snow PBR:errors=False,SR_RoofAlloy:Environment/Surface Station Snow PBR:errors=False,SR_FadedRed:Standard:errors=False,SR_Gaskets:Standard:errors=False,SR_IvoryPaint:Environment/Surface Station Snow PBR:errors=False,SR_Lettering:Standard:errors=False,SR_SmokedGlazing:Standard:errors=False,SR_WarmLight:Standard:errors=False
+STAIR_PROBE x=0 final=(0.000, 0.940, -54.615) maxHeight=0.940 grounded=True reachedLanding=True
+STAIR_PROBE x=-10.8 final=(-10.800, 0.940, -53.386) maxHeight=0.940 grounded=True reachedLanding=True
+STAIR_PROBE x=10.8 final=(10.800, 0.940, -53.386) maxHeight=0.940 grounded=True reachedLanding=True
