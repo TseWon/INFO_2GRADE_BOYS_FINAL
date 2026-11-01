@@ -17,12 +17,22 @@ namespace FacilityEscape
         private MultiEscapePlayer a, b;
         private double nextWrite;
         private int lastCommand;
+        private int voiceTestFrames;
+        private uint voiceTestSequence;
+        private double nextVoiceTest;
+        private readonly short[] testTone = new short[MultiEscapeVoiceBuffer.FrameSamples];
+        private readonly float[] voiceOutput = new float[512];
         [Serializable] public class Report
         {
             public long timestamp;
             public bool connected, host, aInput, bInput, timerVisible, aAvatar, bAvatar;
             public string status, clue;
             public int command, shocks;
+            public int voiceReceived, voiceSent;
+            public bool voiceMuted, voiceRecording;
+            public string voiceStatus;
+            public bool blindfoldVisible, earDefendersVisible, grayscale, voiceSpeakerPlaying, canSendVoice, canReceiveVoice;
+            public float voiceOutputPeak;
             public MultiEscapeSnapshot state;
             public Vector3 aPosition, bPosition;
             public Quaternion aRotation, bRotation;
@@ -51,6 +61,14 @@ namespace FacilityEscape
         }
         void LateUpdate()
         {
+            if (voiceTestFrames > 0 && Time.realtimeSinceStartupAsDouble >= nextVoiceTest)
+            {
+                for (int i = 0; i < testTone.Length; i++)
+                    testTone[i] = (short)(Math.Sin((voiceTestSequence * 320 + i) * Math.PI * 2 * 440 / 16000) * 4000);
+                lan.SendVoice(voiceTestSequence++, testTone);
+                voiceTestFrames--;
+                nextVoiceTest = Time.realtimeSinceStartupAsDouble + .02;
+            }
             if (string.IsNullOrEmpty(output) || Time.realtimeSinceStartupAsDouble < nextWrite) return;
             nextWrite = Time.realtimeSinceStartupAsDouble + .1;
             try
@@ -74,9 +92,18 @@ namespace FacilityEscape
                         if (command.action == "join") lan.Join(command.address);
                         if (command.action == "host") lan.Host();
                         if (command.action == "screenshot") ScreenCapture.CaptureScreenshot(output + ".png");
+                        if (command.action == "voice-mute") lan.Voice.ToggleMute();
+                        if (command.action == "voice-tone") { voiceTestFrames = 50; voiceTestSequence = 0; }
                     }
                 }
                 var root = ui.GetComponent<UIDocument>().rootVisualElement;
+                var voiceSpeaker = lan.GetComponentsInChildren<AudioSource>().FirstOrDefault(s => s.name == "Partner_Voice");
+                float peak = 0;
+                if (voiceSpeaker != null && voiceSpeaker.isPlaying)
+                {
+                    voiceSpeaker.GetOutputData(voiceOutput, 0);
+                    foreach (float sample in voiceOutput) peak = Mathf.Max(peak, Mathf.Abs(sample));
+                }
                 var report = new Report {
                     timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(), connected = lan.Connected, host = lan.IsHost,
                     status = lan.Status, command = lastCommand, state = game.CaptureSnapshot(),
@@ -87,6 +114,14 @@ namespace FacilityEscape
                     bAvatar = b.transform.Find("Avatar_ReplaceVisuals").gameObject.activeSelf,
                     timerVisible = !root.Q("timerLabel").ClassListContains("hidden"),
                     shocks = FindAnyObjectByType<MultiEscapeFeedback>().ShockCount,
+                    voiceReceived = lan.Voice.ReceivedPackets, voiceSent = lan.Voice.SentPackets,
+                    voiceMuted = lan.Voice.Muted, voiceRecording = lan.Voice.IsRecording,
+                    voiceStatus = lan.Voice.Status,
+                    blindfoldVisible = a.transform.Find("Avatar_ReplaceVisuals/Head_LookPivot/Blindfold").gameObject.activeSelf,
+                    earDefendersVisible = b.transform.Find("Avatar_ReplaceVisuals/Head_LookPivot/EarDefenders").gameObject.activeSelf,
+                    grayscale = a.ViewCamera.GetComponent<MultiGrayscaleCamera>().enabled,
+                    voiceSpeakerPlaying = voiceSpeaker != null && voiceSpeaker.isPlaying,
+                    voiceOutputPeak = peak, canSendVoice = lan.CanSendVoice, canReceiveVoice = lan.CanReceiveVoice,
                     clue = FindAnyObjectByType<MultiEscapeClueBoard>().GetComponent<TextMesh>().text
                 };
                 File.WriteAllText(output, JsonUtility.ToJson(report));

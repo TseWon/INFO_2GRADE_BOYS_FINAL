@@ -45,5 +45,13 @@
                 <ui:Button name="lobbyLeaveButton" text="LEAVE / CANCEL" class="control hidden" focusable="false" />
             </ui:VisualElement>
         </ui:VisualElement>
+        <ui:VisualElement name="voicePanel" class="voice-panel blocks-world">
+            <ui:Label name="voiceLabel" text="VOICE / Connect both players first" class="hint" />
+            <ui:VisualElement class="voice-controls">
+                <ui:DropdownField name="microphoneField" label="Headset mic" class="microphone-field" />
+                <ui:Button name="microphoneRefresh" text="REFRESH MICS" class="control" focusable="false" />
+                <ui:Button name="microphoneMute" text="MUTE MIC" class="control" focusable="false" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

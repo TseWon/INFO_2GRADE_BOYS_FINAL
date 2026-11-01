@@ -19,7 +19,15 @@ namespace FacilityEscape
         [SerializeField] private MultiEscapePlayer playerA, playerB;
         [SerializeField] private ushort port = 7777;
         private const string StateMessage = "Facility.State.v1", PoseMessage = "Facility.Pose.v1";
-        private const string Protocol = "FacilityEscape-LAN-1";
+        private const string Protocol = "FacilityEscape-LAN-3-VoiceUnlock";
+        private const string VoiceMessage = "Facility.Voice.v2";
+        private readonly short[] voiceFrame = new short[MultiEscapeVoiceBuffer.FrameSamples];
+        public event Action<uint, short[]> VoiceReceived;
+        public MultiEscapeVoiceChat Voice { get; private set; }
+        public bool VoiceUnlocked => game.Rules != null && game.Rules.Stage == EscapeStage.Escaped;
+        public bool CanSendVoice => Connected && MultiEscapeVoiceBuffer.CanHear(RemoteRole, LocalRole, game.Rules.Stage);
+        public bool CanReceiveVoice => Connected && MultiEscapeVoiceBuffer.CanHear(LocalRole, RemoteRole, game.Rules.Stage);
+        private EscapeRole RemoteRole => LocalRole == EscapeRole.Blindfolded ? EscapeRole.Observer : EscapeRole.Blindfolded;
         private NetworkManager manager;
         private ulong peerId = ulong.MaxValue;
         private bool stopping, receivedState, savedBackground;
@@ -41,6 +49,8 @@ namespace FacilityEscape
         private void Awake()
         {
             game.Lan = this;
+            Voice = gameObject.AddComponent<MultiEscapeVoiceChat>();
+            Voice.Initialize(this, game);
             game.onRoundStarted.AddListener(ResetRemotePose);
             savedBackground = Application.runInBackground;
             Application.runInBackground = true;
@@ -78,7 +88,7 @@ namespace FacilityEscape
             transport.SetConnectionData(address, port, "0.0.0.0");
             manager.NetworkConfig = new NetworkConfig {
                 NetworkTransport = transport, EnableSceneManagement = false,
-                ConnectionApproval = true, ForceSamePrefabs = false, ProtocolVersion = 1,
+                ConnectionApproval = true, ForceSamePrefabs = false, ProtocolVersion = 3,
                 ConnectionData = Encoding.UTF8.GetBytes(Protocol), TickRate = 20
             };
             manager.ConnectionApprovalCallback = Approve;
@@ -91,6 +101,7 @@ namespace FacilityEscape
             if (!started) { Leave("Could not open the connection. Check port 7777 and try again."); return; }
             manager.CustomMessagingManager.RegisterNamedMessageHandler(StateMessage, ReceiveState);
             manager.CustomMessagingManager.RegisterNamedMessageHandler(PoseMessage, ReceivePose);
+            manager.CustomMessagingManager.RegisterNamedMessageHandler(VoiceMessage, ReceiveVoice);
             Changed?.Invoke();
         }
 
@@ -227,6 +238,32 @@ namespace FacilityEscape
             hasRemotePose = true;
         }
         private static bool Finite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
+
+        public void SendVoice(uint sequence, short[] samples)
+        {
+            if (!CanSendVoice || samples == null ||
+                samples.Length != MultiEscapeVoiceBuffer.FrameSamples) return;
+            using (var writer = new FastBufferWriter(8 + samples.Length * 2, Allocator.Temp))
+            {
+                writer.WriteValueSafe(game.RoundNumber);
+                writer.WriteValueSafe(sequence);
+                for (int i = 0; i < samples.Length; i++) writer.WriteValueSafe(samples[i]);
+                manager.CustomMessagingManager.SendNamedMessage(VoiceMessage, IsHost ? peerId : NetworkManager.ServerClientId,
+                    writer, NetworkDelivery.Unreliable);
+            }
+        }
+
+        private void ReceiveVoice(ulong sender, FastBufferReader reader)
+        {
+            // Role/stage gates apply on both peers. Old-round audio cannot cross a restart.
+            if (!CanReceiveVoice || sender != (IsHost ? peerId : NetworkManager.ServerClientId) ||
+                reader.Length - reader.Position != 8 + voiceFrame.Length * 2) return;
+            reader.ReadValueSafe(out int round);
+            if (round != game.RoundNumber) return;
+            reader.ReadValueSafe(out uint sequence);
+            for (int i = 0; i < voiceFrame.Length; i++) reader.ReadValueSafe(out voiceFrame[i]);
+            VoiceReceived?.Invoke(sequence, voiceFrame);
+        }
 
         private void OnDestroy()
         {

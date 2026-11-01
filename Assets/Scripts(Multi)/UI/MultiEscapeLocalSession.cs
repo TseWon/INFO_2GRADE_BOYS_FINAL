@@ -18,6 +18,9 @@ namespace FacilityEscape
         private VisualElement connectionControls;
         private Label connectionLabel;
         private MultiEscapeLanSession lan;
+        private Label voiceLabel;
+        private DropdownField microphoneField;
+        private Button microphoneRefresh, microphoneMute;
         private double noticeUntil;
         private string notice;
         public EscapeRole ActiveRole { get; private set; }
@@ -37,6 +40,14 @@ namespace FacilityEscape
             switchButton = root.Q<Button>("switchButton"); restartButton = root.Q<Button>("restartButton");
             startButton = root.Q<Button>("startButton");
             lan = game.Lan;
+            voiceLabel = root.Q<Label>("voiceLabel");
+            microphoneField = root.Q<DropdownField>("microphoneField");
+            microphoneRefresh = root.Q<Button>("microphoneRefresh");
+            microphoneMute = root.Q<Button>("microphoneMute");
+            microphoneField?.RegisterValueChangedCallback(MicrophoneChanged);
+            if (microphoneRefresh != null) microphoneRefresh.clicked += RefreshMicrophones;
+            if (microphoneMute != null) microphoneMute.clicked += MuteMicrophone;
+            RefreshMicrophones();
             hostButton = root.Q<Button>("hostButton"); joinButton = root.Q<Button>("joinButton");
             leaveButton = root.Q<Button>("leaveButton"); lobbyLeaveButton = root.Q<Button>("lobbyLeaveButton");
             addressField = root.Q<TextField>("addressField");
@@ -66,6 +77,9 @@ namespace FacilityEscape
 
         private void OnDisable()
         {
+            microphoneField?.UnregisterValueChangedCallback(MicrophoneChanged);
+            if (microphoneRefresh != null) microphoneRefresh.clicked -= RefreshMicrophones;
+            if (microphoneMute != null) microphoneMute.clicked -= MuteMicrophone;
             if (lan != null)
             {
                 hostButton.clicked -= lan.Host; joinButton.clicked -= Join;
@@ -100,7 +114,29 @@ namespace FacilityEscape
 #endif
             if (noticeLabel != null) noticeLabel.text = Time.realtimeSinceStartupAsDouble < noticeUntil ? notice : "";
             crosshair?.EnableInClassList("hidden", !CanLook());
+            if (lan?.Voice != null)
+            {
+                if (voiceLabel != null) voiceLabel.text = lan.Voice.Status;
+                // A can prepare a headset and mute preference before the escape unlocks its microphone.
+                microphoneField?.SetEnabled(true);
+                microphoneMute?.SetEnabled(lan.IsBusy);
+                if (microphoneMute != null) microphoneMute.text = lan.Voice.Muted ? "UNMUTE MIC" : "MUTE MIC";
+            }
         }
+
+        private void RefreshMicrophones()
+        {
+            if (microphoneField == null) return;
+            var choices = new System.Collections.Generic.List<string> { MultiEscapeVoiceChat.DefaultDevice };
+            choices.AddRange(Microphone.devices);
+            string selected = lan?.Voice != null ? lan.Voice.SelectedDevice : MultiEscapeVoiceChat.DefaultDevice;
+            if (!choices.Contains(selected)) choices.Add(selected);
+            microphoneField.choices = choices;
+            microphoneField.SetValueWithoutNotify(selected);
+        }
+
+        private void MicrophoneChanged(ChangeEvent<string> change) => lan?.Voice?.SelectMicrophone(change.newValue);
+        private void MuteMicrophone() => lan?.Voice?.ToggleMute();
 
         private bool CanLook() => game != null && game.Rules != null &&
             (lan == null || lan.Connected) &&
@@ -176,7 +212,9 @@ namespace FacilityEscape
             if (root == null || game == null || game.Rules == null) return;
             var rules = game.Rules;
             bool observer = ActiveRole == EscapeRole.Observer;
-            roleLabel.text = observer ? "B / OBSERVER / COLOR" : "A / OPERATOR / GRAYSCALE";
+            roleLabel.text = rules.Stage == EscapeStage.Escaped
+                ? (observer ? "B" : "A") + " / FREE / COLOR"
+                : observer ? "B / EARPLUGS / COLOR" : "A / BLINDFOLD / GRAYSCALE";
             timerLabel.text = Mathf.CeilToInt((float)rules.RemainingSeconds).ToString("00") + "s";
             timerLabel.EnableInClassList("hidden", rules.Stage == EscapeStage.Escaped);
             heartsA.text = "A  [ " + Hearts(rules.HeartsA) + " ]  " + rules.HeartsA + " HP";
@@ -200,7 +238,7 @@ namespace FacilityEscape
                     statusLabel.text = observer ? "READ THE SYMBOL ORDER / A MUST PULL THE LEVER" : "LOCK 02 / SET THREE DIALS, THEN PULL THE LEVER";
                     break;
                 case EscapeStage.Escaped:
-                    statusLabel.text = "ESCAPED / ALL RESTRAINTS RELEASED";
+                    statusLabel.text = "ESCAPED / BLINDFOLD + EARPLUGS REMOVED / TWO-WAY VOICE";
                     hintLabel.text = "WASD: walk through the exit  |  Mouse: look  |  Esc: free cursor  |  Tab: role  |  R: restart";
                     break;
                 case EscapeStage.Failed:
@@ -228,7 +266,7 @@ namespace FacilityEscape
                 if (rules.Stage == EscapeStage.Ready)
                 {
                     modalTitle.text = "TWO-PLAYER LAN";
-                    modalBody.text = "Same Wi-Fi: create a room as A, then join from the other laptop as B.\nHost gives B the Wi-Fi IPv4 address shown below. Both players must connect before starting.";
+                    modalBody.text = "Same Wi-Fi: host as A, join as B using the host's IPv4.\nA wears a blindfold and hears B. B wears earplugs: speak into your headset to guide A, but you cannot hear A.\nVoice starts when both players connect.";
                     statusLabel.text = lan.Connected ? "TWO PLAYERS CONNECTED / READY" : "WAITING FOR TWO PLAYERS";
                     if (MouseCaptured) SetMouseCaptured(false);
                 }

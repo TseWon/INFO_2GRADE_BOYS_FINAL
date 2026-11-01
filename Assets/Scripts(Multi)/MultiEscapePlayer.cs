@@ -21,6 +21,7 @@ namespace FacilityEscape
 
         public EscapeRole Role => role;
         public MultiEscapeGame Game => game;
+        public bool SensoryRestrictionsReleased => game != null && game.Rules != null && game.Rules.Stage == EscapeStage.Escaped;
         public Camera ViewCamera => viewCamera;
         public bool LocalInput { get => localInput; set => localInput = value; }
         public System.Func<bool> IsPointerBlocked { get; set; }
@@ -56,12 +57,6 @@ namespace FacilityEscape
 
         private void OnEnable()
         {
-            if (viewCamera != null)
-            {
-                viewCamera.cullingMask = role == EscapeRole.Blindfolded
-                    ? originalCullingMask & ~(1 << clueLayer) : originalCullingMask | (1 << clueLayer);
-                if (grayscale != null) grayscale.enabled = role == EscapeRole.Blindfolded;
-            }
             if (game != null) game.StateChanged += RefreshRestraints;
             RefreshRestraints();
         }
@@ -77,7 +72,12 @@ namespace FacilityEscape
 
         private void RefreshRestraints()
         {
-            bool free = game != null && game.Rules != null && game.Rules.Stage == EscapeStage.Escaped;
+            bool free = SensoryRestrictionsReleased;
+            bool blindfolded = role == EscapeRole.Blindfolded && !free;
+            if (viewCamera != null)
+                viewCamera.cullingMask = blindfolded
+                    ? originalCullingMask & ~(1 << clueLayer) : originalCullingMask | (1 << clueLayer);
+            if (grayscale != null) grayscale.enabled = blindfolded;
             for (int i = 0; i < movementWhileFree.Length; i++)
                 if (movementWhileFree[i] != null)
                     movementWhileFree[i].enabled = free && originalMovementEnabled[i];

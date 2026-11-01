@@ -37,7 +37,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 180px;
     bottom: 0;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@
 .address-field { margin: 12px 0; font-size: 18px; }
 .address-field .unity-text-field__input { background-color: rgb(50, 50, 50); color: white; padding: 7px; }
 .connection-status { font-size: 16px; margin-top: 8px; }
-.notice { position: absolute; top: 105px; left: 26px; font-size: 20px; -unity-font-style: bold; }
+.notice { position: absolute; top: 195px; left: 26px; font-size: 20px; -unity-font-style: bold; }
 .crosshair {
     position: absolute;
     left: 50%;
@@ -79,3 +79,8 @@
 .aim-left { left: 0; top: 14px; width: 10px; height: 4px; }
 .aim-right { left: 22px; top: 14px; width: 10px; height: 4px; }
 .aim-dot { left: 13px; top: 13px; width: 6px; height: 6px; border-radius: 3px; }
+.voice-panel { position: absolute; top: 100px; left: 26px; right: 26px; padding: 8px; background-color: rgba(10, 10, 10, 0.93); }
+.voice-controls { flex-direction: row; flex-wrap: wrap; align-items: center; margin-top: 5px; }
+.microphone-field { flex-grow: 1; min-width: 240px; margin-right: 10px; }
+.microphone-field .unity-base-field__input { background-color: rgb(50, 50, 50); color: white; }
+.microphone-field .unity-base-popup-field__text { color: white; }
