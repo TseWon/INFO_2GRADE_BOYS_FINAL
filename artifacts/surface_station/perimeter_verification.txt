@@ -1,0 +1,1 @@
+scene=Assets/Scene/SoloScene1.unity panels=69 invisibleWalls=8 fenceHeight=3.996987 gateHeight=3.999999 stationSideClearance=3.620001 gateScript=OutwardResearchGate westHinge=(-2.50, 0.00, -76.00) eastHinge=(2.50, 0.00, -76.00) truckZ=-96 stationZ=-42

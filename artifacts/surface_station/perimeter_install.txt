@@ -1,0 +1,1 @@
+scene=Assets/Scene/SoloScene1.unity backup=artifacts/backups/SoloScene1_before_perimeter_20261101_051519.unity fencePanels=69 fenceHeight=4m gateHeight=4m gateClearWidth=5m perimeterWidth=38m truck=(4.00, -0.01, -96.00) -> (4.00, -0.01, -96.00) player=(14.00, 0.04, -79.00) invisibleWalls=8
