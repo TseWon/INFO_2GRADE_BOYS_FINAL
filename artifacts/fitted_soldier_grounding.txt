@@ -1,0 +1,1 @@
+Actual skinned geometry before=Center: (13.95, 0.90, -78.96), Extents: (0.42, 0.86, 0.29) after=Center: (13.95, 0.98, -78.96), Extents: (0.46, 0.94, 0.32) footRelative=2.235174E-08 skinWidth=0.025

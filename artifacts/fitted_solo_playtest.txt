@@ -1,0 +1,1 @@
+Frames advanced=264; walking thigh bend=6.872995; closed gate stop z=-64.38242; open gate passage z=-62.3; invisible wall stop x=18.5; skinned meshes=8; camera-parent=Tactical Soldier Player

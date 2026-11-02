@@ -1,0 +1,108 @@
+{
+  "materials": [
+    {
+      "name": "FS_DesertDigitalFabric",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "roughness": 0.8399999737739563,
+      "metallic": 0.0,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_DesertDigitalFabric_BaseColor.png",
+      "Normal": "Assets/Characters/FittedSoldier/Textures/FS_DesertDigitalFabric_Normal.png"
+    },
+    {
+      "name": "FS_MOLLE_Webbing",
+      "color": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.14499999582767487,
+        1.0
+      ],
+      "roughness": 0.8600000143051147,
+      "metallic": 0.0,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_MOLLE_Webbing_BaseColor.png"
+    },
+    {
+      "name": "FS_DullHardware",
+      "color": [
+        0.12999999523162842,
+        0.14000000059604645,
+        0.11999999731779099,
+        1.0
+      ],
+      "roughness": 0.6200000047683716,
+      "metallic": 0.550000011920929,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_DullHardware_BaseColor.png"
+    },
+    {
+      "name": "FS_WornOliveNylon",
+      "color": [
+        0.1599999964237213,
+        0.16500000655651093,
+        0.11999999731779099,
+        1.0
+      ],
+      "roughness": 0.8899999856948853,
+      "metallic": 0.0,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_WornOliveNylon_BaseColor.png",
+      "Normal": "Assets/Characters/FittedSoldier/Textures/FS_WornOliveNylon_Normal.png"
+    },
+    {
+      "name": "FS_BalaclavaAndGlove",
+      "color": [
+        0.03500000014901161,
+        0.039000000804662704,
+        0.03799999877810478,
+        1.0
+      ],
+      "roughness": 0.9100000262260437,
+      "metallic": 0.0,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_BalaclavaAndGlove_BaseColor.png",
+      "Normal": "Assets/Characters/FittedSoldier/Textures/FS_BalaclavaAndGlove_Normal.png"
+    },
+    {
+      "name": "FS_SandRubber",
+      "color": [
+        0.28999999165534973,
+        0.25,
+        0.17000000178813934,
+        1.0
+      ],
+      "roughness": 0.9100000262260437,
+      "metallic": 0.0,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_SandRubber_BaseColor.png"
+    },
+    {
+      "name": "FS_HelmetComposite",
+      "color": [
+        0.23000000417232513,
+        0.2199999988079071,
+        0.1599999964237213,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.05000000074505806,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_HelmetComposite_BaseColor.png",
+      "Normal": "Assets/Characters/FittedSoldier/Textures/FS_HelmetComposite_Normal.png"
+    },
+    {
+      "name": "FS_DarkGoggleLens",
+      "color": [
+        0.017999999225139618,
+        0.023000000044703484,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.1599999964237213,
+      "metallic": 0.2800000011920929,
+      "BaseColor": "Assets/Characters/FittedSoldier/Textures/FS_DarkGoggleLens_BaseColor.png"
+    }
+  ],
+  "vertices": 182828,
+  "triangles": 361148,
+  "height": 1.7180731296539307,
+  "bones": 19
+}

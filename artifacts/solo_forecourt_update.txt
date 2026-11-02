@@ -1,0 +1,1 @@
+Front fence z=-64 (was -76), rear z=-12 unchanged; depth 52m (was64); width38m height4m unchanged; modified snow vertices=721; truck=(4.00, -0.01, -96.00); backup=artifacts/backups/SoloScene1_before_fitted_soldier_20261102_113922.unity

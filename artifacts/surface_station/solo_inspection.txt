@@ -1,22 +1,9 @@
 STATE playing=False compiling=False
-SCENE Assets/Scene/SoloScene1.unity dirty=True
+SCENE Assets/Scene/SoloScene1.unity dirty=False
 ROOT Directional Light pos=(0.000, 3.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(36.0, 328.0, 0.0) no renderers
 ROOT Grid pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) bounds center=(-4.500, 0.000, -4.000) size=(9.000, 0.000, 8.000) min=(-9.000, 0.000, -8.000) renderers=1
 ROOT Snow Plain - Morning pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) bounds center=(0.000, 3.368, 0.000) size=(400.000, 6.736, 400.000) min=(-200.000, 0.000, -200.000) renderers=1
-ROOT Research Facility - Snow Site pos=(0.000, 0.000, 35.000) scale=(1.000, 1.000, 1.000) rot=(270.0, 180.0, 0.0) bounds center=(-0.118, 19.299, 36.709) size=(218.761, 38.657, 173.434) min=(-109.499, -0.030, -50.008) renderers=24
-MATCH Research Facility - Snow Site pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.118, 19.299, 36.709) size=(218.761, 38.657, 173.434) min=(-109.499, -0.030, -50.008) renderers=24
-MATCH A - five-storey outer research wing | cracks and exposed rebar pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.140, 13.652, 41.197) size=(218.578, 26.757, 164.328) min=(-109.429, 0.273, -40.967) renderers=1
-MATCH A - five-storey outer research wing | floor slabs and concrete bands pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 13.502, 40.874) size=(218.160, 27.057, 164.412) min=(-109.080, -0.027, -41.332) renderers=1
-MATCH A - five-storey outer research wing | glazing and broken panes pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 14.492, 40.891) size=(218.044, 23.957, 164.260) min=(-109.022, 2.513, -41.239) renderers=1
-MATCH A - five-storey outer research wing | mullions and concrete piers pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(-0.118, 14.002, 40.916) size=(218.761, 26.058, 165.019) min=(-109.499, 0.973, -41.593) renderers=1
-MATCH A - five-storey outer research wing | roof and parapets pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 27.652, 40.891) size=(218.160, 1.357, 164.360) min=(-109.080, 26.973, -41.289) renderers=1
-MATCH C - central circular research core | cracks and exposed rebar pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.144, 11.050, 34.818) size=(44.540, 21.515, 43.913) min=(-22.126, 0.292, 12.862) renderers=1
-MATCH C - central circular research core | floor slabs and concrete bands pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 10.900, 34.996) size=(44.160, 21.815, 44.168) min=(-22.080, -0.008, 12.912) renderers=1
-MATCH C - central circular research core | glazing and broken panes pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 11.890, 34.996) size=(44.044, 18.715, 44.051) min=(-22.022, 2.532, 12.971) renderers=1
-MATCH C - central circular research core | mullions and concrete piers pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.183, 11.400, 34.946) size=(44.600, 20.815, 44.341) min=(-22.117, 0.992, 12.775) renderers=1
-MATCH C - central circular research core | roof and parapets pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 22.450, 34.992) size=(44.160, 1.315, 44.160) min=(-22.080, 21.792, 12.912) renderers=1
-MATCH G - central research core roof pos=(0.00, 0.00, 35.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 22.958, 34.992) size=(30.200, 2.266, 30.201) min=(-15.100, 21.825, 19.892) renderers=1
-ROOT Military Truck - Forecourt pos=(4.000, -0.008, -66.000) scale=(1.000, 1.000, 1.000) rot=(270.0, 0.0, 0.0) bounds center=(4.095, 1.670, -66.000) size=(8.190, 3.329, 3.080) min=(0.000, 0.005, -67.540) renderers=553
+ROOT Military Truck - Forecourt pos=(4.000, -0.008, -96.000) scale=(1.000, 1.000, 1.000) rot=(270.0, 0.0, 0.0) bounds center=(4.095, 1.670, -96.000) size=(8.190, 3.329, 3.080) min=(0.000, 0.005, -97.540) renderers=553
 ROOT Heavy Snowfall - near visibility pos=(9.000, 9.040, -71.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) no renderers
 ROOT Tactical Soldier Player pos=(14.000, 0.040, -79.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 336.0, 0.0) bounds center=(14.013, 0.920, -79.003) size=(0.870, 1.974, 0.604) min=(13.578, -0.067, -79.305) renderers=9
 CHARACTER Tactical Soldier Player height=1.88 radius=0.3 center=(0.00, 0.94, 0.00) step=0.25 scale=(1.00, 1.00, 1.00) pos=(14.00, 0.04, -79.00)
@@ -34,5 +21,50 @@ MATCH Mesh_Soldier_Stitching pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) 
 MATCH TacticalSoldier_Rig pos=(14.00, 0.04, -79.00) scale=(1.00, 1.00, 1.00) no renderers
 ROOT World Boundary - 188m limit pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) no renderers
 ROOT Snow Bounce - soft environment fill pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(32.0, 145.0, 0.0) no renderers
+ROOT Surface Research Station - Snow Site pos=(0.000, 0.015, -42.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 180.0, 0.0) bounds center=(0.000, 4.027, -41.876) size=(30.760, 8.024, 29.399) min=(-15.380, 0.015, -56.575) renderers=262
+MATCH Surface Research Station - Snow Site pos=(0.00, 0.02, -42.00) scale=(1.00, 1.00, 1.00) bounds center=(0.000, 4.027, -41.876) size=(30.760, 8.024, 29.399) min=(-15.380, 0.015, -56.575) renderers=262
+MATCH Research_Spine__Decks__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 0.415, -34.900) size=(7.383, 0.420, 15.375) min=(-3.692, 0.205, -42.588) renderers=1
+MATCH Research_Spine__Details__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.761, -34.900) size=(7.408, 4.776, 15.448) min=(-3.704, 0.373, -42.624) renderers=1
+MATCH Research_Spine__Details__Gaskets pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.385, -34.925) size=(7.293, 2.125, 13.894) min=(-3.647, 2.322, -41.872) renderers=1
+MATCH Research_Spine__Details__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.880, -34.900) size=(5.588, 5.170, 15.375) min=(-2.794, 0.295, -42.588) renderers=1
+MATCH Research_Spine__Details__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 4.098, -34.926) size=(7.370, 3.777, 13.968) min=(-3.685, 2.210, -41.910) renderers=1
+MATCH Research_Spine__Details__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.129, -34.900) size=(5.510, 5.591, 15.418) min=(-2.755, 0.334, -42.609) renderers=1
+MATCH Research_Spine__Details__SmokedGlazing pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.370, -41.835) size=(5.040, 1.110, 0.000) min=(-2.520, 4.815, -41.835) renderers=1
+MATCH Research_Spine__Details__WarmLight pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.715, -27.847) size=(0.400, 0.100, 0.045) min=(-0.200, 3.665, -27.870) renderers=1
+MATCH Research_Spine__Roofs__FadedRed pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.800, 6.885, -31.600) size=(1.200, 0.340, 1.200) min=(0.200, 6.715, -32.200) renderers=1
+MATCH Research_Spine__Roofs__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.800, 7.305, -31.600) size=(0.036, 0.520, 0.034) min=(0.782, 7.045, -31.617) renderers=1
+MATCH Research_Spine__Roofs__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 6.052, -34.758) size=(4.280, 1.285, 7.165) min=(-2.140, 5.410, -38.340) renderers=1
+MATCH Research_Spine__Roofs__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.595, -34.900) size=(7.640, 2.160, 14.220) min=(-3.820, 4.515, -42.010) renderers=1
+MATCH Research_Spine__Roofs__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.578, -34.900) size=(7.707, 1.973, 14.390) min=(-3.854, 4.592, -42.095) renderers=1
+MATCH Research_Spine__Shell__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.182, -34.900) size=(7.310, 2.735, 13.910) min=(-3.655, 0.815, -41.855) renderers=1
+MATCH Research_Spine__Shell__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.640, -34.889) size=(7.200, 5.550, 13.823) min=(-3.600, 0.865, -41.800) renderers=1
+MATCH Research_Spine__Shell__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.770, -34.900) size=(7.340, 3.810, 13.940) min=(-3.670, 0.865, -41.870) renderers=1
+MATCH Research_Spine__Shell__SmokedGlazing pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.910, -35.966) size=(7.118, 1.160, 11.637) min=(-3.559, 2.330, -41.784) renderers=1
+MATCH LOD1_Research_Spine__Decks__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 0.415, -34.901) size=(7.383, 0.420, 15.372) min=(-3.692, 0.205, -42.588) renderers=1
+MATCH LOD1_Research_Spine__Details__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.758, -34.900) size=(7.408, 4.775, 15.448) min=(-3.704, 0.370, -42.624) renderers=1
+MATCH LOD1_Research_Spine__Details__Gaskets pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.386, -34.925) size=(7.293, 2.121, 13.894) min=(-3.647, 2.325, -41.872) renderers=1
+MATCH LOD1_Research_Spine__Details__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.001, 2.880, -34.900) size=(5.592, 5.170, 15.375) min=(-2.796, 0.295, -42.588) renderers=1
+MATCH LOD1_Research_Spine__Details__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 4.099, -34.926) size=(7.370, 3.770, 13.968) min=(-3.685, 2.214, -41.910) renderers=1
+MATCH LOD1_Research_Spine__Details__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.129, -34.900) size=(5.514, 5.592, 15.418) min=(-2.757, 0.333, -42.609) renderers=1
+MATCH LOD1_Research_Spine__Details__SmokedGlazing pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.370, -41.835) size=(5.040, 1.110, 0.000) min=(-2.520, 4.815, -41.835) renderers=1
+MATCH LOD1_Research_Spine__Details__WarmLight pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.715, -27.846) size=(0.401, 0.101, 0.043) min=(-0.200, 3.665, -27.867) renderers=1
+MATCH LOD1_Research_Spine__Roofs__FadedRed pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.800, 6.885, -31.600) size=(1.200, 0.340, 1.200) min=(0.200, 6.715, -32.200) renderers=1
+MATCH LOD1_Research_Spine__Roofs__Fasteners pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.800, 7.305, -31.600) size=(0.036, 0.520, 0.034) min=(0.782, 7.045, -31.617) renderers=1
+MATCH LOD1_Research_Spine__Roofs__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 6.052, -34.758) size=(4.280, 1.285, 7.165) min=(-2.140, 5.410, -38.340) renderers=1
+MATCH LOD1_Research_Spine__Roofs__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.594, -34.900) size=(7.631, 2.162, 14.209) min=(-3.816, 4.513, -42.005) renderers=1
+MATCH LOD1_Research_Spine__Roofs__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 5.575, -34.900) size=(7.707, 1.978, 14.391) min=(-3.854, 4.586, -42.095) renderers=1
+MATCH LOD1_Research_Spine__Shell__Graphite pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.183, -34.900) size=(7.305, 2.737, 13.905) min=(-3.652, 0.815, -41.852) renderers=1
+MATCH LOD1_Research_Spine__Shell__IvoryPaint pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 3.640, -34.889) size=(7.200, 5.550, 13.823) min=(-3.600, 0.865, -41.800) renderers=1
+MATCH LOD1_Research_Spine__Shell__RoofAlloy pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(-0.001, 2.770, -34.899) size=(7.338, 3.810, 13.938) min=(-3.670, 0.865, -41.868) renderers=1
+MATCH LOD1_Research_Spine__Shell__SmokedGlazing pos=(0.00, 0.02, -42.00) scale=(100.00, 100.00, 100.00) bounds center=(0.000, 2.910, -35.966) size=(7.118, 1.160, 11.637) min=(-3.559, 2.330, -41.784) renderers=1
+ROOT abandoned_basement_lab pos=(-66.732, 0.755, -70.188) scale=(1.000, 1.000, 1.000) rot=(270.0, 0.0, 0.0) bounds center=(-66.700, 3.175, -69.433) size=(12.315, 6.350, 14.390) min=(-72.857, 0.000, -76.628) renderers=1558
+MATCH Discarded research sheet pos=(-65.63, 0.80, -72.29) scale=(1.00, 1.00, 1.00) bounds center=(-65.632, 0.798, -72.288) size=(0.235, 0.003, 0.298) min=(-65.750, 0.797, -72.437) renderers=1
+MATCH Discarded research sheet.001 pos=(-68.53, 0.80, -71.39) scale=(1.00, 1.00, 1.00) bounds center=(-68.532, 0.798, -71.388) size=(0.330, 0.003, 0.350) min=(-68.698, 0.797, -71.563) renderers=1
+MATCH Discarded research sheet.002 pos=(-63.43, 0.80, -67.49) scale=(1.00, 1.00, 1.00) bounds center=(-63.432, 0.798, -67.488) size=(0.246, 0.003, 0.306) min=(-63.555, 0.797, -67.641) renderers=1
+MATCH Discarded research sheet.003 pos=(-67.23, 0.80, -67.89) scale=(1.00, 1.00, 1.00) bounds center=(-67.232, 0.798, -67.888) size=(0.346, 0.003, 0.347) min=(-67.405, 0.797, -68.062) renderers=1
+MATCH Operator desk top pos=(-70.23, 3.19, -76.14) scale=(1.00, 1.00, 1.00) bounds center=(-70.232, 3.185, -76.138) size=(1.700, 0.065, 0.620) min=(-71.082, 3.152, -76.448) renderers=1
+MATCH Operator desk top.001 pos=(-64.33, 1.56, -72.42) scale=(1.00, 1.00, 1.00) bounds center=(-64.332, 1.555, -72.418) size=(1.700, 0.065, 0.620) min=(-65.182, 1.523, -72.728) renderers=1
+MATCH Research lab wall stencil pos=(-66.63, 4.29, -74.57) scale=(1.00, 1.00, 1.00) bounds center=(-66.635, 4.321, -74.574) size=(0.700, 0.074, 0.002) min=(-66.986, 4.284, -74.575) renderers=1
+ROOT Hollow Creek Iron Perimeter pos=(0.000, 0.000, 0.000) scale=(1.000, 1.000, 1.000) rot=(0.0, 0.0, 0.0) bounds center=(-0.016, 2.000, -44.016) size=(38.589, 4.000, 64.589) min=(-19.310, 0.000, -76.310) renderers=286
 MODEL Assets/Characters/DesertOperator/Models/DesertOperator.fbx bounds center=(0.000, 0.856, 0.004) size=(0.909, 1.926, 0.547) min=(-0.455, -0.107, -0.269) renderers=28
 MODEL Assets/Environment/SurfaceResearchStation/Models/SurfaceResearchStation.fbx bounds center=(0.000, 4.012, -0.125) size=(30.760, 8.024, 29.399) min=(-15.380, 0.000, -14.824) renderers=131

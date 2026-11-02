@@ -1,0 +1,1 @@
+rear=-12 front=-64 station-front=-56.575 clearance=7.425003 truck-bottom=0.004999995 snow-under-truck-max=0 wall-count=8

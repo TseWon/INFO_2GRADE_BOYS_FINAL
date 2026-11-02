@@ -1,0 +1,1 @@
+SoloScene1 visual replaced; height=1.880001 renderers=8 bones=19 vertices=258571 materials=8 movement/camera preserved; source=artifacts/FittedSoldier_Source.blend
