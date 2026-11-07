@@ -92,7 +92,9 @@ namespace FacilityEscape
 #if ENABLE_LEGACY_INPUT_MANAGER
             if (Cursor.lockState != CursorLockMode.Locked || Time.frameCount <= ignoreMouseThroughFrame) return;
             Look(new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y")));
-            if (Input.GetMouseButtonDown(0)) TryInteract(InteractionRay);
+            if (game.Campaign != null && game.CanExplore)
+                game.Campaign.CheckInteraction(this, Input.GetKey(KeyCode.E), Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
+            else if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) TryInteract(InteractionRay);
 #endif
         }
 

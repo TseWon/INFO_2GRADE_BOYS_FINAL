@@ -19,7 +19,8 @@ namespace FacilityEscape
         [SerializeField] private MultiEscapePlayer playerA, playerB;
         [SerializeField] private ushort port = 7777;
         private const string StateMessage = "Facility.State.v1", PoseMessage = "Facility.Pose.v1";
-        private const string Protocol = "FacilityEscape-LAN-3-VoiceUnlock";
+        private const string Protocol = "FacilityEscape-LAN-5-Climb";
+        private const string CampaignMessage = "Facility.Campaign.v1";
         private const string VoiceMessage = "Facility.Voice.v2";
         private readonly short[] voiceFrame = new short[MultiEscapeVoiceBuffer.FrameSamples];
         public event Action<uint, short[]> VoiceReceived;
@@ -88,7 +89,7 @@ namespace FacilityEscape
             transport.SetConnectionData(address, port, "0.0.0.0");
             manager.NetworkConfig = new NetworkConfig {
                 NetworkTransport = transport, EnableSceneManagement = false,
-                ConnectionApproval = true, ForceSamePrefabs = false, ProtocolVersion = 3,
+                ConnectionApproval = true, ForceSamePrefabs = false, ProtocolVersion = 5,
                 ConnectionData = Encoding.UTF8.GetBytes(Protocol), TickRate = 20
             };
             manager.ConnectionApprovalCallback = Approve;
@@ -102,6 +103,7 @@ namespace FacilityEscape
             manager.CustomMessagingManager.RegisterNamedMessageHandler(StateMessage, ReceiveState);
             manager.CustomMessagingManager.RegisterNamedMessageHandler(PoseMessage, ReceivePose);
             manager.CustomMessagingManager.RegisterNamedMessageHandler(VoiceMessage, ReceiveVoice);
+            manager.CustomMessagingManager.RegisterNamedMessageHandler(CampaignMessage, ReceiveCampaignAction);
             Changed?.Invoke();
         }
 
@@ -174,8 +176,9 @@ namespace FacilityEscape
                 var remote = IsHost ? playerB : playerA;
                 var motor = remote.GetComponent<CharacterController>();
                 if (motor != null) motor.enabled = false;
-                remote.transform.position = Vector3.Lerp(remote.transform.position, remotePosition,
-                    1 - Mathf.Exp(-18 * Time.unscaledDeltaTime));
+                if (!remote.GetComponent<MultiEscapeWalk>().IsClimbing)
+                    remote.transform.position = Vector3.Lerp(remote.transform.position, remotePosition,
+                        1 - Mathf.Exp(-18 * Time.unscaledDeltaTime));
                 remote.ViewCamera.transform.rotation = Quaternion.Slerp(remote.ViewCamera.transform.rotation,
                     remoteRotation, 1 - Mathf.Exp(-18 * Time.unscaledDeltaTime));
             }
@@ -205,11 +208,13 @@ namespace FacilityEscape
         private sealed class Pose
         {
             public int round;
+            public int lifted;
             public Vector3 position;
             public Quaternion rotation;
         }
         private void SendPose(ulong recipient, MultiEscapePlayer player) => Send(PoseMessage, recipient,
             JsonUtility.ToJson(new Pose { round = game.RoundNumber, position = player.transform.position,
+                lifted = game.Campaign != null ? game.Campaign.State.lifted : 0,
                 rotation = player.ViewCamera.transform.rotation }));
 
         private void ReceiveState(ulong sender, FastBufferReader reader)
@@ -228,16 +233,40 @@ namespace FacilityEscape
                 : sender != NetworkManager.ServerClientId)) return;
             reader.ReadValueSafe(out string json);
             var pose = JsonUtility.FromJson<Pose>(json);
+            if (game.Campaign != null && pose.lifted != game.Campaign.State.lifted) { hasRemotePose = false; return; }
             if (pose.round != game.RoundNumber || !Finite(pose.position.x) || !Finite(pose.position.y) || !Finite(pose.position.z)
                 || !Finite(pose.rotation.x) || !Finite(pose.rotation.y) || !Finite(pose.rotation.z) || !Finite(pose.rotation.w)) return;
             var remote = IsHost ? playerB : playerA;
             // Bound players can turn their heads, but cannot leave their chairs.
             remotePosition = game.Rules.Stage == EscapeStage.Escaped ? pose.position : remote.transform.position;
-            remotePosition = new Vector3(Mathf.Clamp(remotePosition.x, -5, 5), Mathf.Clamp(remotePosition.y, -1, 3), Mathf.Clamp(remotePosition.z, -4, 10));
+            remotePosition = new Vector3(Mathf.Clamp(remotePosition.x, -5, 5), Mathf.Clamp(remotePosition.y, -1, 3), Mathf.Clamp(remotePosition.z, -4, game.Campaign != null ? 66 : 10));
+            if (game.Campaign != null && IsHost)
+            {
+                var campaign = game.Campaign.State;
+                if (campaign.chapter == EscapeChapter.Search) remotePosition.z = Mathf.Min(remotePosition.z, 19.8f);
+                if (!campaign.gateOpen) remotePosition.z = Mathf.Min(remotePosition.z, 42.1f);
+                if ((campaign.lifted & 2) == 0) remotePosition.z = Mathf.Min(remotePosition.z, 51.2f);
+            }
             remoteRotation = pose.rotation.normalized;
             hasRemotePose = true;
         }
         private static bool Finite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
+
+        public void SendCampaignAction(int action)
+        {
+            if (IsHost || !Connected) return;
+            using (var writer = new FastBufferWriter(8, Allocator.Temp))
+            {
+                writer.WriteValueSafe(game.RoundNumber); writer.WriteValueSafe(action);
+                manager.CustomMessagingManager.SendNamedMessage(CampaignMessage, NetworkManager.ServerClientId, writer, NetworkDelivery.ReliableSequenced);
+            }
+        }
+        private void ReceiveCampaignAction(ulong sender, FastBufferReader reader)
+        {
+            if (!IsHost || sender != peerId || reader.Length - reader.Position != 8) return;
+            reader.ReadValueSafe(out int round); reader.ReadValueSafe(out int action);
+            if (round == game.RoundNumber && game.Campaign != null) game.Campaign.Act(EscapeRole.Observer, action);
+        }
 
         public void SendVoice(uint sequence, short[] samples)
         {

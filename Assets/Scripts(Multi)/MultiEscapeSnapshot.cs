@@ -12,5 +12,7 @@ namespace FacilityEscape
         public int heartsA, heartsB, progress, maxHearts;
         public double elapsed, nextShock, lockedUntil, duration, damageInterval, lockout;
         public int round, wrong, shocks;
+        public bool mistakeDamage;
+        public CampaignState campaign;
     }
 }

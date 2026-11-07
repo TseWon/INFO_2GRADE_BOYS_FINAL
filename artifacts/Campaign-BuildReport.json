@@ -1,0 +1,26 @@
+{
+  "result": "Succeeded",
+  "platform": "StandaloneWindows64",
+  "outputPath": "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/output/CampaignQA/Escape.exe",
+  "buildTimeMs": 56615,
+  "totalSizeBytes": 215866869,
+  "totalErrors": 0,
+  "totalWarnings": 486,
+  "warningGroups": [
+    {
+      "Name": "Unity AI Inference / Sentis and ConvGeneric shaders",
+      "Count": 485
+    },
+    {
+      "Name": "Pipeline runtime automation disabled",
+      "Count": 1
+    }
+  ],
+  "checks": {
+    "rulesAndGrayscale": 81,
+    "twoProcessLan": 48,
+    "liveScene": 69,
+    "movement": "Exhaustion recovery and 41 climb capsule clearance samples passed.",
+    "network": "Editor host and Windows Development Player on loopback: climbing, remote feedback, shared ending, restart and disconnect passed."
+  }
+}

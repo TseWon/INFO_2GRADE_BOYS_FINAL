@@ -18,6 +18,7 @@ namespace FacilityEscape
         private readonly int[] dials = new int[DialCount];
         private readonly double timeLimit, damageInterval, lockoutDuration;
         private readonly int maxHearts;
+        private readonly bool mistakeDamage;
         private double elapsed, nextShock, lockedUntil;
 
         public EscapeStage Stage { get; private set; } = EscapeStage.Ready;
@@ -30,7 +31,7 @@ namespace FacilityEscape
         public double ColorLockoutSeconds => Math.Max(0, lockedUntil - elapsed);
 
         public MultiEscapeRules(LockColor[] colors, DialSymbol[] symbols,
-            double duration = 60, int hearts = 3, double shockInterval = 20, double lockout = 3)
+            double duration = 60, int hearts = 3, double shockInterval = 20, double lockout = 3, bool damageOnMistake = false)
         {
             if (colors == null || colors.Length == 0)
                 throw new ArgumentException("색상 정답을 하나 이상 지정하세요.", nameof(colors));
@@ -47,6 +48,7 @@ namespace FacilityEscape
             symbolAnswer = (DialSymbol[])symbols.Clone();
             timeLimit = duration;
             maxHearts = hearts;
+            mistakeDamage = damageOnMistake;
             damageInterval = shockInterval;
             lockoutDuration = lockout;
             HeartsA = HeartsB = hearts;
@@ -73,7 +75,7 @@ namespace FacilityEscape
             elapsed = Math.Min(timeLimit, elapsed + seconds);
             int shocks = 0;
             // 프레임이 지연되어도 20/40/60초 피해를 빠뜨리지 않습니다.
-            while (nextShock <= elapsed && HeartsA > 0 && HeartsB > 0)
+            while (!mistakeDamage && nextShock <= elapsed && HeartsA > 0 && HeartsB > 0)
             {
                 HeartsA = Math.Max(0, HeartsA - 1);
                 HeartsB = Math.Max(0, HeartsB - 1);
@@ -93,6 +95,7 @@ namespace FacilityEscape
             {
                 ColorProgress = 0;
                 lockedUntil = elapsed + lockoutDuration;
+                WrongAnswerDamage();
                 return EscapeInputResult.Wrong;
             }
             ColorProgress++;
@@ -114,10 +117,13 @@ namespace FacilityEscape
         {
             if (role != EscapeRole.Blindfolded || Stage != EscapeStage.SymbolLock)
                 return EscapeInputResult.Ignored;
+            if (mistakeDamage && ColorLockoutSeconds > 0) return EscapeInputResult.Ignored;
             for (int i = 0; i < DialCount; i++)
                 if (dials[i] != (int)symbolAnswer[i])
                 {
                     Array.Clear(dials, 0, dials.Length);
+                    if (mistakeDamage) lockedUntil = elapsed + lockoutDuration;
+                    WrongAnswerDamage();
                     return EscapeInputResult.Wrong;
                 }
             Stage = EscapeStage.Escaped;
@@ -126,6 +132,14 @@ namespace FacilityEscape
 
         public LockColor GetColorAnswer(int index) => colorAnswer[index];
 
+        private void WrongAnswerDamage()
+        {
+            if (!mistakeDamage) return;
+            HeartsA = Math.Max(0, HeartsA - 1);
+            HeartsB = Math.Max(0, HeartsB - 1);
+            if (HeartsA == 0 || HeartsB == 0) Stage = EscapeStage.Failed;
+        }
+
         // Only the host advances the simulation. Clients display this authoritative replica.
         public MultiEscapeSnapshot Capture()
         {
@@ -133,14 +147,15 @@ namespace FacilityEscape
                 colors = (LockColor[])colorAnswer.Clone(), symbols = (DialSymbol[])symbolAnswer.Clone(),
                 dials = (int[])dials.Clone(), stage = Stage, heartsA = HeartsA, heartsB = HeartsB,
                 progress = ColorProgress, elapsed = elapsed, nextShock = nextShock, lockedUntil = lockedUntil,
-                duration = timeLimit, damageInterval = damageInterval, lockout = lockoutDuration, maxHearts = maxHearts
+                duration = timeLimit, damageInterval = damageInterval, lockout = lockoutDuration, maxHearts = maxHearts,
+                mistakeDamage = mistakeDamage
             };
         }
 
         public static MultiEscapeRules FromSnapshot(MultiEscapeSnapshot state)
         {
             var replica = new MultiEscapeRules(state.colors, state.symbols, state.duration,
-                state.maxHearts, state.damageInterval, state.lockout);
+                state.maxHearts, state.damageInterval, state.lockout, state.mistakeDamage);
             replica.Stage = state.stage;
             replica.HeartsA = state.heartsA; replica.HeartsB = state.heartsB;
             replica.ColorProgress = state.progress;

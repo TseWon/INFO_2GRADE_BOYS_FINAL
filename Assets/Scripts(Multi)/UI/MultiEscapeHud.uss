@@ -44,18 +44,18 @@
     background-color: rgba(0, 0, 0, 0.55);
 }
 .card {
-    width: 540px;
+    width: 800px;
     max-width: 90%;
-    padding: 28px;
+    padding: 20px;
     background-color: rgb(22, 22, 22);
     border-width: 1px;
     border-color: rgb(150, 150, 150);
 }
-.title { font-size: 34px; -unity-font-style: bold; margin: 8px 0; white-space: normal; }
-.body { font-size: 17px; white-space: normal; margin-bottom: 18px; }
+.title { font-size: 29px; -unity-font-style: bold; margin: 6px 0; white-space: normal; }
+.body { font-size: 16px; white-space: normal; margin-bottom: 10px; }
 .hidden { display: none; }
-.connection-controls { margin-bottom: 12px; }
-.address-field { margin: 12px 0; font-size: 18px; }
+.connection-controls { margin-bottom: 8px; flex-direction: row; align-items: center; flex-wrap: wrap; }
+.address-field { margin: 6px 0; font-size: 16px; flex-grow: 1; width: 260px; }
 .address-field .unity-text-field__input { background-color: rgb(50, 50, 50); color: white; padding: 7px; }
 .connection-status { font-size: 16px; margin-top: 8px; }
 .notice { position: absolute; top: 195px; left: 26px; font-size: 20px; -unity-font-style: bold; }
@@ -84,3 +84,29 @@
 .microphone-field { flex-grow: 1; min-width: 240px; margin-right: 10px; }
 .microphone-field .unity-base-field__input { background-color: rgb(50, 50, 50); color: white; }
 .microphone-field .unity-base-popup-field__text { color: white; }
+.campaign-journal {
+    position: absolute;
+    left: 26px;
+    top: 225px;
+    max-width: 330px;
+    padding: 15px;
+    background-color: rgba(12, 17, 18, 0.88);
+    border-left-width: 3px;
+    border-left-color: rgb(210, 159, 64);
+    color: rgb(238, 225, 194);
+    white-space: normal;
+    font-size: 17px;
+}
+.campaign-prompt {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 170px;
+    -unity-text-align: middle-center;
+    color: rgb(255, 225, 156);
+    font-size: 21px;
+    white-space: normal;
+    -unity-font-style: bold;
+}
+.campaign-stamina { position: absolute; right: 26px; bottom: 170px; color: rgb(192, 221, 220); font-size: 16px; }
+.campaign-overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }

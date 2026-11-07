@@ -17,6 +17,7 @@ namespace FacilityEscape
         private MultiEscapePlayer a, b;
         private double nextWrite;
         private int lastCommand;
+        private int heldCampaignAction = -1;
         private int voiceTestFrames;
         private uint voiceTestSequence;
         private double nextVoiceTest;
@@ -27,6 +28,8 @@ namespace FacilityEscape
             public long timestamp;
             public bool connected, host, aInput, bInput, timerVisible, aAvatar, bAvatar;
             public string status, clue;
+            public string campaignFeedback;
+            public bool aClimbing, bClimbing;
             public int command, shocks;
             public int voiceReceived, voiceSent;
             public bool voiceMuted, voiceRecording;
@@ -40,6 +43,7 @@ namespace FacilityEscape
         [Serializable] public class Command
         {
             public int id;
+            public int controlId;
             public string action, address;
             public Vector3 position;
             public Vector2 look;
@@ -71,6 +75,7 @@ namespace FacilityEscape
             }
             if (string.IsNullOrEmpty(output) || Time.realtimeSinceStartupAsDouble < nextWrite) return;
             nextWrite = Time.realtimeSinceStartupAsDouble + .1;
+            if (heldCampaignAction >= 0 && lan.Connected) lan.SendCampaignAction(heldCampaignAction);
             try
             {
                 string commandPath = output + ".command.json";
@@ -94,6 +99,8 @@ namespace FacilityEscape
                         if (command.action == "screenshot") ScreenCapture.CaptureScreenshot(output + ".png");
                         if (command.action == "voice-mute") lan.Voice.ToggleMute();
                         if (command.action == "voice-tone") { voiceTestFrames = 50; voiceTestSequence = 0; }
+                        if (command.action == "campaign") lan.SendCampaignAction(command.controlId);
+                        if (command.action == "campaign-hold") heldCampaignAction = command.controlId;
                     }
                 }
                 var root = ui.GetComponent<UIDocument>().rootVisualElement;
@@ -107,6 +114,9 @@ namespace FacilityEscape
                 var report = new Report {
                     timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(), connected = lan.Connected, host = lan.IsHost,
                     status = lan.Status, command = lastCommand, state = game.CaptureSnapshot(),
+                    campaignFeedback = game.Campaign != null ? game.Campaign.Message : "",
+                    aClimbing = a.GetComponent<MultiEscapeWalk>().IsClimbing,
+                    bClimbing = b.GetComponent<MultiEscapeWalk>().IsClimbing,
                     aInput = a.LocalInput, bInput = b.LocalInput,
                     aPosition = a.transform.position, bPosition = b.transform.position,
                     aRotation = a.ViewCamera.transform.rotation, bRotation = b.ViewCamera.transform.rotation,

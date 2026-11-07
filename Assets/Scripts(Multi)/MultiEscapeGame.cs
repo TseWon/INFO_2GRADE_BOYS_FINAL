@@ -20,6 +20,8 @@ namespace FacilityEscape
         [SerializeField, Min(0.1f)] private float wrongColorLockSeconds = 3;
         [Tooltip("매 라운드 색상 순서와 기호 정답을 새로 생성합니다. 끄면 아래 고정 정답을 사용합니다.")]
         [SerializeField] private bool randomizeAnswers = true;
+        [Tooltip("오답마다 두 사람의 HP가 1씩 감소합니다. 기존 주기 피해 모드는 끄면 유지됩니다.")]
+        [SerializeField] private bool damageOnMistake;
         [SerializeField] private LockColor[] colorAnswer =
             { LockColor.Red, LockColor.Blue, LockColor.Yellow, LockColor.Green };
         [SerializeField] private DialSymbol[] symbolAnswer =
@@ -46,6 +48,9 @@ namespace FacilityEscape
         public event Action StateChanged;
         public MultiEscapeLanSession Lan { get; set; }
         public int RoundNumber { get; private set; }
+        public MultiEscapeCampaign Campaign { get; set; }
+        public bool CanExplore => Rules != null && Rules.Stage == EscapeStage.Escaped &&
+            (Campaign == null || !Campaign.Rules.Terminal);
         private int wrongCount, shockCount;
         public bool HasAuthority => Lan == null || Lan.IsHost;
         private double lastTick;
@@ -64,7 +69,7 @@ namespace FacilityEscape
                 if (newRound && randomizeAnswers)
                     MultiEscapePuzzleGenerator.Generate(puzzleRandom, Rules, out colors, out symbols);
                 Rules = new MultiEscapeRules(colors, symbols, timeLimit,
-                    maxHearts, damageInterval, wrongColorLockSeconds);
+                    maxHearts, damageInterval, wrongColorLockSeconds, damageOnMistake);
                 return true;
             }
             catch (ArgumentException exception)
@@ -147,6 +152,7 @@ namespace FacilityEscape
                 wrongCount++;
                 PlaySound(wrongAnswerSound);
                 onWrongAnswer.Invoke();
+                if (damageOnMistake) { shockCount++; PlaySound(electricShockSound); onElectricShock.Invoke(); }
             }
             if (result == EscapeInputResult.Unlocked)
             {
@@ -169,6 +175,7 @@ namespace FacilityEscape
         {
             var state = Rules.Capture();
             state.round = RoundNumber; state.wrong = wrongCount; state.shocks = shockCount;
+            state.campaign = Campaign != null ? Campaign.Rules.State : null;
             return state;
         }
 
@@ -185,6 +192,7 @@ namespace FacilityEscape
                 terminalEventSent = false;
                 onRoundStarted.Invoke();
             }
+            if (Campaign != null) Campaign.ApplyRemote(state.campaign);
             PublishState();
             if (state.wrong > wrongCount) { PlaySound(wrongAnswerSound); onWrongAnswer.Invoke(); }
             for (int i = shockCount; i < state.shocks; i++) { PlaySound(electricShockSound); onElectricShock.Invoke(); }

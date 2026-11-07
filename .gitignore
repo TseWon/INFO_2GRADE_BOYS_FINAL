@@ -6,6 +6,9 @@
 # See: https://github.com/github/gitignore/tree/main/Global
 #
 .utmp/
+/output/CampaignQA/
+/artifacts/campaign-client.json
+/artifacts/campaign-client.json.command.json
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/

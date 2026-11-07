@@ -1,0 +1,1 @@
+PASS: 48 two-process LAN campaign checks (Editor host + Windows Player client).

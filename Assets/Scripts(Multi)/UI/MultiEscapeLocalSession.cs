@@ -110,7 +110,9 @@ namespace FacilityEscape
             if (Input.GetKeyDown(KeyCode.Tab)) SwitchRole();
             bool typing = addressField != null && addressField.Contains(root.focusController.focusedElement as VisualElement);
             if (!typing && (Input.GetKeyDown(KeyCode.R) ||
-                (Input.GetKeyDown(KeyCode.Space) && game.Rules != null && !game.Rules.IsRunning))) StartRound();
+                (Input.GetKeyDown(KeyCode.Space) && game.Rules != null &&
+                (game.Rules.Stage == EscapeStage.Ready || game.Rules.Stage == EscapeStage.Failed ||
+                (game.Campaign != null && game.Campaign.Rules.Terminal))))) StartRound();
 #endif
             if (noticeLabel != null) noticeLabel.text = Time.realtimeSinceStartupAsDouble < noticeUntil ? notice : "";
             crosshair?.EnableInClassList("hidden", !CanLook());
@@ -139,6 +141,7 @@ namespace FacilityEscape
         private void MuteMicrophone() => lan?.Voice?.ToggleMute();
 
         private bool CanLook() => game != null && game.Rules != null &&
+            (game.Campaign == null || !game.Campaign.Rules.Terminal) &&
             (lan == null || lan.Connected) &&
             (game.Rules.IsRunning || game.Rules.Stage == EscapeStage.Escaped);
 
