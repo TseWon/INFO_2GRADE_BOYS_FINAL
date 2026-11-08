@@ -2,6 +2,7 @@
 import bpy
 import math
 import os
+import sys
 from mathutils import Vector
 
 ROOT = r"C:\Users\user\OneDrive\문서\GitHub\INFO_2GRADE_BOYS_FINAL"
@@ -113,9 +114,9 @@ def wall(name, a, b, coll, opening=None):
         sill = cube(f'{name} | safety threshold', (mid.x,mid.y,.008), (width,.08,.016), 'yellow', coll)
         sill.rotation_euler.z = angle
 
-def rect(name, cx, cy, sx, sy, coll, doors=None, ceiling=None, skip=()):
+def rect(name, cx, cy, sx, sy, coll, doors=None, ceiling=None, skip=(), with_floor=True):
     doors=doors or {}
-    floor = cube(f'{name} | floor', (cx,cy,-FLOOR_T/2), (sx,sy,FLOOR_T), 'floor', coll)
+    floor = cube(f'{name} | floor', (cx,cy,-FLOOR_T/2), (sx,sy,FLOOR_T), 'floor', coll) if with_floor else None
     x0,x1=cx-sx/2,cx+sx/2
     y0,y1=cy-sy/2,cy+sy/2
     for side,a,b in [
@@ -129,7 +130,7 @@ def rect(name, cx, cy, sx, sy, coll, doors=None, ceiling=None, skip=()):
         cube(f'{name} | ceiling', (cx,cy,WALL_H+.10), (sx,sy,.20), 'dark', ceiling)
     return floor
 
-def corridor(name, cx, cy, sx, sy, coll, axis='Y', ceiling=None, branch=None):
+def corridor(name, cx, cy, sx, sy, coll, axis='Y', ceiling=None, branch=None, side_doors=None):
     cube(f'{name} | floor', (cx,cy,-FLOOR_T/2), (sx,sy,FLOOR_T), 'floor', coll)
     if axis=='Y':
         x0,x1=cx-sx/2,cx+sx/2; y0,y1=cy-sy/2,cy+sy/2
@@ -137,13 +138,14 @@ def corridor(name, cx, cy, sx, sy, coll, axis='Y', ceiling=None, branch=None):
         wall(f'{name} | east',(x1,y0),(x1,y1),coll,branch)
     else:
         x0,x1=cx-sx/2,cx+sx/2; y0,y1=cy-sy/2,cy+sy/2
-        wall(f'{name} | south',(x0,y0),(x1,y0),coll)
-        wall(f'{name} | north',(x0,y1),(x1,y1),coll)
+        wall(f'{name} | south',(x0,y0),(x1,y0),coll,side_doors)
+        wall(f'{name} | north',(x0,y1),(x1,y1),coll,side_doors)
     if ceiling:
         cube(f'{name} | ceiling',(cx,cy,WALL_H+.10),(sx,sy,.20),'dark',ceiling)
 
-def hex_room(name,cx,cy,r,rotation,coll,open_edges=(),ceiling=None,solid_walls=True,floor_ring=False):
-    verts=[Vector((cx+r*math.cos(rotation+i*math.pi/3),cy+r*math.sin(rotation+i*math.pi/3))) for i in range(6)]
+def hex_room(name,cx,cy,r,rotation,coll,open_edges=(),ceiling=None,solid_walls=True,floor_ring=False,axis_scale=(1,1)):
+    verts=[Vector((cx+r*axis_scale[0]*math.cos(rotation+i*math.pi/3),
+                   cy+r*axis_scale[1]*math.sin(rotation+i*math.pi/3))) for i in range(6)]
     mesh=bpy.data.meshes.new(f'{name} floor mesh')
     if floor_ring:
         inner=[Vector((cx+r*.53*math.cos(rotation+i*math.pi/3),cy+r*.53*math.sin(rotation+i*math.pi/3))) for i in range(6)]
@@ -178,6 +180,64 @@ def stair_run(name,cx,y_start,width,run,rise,steps,coll,axis='Y'):
             cube(f'{name} | step {i+1:02d}',(cx,y_start+(i+.5)*depth,h/2),(width,depth,h),'edge',coll)
         else:
             cube(f'{name} | step {i+1:02d}',(cx+(i+.5)*depth,y_start,h/2),(depth,width,h),'edge',coll)
+
+def descending_stairs(name,cx,y_start,width,run,drop,steps,coll):
+    depth=run/steps
+    for i in range(steps):
+        z=-drop*(i+1)/steps
+        cube(f'{name} | descending tread {i+1:02d}',
+             (cx,y_start+(i+.5)*depth,z-.09),(width,depth,.18),'edge',coll)
+
+def wall_with_openings(name,x0,x1,y,centers,width,coll):
+    gaps=sorted((c-width/2,c+width/2) for c in centers)
+    last=x0
+    for i,(lo,hi) in enumerate(gaps):
+        if lo>last:
+            cube(f'{name} | solid span {i}',((last+lo)/2,y,WALL_H/2),(lo-last,WALL_T,WALL_H),'wall',coll)
+        cube(f'{name} | lintel {i}',((lo+hi)/2,y,(DOOR_H+WALL_H)/2),(hi-lo,WALL_T,WALL_H-DOOR_H),'wall',coll)
+        last=hi
+    if last<x1:
+        cube(f'{name} | solid end',((last+x1)/2,y,WALL_H/2),(x1-last,WALL_T,WALL_H),'wall',coll)
+
+def elevator_shaft(name,cx,cy,coll):
+    """A full vertical passage around the 7 x 7 m lift deck."""
+    cube(f'{name} | lower shaft pit',(cx,cy,-3.35),(6.3,6.3,.25),'dark',coll)
+    for sx in (-1,1):
+        for sy in (-1,1):
+            cube(f'{name} | vertical guide {sx:+d} {sy:+d}',
+                 (cx+sx*3.2,cy+sy*3.2,1.15),(.18,.18,8.9),'edge',coll)
+    for z in (-3.15,5.55):
+        for sx in (-1,1):
+            cube(f'{name} | shaft side frame {sx:+d} z{z}',
+                 (cx+sx*3.2,cy,z),( .14,6.4,.16),'edge',coll)
+
+def polygon_envelope(name,points,coll,doors=None,skip_edges=()):
+    """Continuous exterior corridor skin around several inner rooms."""
+    mesh=bpy.data.meshes.new(f'{name} floor mesh')
+    mesh.from_pydata([(x,y,-.02) for x,y in points],[],[tuple(range(len(points)))])
+    o=bpy.data.objects.new(f'{name} | lower walkway floor',mesh)
+    coll.objects.link(o);o.data.materials.append(MAT['floor'])
+    doors=doors or {}
+    for i,a in enumerate(points):
+        if i in skip_edges:
+            continue
+        b=points[(i+1)%len(points)]
+        length=(Vector(b)-Vector(a)).length
+        wall(f'{name} | boundary {i+1}',a,b,coll,(length/2,doors[i]) if i in doors else None)
+
+def glass_barrier(name,x,y0,y1,coll):
+    length=y1-y0;yc=(y0+y1)/2
+    cube(f'{name} | lower sill',(x,yc,.45),(.18,length,.9),'wall',coll)
+    cube(f'{name} | upper beam',(x,yc,3.35),(.18,length,.7),'wall',coll)
+    cube(f'{name} | full observation pane',(x,yc,1.9),(.07,length-.20,2.0),'glass',coll)
+    for yy in (y0,y1):
+        cube(f'{name} | steel jamb {yy:+.2f}',(x,yy,1.9),(.18,.18,2.1),'edge',coll)
+    # Divide long observation walls into human-scale panes.
+    if length > 6:
+        pane_count=4
+        for i in range(1,pane_count):
+            yy=y0+length*i/pane_count
+            cube(f'{name} | glazing mullion {i}',(x,yy,1.9),(.18,.12,2.1),'edge',coll)
 
 def glazed_partition(name,x,y0,y1,coll):
     """Doorway in the middle, observation panes on both sides."""
@@ -270,45 +330,78 @@ def stage_view(name, target, radius, target_z=0):
     bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT,name+'.blend'))
     bpy.ops.render.render(write_still=True)
     print('SAVED',scene.render.filepath)
+    # A second plan image makes doorway and corridor relationships reviewable.
+    bounds=[]
+    for o in scene.objects:
+        if o.type != 'MESH': continue
+        bounds.extend((o.matrix_world @ Vector(corner)) for corner in o.bound_box)
+    xmin=min(p.x for p in bounds);xmax=max(p.x for p in bounds)
+    ymin=min(p.y for p in bounds);ymax=max(p.y for p in bounds)
+    cam.location=((xmin+xmax)/2,(ymin+ymax)/2,100)
+    cam.rotation_euler=(0,0,0)
+    cam.data.ortho_scale=max((xmax-xmin)*1.12,(ymax-ymin)*1.12*1400/900)
+    scene.render.filepath=os.path.join(PREV,name+'_Plan.png')
+    bpy.ops.render.render(write_still=True)
 
-init('Underground B1 | Case 1')
-structure=collection('10_B1_Rooms_and_Corridors')
-ceilings=collection('90_Ceilings_for_later_use')
-rect('B1 large research hall',0,16,24,18,structure,{'S':(12,3.2),'N':(12,3.2)},ceilings)
-rect('B1 inline elevator',0,3,7,8,structure,{'N':(3.5,3.2),'S':(3.5,3.2)},ceilings)
-hex_room('B1 exterior-linked hex cage',0,-5.677,5.4,0,structure,(1,),None,False,True)
-hex_cage_lattice('B1 cage crossed steel shell',0,-5.677,5.4,0,structure,(1,))
-cage_crown('B1 exterior-visible birdcage crown',0,-5.677,5.4,WALL_H,2.6,structure)
-rect('B1 stairwell',0,29,5,8,structure,{'S':(2.5,3.2)},ceilings)
-stair_run('B1 staircase',0,25,3.2,8,3.2,12,structure)
-stage_view('Underground_B1_Blockout',(0,10),40)
+if '--only-b2' not in sys.argv:
+    init('Underground B1 | Case 1')
+    structure=collection('10_B1_Rooms_and_Corridors')
+    ceilings=collection('90_Ceilings_for_later_use')
+    hex_room('B1 bare hexagonal containment room',0,-19,5.4,0,structure,(1,),ceilings)
+    corridor('B1 cage to elevator long corridor',0,-11.9,3.6,4.85,structure,'Y',ceilings)
+    rect('B1 7m elevator passage',0,-5.975,7,7,structure,{'N':(3.5,3.2),'S':(3.5,3.2)})
+    elevator_shaft('B1 7m elevator vertical shaft',0,-5.975,structure)
+    corridor('B1 elevator to research long corridor',0,2.2625,3.6,9.475,structure,'Y',ceilings)
+    rect('B1 enlarged research hall',0,23,36,32,structure,{'S':(18,3.2)},ceilings,skip=('N',))
+    wall_with_openings('B1 three staircase entrances',-18,18,39,(-5.2,0,5.2),3.3,structure)
+    rect('B1 three lane stair hall',0,44.5,16,11,structure,ceiling=ceilings,skip=('S',),with_floor=False)
+    for x in (-2.55,2.55):
+        wall(f'B1 stair lane divider {x:+.2f}',(x,39),(x,50),structure)
+    cube('B1 central stair landing',(0,44.5,-.12),(4.8,11,.24),'floor',structure)
+    stair_run('B1 central upward staircase',0,39,3.2,10.5,3.2,12,structure)
+    descending_stairs('B1 left downward staircase',-5.2,39,3.2,10.5,3.2,12,structure)
+    descending_stairs('B1 right downward staircase',5.2,39,3.2,10.5,3.2,12,structure)
+    for x in (-5.2,5.2):
+        cube(f'B1 lower stair landing {x:+.1f}',(x,49.7,-3.32),(3.2,.6,.24),'floor',structure)
+        for dx in (-1.8,1.8):
+            cube(f'B1 lower stair retaining wall {x:+.1f} {dx:+.1f}',
+                 (x+dx,44.5,-1.6),(.18,11,3.2),'wall',structure)
+    stage_view('Underground_B1_Blockout',(0,12),60)
 
 init('Underground B2 | Case 2')
 structure=collection('20_B2_Rooms_and_Corridors')
 ceilings=collection('90_Ceilings_for_later_use')
-rect('B2 inline elevator',-32,0,7,7,structure,{'E':(3.5,3.2)},ceilings)
-corridor('B2 elevator to cage ring',-26.887,0,3.226,3.2,structure,'X',ceilings)
-hex_room('B2 containment corridor outer hex',-18,0,8.4,math.pi/6,structure,(2,5),ceilings)
-hex_cage_lattice('B2 exterior-linked cage',-18,0,5.4,0,structure)
-corridor('B2 cage to observation door',-9.613,0,2.226,3.2,structure,'X',ceilings)
-rect('B2 experiment room',-1.5,0,14,12,structure,{'E':(6,3.2)},ceilings,skip=('W',))
-glazed_partition('B2 cage experiment observation',-8.5,-6,6,structure)
-corridor('B2 specimen passage',8,0,5,3.2,structure,'X',ceilings)
-rect('B2 specimen and escape room',17.5,0,14,12,structure,{'W':(6,3.2),'E':(6,3.2)},ceilings)
-corridor('B2 stair passage',26,0,3,3.2,structure,'X',ceilings)
-rect('B2 emergency stair',31.5,0,8,7,structure,{'W':(3.5,3.2)},ceilings)
-stair_run('B2 staircase',27.5,0,3.2,8,3.2,12,structure,axis='X')
-stage_view('Underground_B2_Blockout',(-2,0),64)
-
-# Assemble the two independently editable floors at a common cage axis.  The
-# B2 lattice ends at z=3.7 m; B1's ring and upper lattice start at that plane.
-b1_path=os.path.join(OUT,'Underground_B1_Blockout.blend')
-with bpy.data.libraries.load(b1_path,link=False) as (source, destination):
-    destination.objects=[n for n in source.objects if not n.startswith('REVIEW |') and not n.endswith(' | ceiling')]
-elevated=collection('30_B1_Elevated_Continuous_Cage')
-for o in destination.objects:
-    if o is None: continue
-    elevated.objects.link(o)
-    o.location += Vector((-18,5.677,WALL_H))
-bpy.context.scene.name='Underground B1+B2 | single continuous birdcage'
-stage_view('Underground_B1_B2_Continuous_Cage',(-14,6),66,target_z=2.4)
+polygon_envelope('B2 continuous outside corridor',
+    [(-31.5,-3.8),(-28.5,-10.5),(10.8,-10.5),(10.8,10.5),(-28.5,10.5),(-31.5,3.8)],
+    structure,{5:3.6},skip_edges=(2,))
+# SoloScene1 uses the station FBX at unit scale.  Its hex cage footing measures
+# 10.8087 x 9.3877 m.  Rotate the plan hex for flat side doorways while keeping
+# exactly that Unity footprint and almost the same floor area.
+unity_cage_width=10.8087
+unity_cage_depth=9.3877
+hex_radius=5.4
+hex_axis_scale=(unity_cage_width/(math.sqrt(3)*hex_radius),unity_cage_depth/(2*hex_radius))
+hex_room('B2 Unity-sized bare hexagonal room',-21,0,hex_radius,math.pi/6,
+         structure,(2,5),ceilings,axis_scale=hex_axis_scale)
+rect('B2 7m elevator passage',-40,0,7,7,structure,{'E':(3.5,3.6)})
+elevator_shaft('B2 7m elevator vertical shaft',-40,0,structure)
+corridor('B2 elevator to cage with perimeter doors',-31.4522,0,10.0957,3.6,
+         structure,'X',ceilings,side_doors=(7.35,2.2))
+corridor('B2 widened cage experiment passage',-10.8978,0,9.3957,5.2,structure,'X',ceilings)
+rect('B2 experiment room',.8,0,14,14,structure,ceiling=ceilings,skip=('W',))
+glazed_partition('B2 cage to experiment viewing wall',-6.2,-7,7,structure)
+cube('B2 open junction between separate rooms | floor',
+     (11.3,0,-FLOOR_T/2),(7,14,FLOOR_T),'floor',structure)
+for side in (-1,1):
+    label='south' if side < 0 else 'north'
+    y=side*8.75
+    cube(f'B2 {label} side corridor continuation | floor',
+         (12.8,y,-.145),(4,3.5,.25),'floor',structure)
+    cube(f'B2 {label} side corridor continuation | outer wall',
+         (19.8,side*10.5,1.85),(18,.28,3.7),'wall',structure)
+rect('B2 equally sized specimen escape room',21.8,0,14,21,structure,
+     {'E':(10.5,16)},ceilings,skip=('W','N','S'))
+corridor('B2 stair passage',30.3,0,3,16,structure,'X',ceilings)
+rect('B2 emergency stair',35.8,0,8,16,structure,{'W':(8,16)},ceilings)
+stair_run('B2 staircase',31.8,0,16,8,3.2,12,structure,axis='X')
+stage_view('Underground_B2_Blockout',(0,0),82)
