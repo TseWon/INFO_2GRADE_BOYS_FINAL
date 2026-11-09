@@ -26,14 +26,14 @@ public static class TestMultiEscapeVoiceBuffer
         Check(!buffer.Push(0, null) && !buffer.Push(0, new short[321]), "Malformed frames rejected");
         buffer.Push(1, frame); buffer.Read(audio);
         Check(audio.All(s => s == 0), "Jitter prebuffer emits silence");
-        buffer.Push(2, frame); buffer.Push(3, frame); buffer.Read(audio);
+        buffer.Push(2, frame); buffer.Push(3, frame); buffer.Push(4, frame); buffer.Read(audio);
         Check(audio.All(s => s == .5f), "PCM amplitude survives transport buffer");
         Check(!buffer.Push(3, frame) && !buffer.Push(2, frame), "Duplicate and reordered packets rejected");
-        buffer.Read(audio); buffer.Read(audio); buffer.Read(audio);
+        buffer.Read(audio); buffer.Read(audio); buffer.Read(audio); buffer.Read(audio); buffer.Read(audio); buffer.Read(audio);
         Check(audio.All(s => s == 0), "Underrun emits silence");
-        buffer.Clear(); buffer.Push(8, frame); buffer.Push(10, frame); buffer.Read(audio);
+        buffer = new MultiEscapeVoiceBuffer(); buffer.Push(8, frame); buffer.Push(10, frame); buffer.Push(11, frame); buffer.Read(audio);
         Check(audio.All(s => s == .5f), "First packet before gap");
-        buffer.Read(audio); Check(audio.All(s => s == 0), "Lost packet replaced with silence");
+        buffer.Read(audio); Check(audio.All(s => Math.Abs(s - .275f) < .00001f), "Lost packet concealed with attenuated preceding frame");
         buffer.Read(audio); Check(audio.All(s => s == .5f), "Recovery after packet loss");
         buffer.Clear(); Check(buffer.Push(uint.MaxValue, frame) && buffer.Push(0, frame), "Sequence wraps safely");
         buffer.Clear(); buffer.Push(0, frame); buffer.Push(10000, frame); buffer.Read(audio);

@@ -1,0 +1,1 @@
+Source pre-filter peak=0.004882813; DSP peak=0.02441406; listener peak=0.004882813; callbacks=106; underruns=0; queued=138

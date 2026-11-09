@@ -1,0 +1,10 @@
+PASS Physical corridor traversal: 64m, end=(0.00, 0.60, 64.05)
+PASS Run and Space jump clear all chase obstacles
+PASS Fire door closes, emergency exit collapses
+PASS Vent changes collider and camera height
+PASS Low duct straight section passable
+PASS Low duct corner and exit passable
+PASS Collapse completes with ending UI
+PASS Vent checkpoint restores crawling and spawn
+PASS Capture opens retry UI
+PASS Retry restores last checkpoint after capture

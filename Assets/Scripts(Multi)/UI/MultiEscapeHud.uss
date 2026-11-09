@@ -84,6 +84,8 @@
 .microphone-field { flex-grow: 1; min-width: 240px; margin-right: 10px; }
 .microphone-field .unity-base-field__input { background-color: rgb(50, 50, 50); color: white; }
 .microphone-field .unity-base-popup-field__text { color: white; }
+.voice-slider { width: 165px; margin-left: 8px; }
+.voice-slider > .unity-base-field__label { min-width: 62px; color: rgb(230, 230, 230); }
 .campaign-journal {
     position: absolute;
     left: 26px;

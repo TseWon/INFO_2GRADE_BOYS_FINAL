@@ -1,0 +1,17 @@
+PASS Displayed segment masks match the 8-7-4-4 puzzle sequence
+PASS Profile required before entrance code
+PASS Entrance wrong/correct answer
+PASS Lift is one-shot
+PASS QTE resolves exactly once
+PASS Acrostic normalizes whitespace and case
+PASS Seven-segment puzzle
+PASS Radio requires channel document
+PASS Radio channel code
+PASS Missed QTE takes prison branch
+PASS Weak wall opens prison passage
+PASS 200 generated sliding boards are solvable and not already solved
+PASS Invalid tile indices rejected
+PASS Incomplete flag does not unlock
+PASS Completed flag unlocks radio
+PASS Cannot skip seal/vent stages
+PASS Seal to vent to ending guards

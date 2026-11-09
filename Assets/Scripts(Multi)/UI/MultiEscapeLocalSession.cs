@@ -21,6 +21,7 @@ namespace FacilityEscape
         private Label voiceLabel;
         private DropdownField microphoneField;
         private Button microphoneRefresh, microphoneMute;
+        private Slider inputGain, outputVolume;
         private double noticeUntil;
         private string notice;
         public EscapeRole ActiveRole { get; private set; }
@@ -44,6 +45,9 @@ namespace FacilityEscape
             microphoneField = root.Q<DropdownField>("microphoneField");
             microphoneRefresh = root.Q<Button>("microphoneRefresh");
             microphoneMute = root.Q<Button>("microphoneMute");
+            inputGain = root.Q<Slider>("voiceInputGain"); outputVolume = root.Q<Slider>("voiceOutputVolume");
+            if (inputGain != null) { inputGain.SetValueWithoutNotify(lan?.Voice?.InputGain ?? 1); inputGain.RegisterValueChangedCallback(InputGainChanged); }
+            if (outputVolume != null) { outputVolume.SetValueWithoutNotify(lan?.Voice?.OutputVolume ?? 1); outputVolume.RegisterValueChangedCallback(OutputVolumeChanged); }
             microphoneField?.RegisterValueChangedCallback(MicrophoneChanged);
             if (microphoneRefresh != null) microphoneRefresh.clicked += RefreshMicrophones;
             if (microphoneMute != null) microphoneMute.clicked += MuteMicrophone;
@@ -77,6 +81,7 @@ namespace FacilityEscape
 
         private void OnDisable()
         {
+            inputGain?.UnregisterValueChangedCallback(InputGainChanged); outputVolume?.UnregisterValueChangedCallback(OutputVolumeChanged);
             microphoneField?.UnregisterValueChangedCallback(MicrophoneChanged);
             if (microphoneRefresh != null) microphoneRefresh.clicked -= RefreshMicrophones;
             if (microphoneMute != null) microphoneMute.clicked -= MuteMicrophone;
@@ -139,6 +144,8 @@ namespace FacilityEscape
 
         private void MicrophoneChanged(ChangeEvent<string> change) => lan?.Voice?.SelectMicrophone(change.newValue);
         private void MuteMicrophone() => lan?.Voice?.ToggleMute();
+        private void InputGainChanged(ChangeEvent<float> change) => lan?.Voice?.SetInputGain(change.newValue);
+        private void OutputVolumeChanged(ChangeEvent<float> change) => lan?.Voice?.SetOutputVolume(change.newValue);
 
         private bool CanLook() => game != null && game.Rules != null &&
             (game.Campaign == null || !game.Campaign.Rules.Terminal) &&

@@ -1,0 +1,16 @@
+{
+  "supersededBy": "independent-build-report.json",
+  "date": "2026-11-09",
+  "unity": "6000.4.8f1",
+  "result": "Succeeded",
+  "outputPath": "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek.exe",
+  "totalErrors": 0,
+  "totalWarnings": 1,
+  "totalSizeBytes": 276137440,
+  "buildTimeMs": 24662,
+  "warnings": [
+    {
+      "message": "Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds."
+    }
+  ]
+}

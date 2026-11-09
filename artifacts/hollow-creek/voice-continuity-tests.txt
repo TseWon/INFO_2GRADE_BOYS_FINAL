@@ -1,0 +1,41 @@
+PASS B to A permitted in Ready
+PASS A to B unlock preserved in Ready
+PASS B to A permitted in ColorLock
+PASS A to B unlock preserved in ColorLock
+PASS B to A permitted in SymbolLock
+PASS A to B unlock preserved in SymbolLock
+PASS B to A permitted in Escaped
+PASS A to B unlock preserved in Escaped
+PASS B to A permitted in Failed
+PASS A to B unlock preserved in Failed
+PASS Malformed packets rejected
+PASS Out-of-order packet recovered before playout
+PASS Duplicate rejected
+PASS Already played packet rejected
+PASS Disconnect flushes queued speech and interpolation tail
+PASS Sequence wrap accepted
+PASS Long gap discards stale queue and bounds latency
+PASS 16000Hz / 256 DSP frames / clean: 593 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 16000Hz / 256 DSP frames / jitter+reorder+loss: 593 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 16000Hz / 512 DSP frames / clean: 297 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 16000Hz / 512 DSP frames / jitter+reorder+loss: 297 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 16000Hz / 1024 DSP frames / clean: 149 callbacks, silent=0; underruns=0, concealed=0, target=120ms
+PASS 16000Hz / 1024 DSP frames / jitter+reorder+loss: 149 callbacks, silent=0; underruns=0, concealed=10, target=120ms
+PASS 16000Hz / 2048 DSP frames / clean: 75 callbacks, silent=0; underruns=0, concealed=0, target=180ms
+PASS 16000Hz / 2048 DSP frames / jitter+reorder+loss: 75 callbacks, silent=0; underruns=0, concealed=10, target=180ms
+PASS 44100Hz / 256 DSP frames / clean: 1636 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 44100Hz / 256 DSP frames / jitter+reorder+loss: 1636 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 44100Hz / 512 DSP frames / clean: 818 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 44100Hz / 512 DSP frames / jitter+reorder+loss: 818 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 44100Hz / 1024 DSP frames / clean: 409 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 44100Hz / 1024 DSP frames / jitter+reorder+loss: 409 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 44100Hz / 2048 DSP frames / clean: 205 callbacks, silent=0; underruns=0, concealed=0, target=100ms
+PASS 44100Hz / 2048 DSP frames / jitter+reorder+loss: 205 callbacks, silent=0; underruns=0, concealed=10, target=100ms
+PASS 48000Hz / 256 DSP frames / clean: 1782 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 48000Hz / 256 DSP frames / jitter+reorder+loss: 1782 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 48000Hz / 512 DSP frames / clean: 891 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 48000Hz / 512 DSP frames / jitter+reorder+loss: 891 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 48000Hz / 1024 DSP frames / clean: 445 callbacks, silent=0; underruns=0, concealed=0, target=80ms
+PASS 48000Hz / 1024 DSP frames / jitter+reorder+loss: 445 callbacks, silent=0; underruns=0, concealed=10, target=80ms
+PASS 48000Hz / 2048 DSP frames / clean: 223 callbacks, silent=0; underruns=0, concealed=0, target=100ms
+PASS 48000Hz / 2048 DSP frames / jitter+reorder+loss: 223 callbacks, silent=0; underruns=0, concealed=10, target=100ms

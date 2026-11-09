@@ -51,6 +51,8 @@
                 <ui:DropdownField name="microphoneField" label="Headset mic" class="microphone-field" />
                 <ui:Button name="microphoneRefresh" text="REFRESH MICS" class="control" focusable="false" />
                 <ui:Button name="microphoneMute" text="MUTE MIC" class="control" focusable="false" />
+                <ui:Slider name="voiceInputGain" label="Mic gain" low-value="0.5" high-value="3" value="1" class="voice-slider" />
+                <ui:Slider name="voiceOutputVolume" label="Receive" low-value="0" high-value="1" value="1" class="voice-slider" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

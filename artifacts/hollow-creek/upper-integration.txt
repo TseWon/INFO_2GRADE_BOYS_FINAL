@@ -1,0 +1,13 @@
+PASS Surface play mode ready
+PASS Actual frames advancing
+PASS Tutorial dialogue buttons dismiss modal
+PASS Researcher profile retained in journal
+PASS Wrong entrance code stays open
+PASS Keypad UI unlocks entrance
+PASS B1 lift has collidable floor
+PASS Rescue success inside visible QTE window
+PASS CASE 1 landing
+PASS Acrostic physically opens barrier
+PASS Upper branch persists across scene transition
+PASS Digital puzzle UI restores power
+PASS Radio dialogue transitions to final scene briefing

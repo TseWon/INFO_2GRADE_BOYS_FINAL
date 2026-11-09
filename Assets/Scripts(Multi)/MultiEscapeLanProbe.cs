@@ -51,6 +51,7 @@ namespace FacilityEscape
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Launch()
         {
+            if (FindAnyObjectByType<MultiEscapeLanSession>() == null) return;
             var args = Environment.GetCommandLineArgs();
             for (int i = 0; i + 1 < args.Length; i++)
                 if (args[i] == "-escape-lan-probe")
@@ -65,13 +66,14 @@ namespace FacilityEscape
         }
         void LateUpdate()
         {
-            if (voiceTestFrames > 0 && Time.realtimeSinceStartupAsDouble >= nextVoiceTest)
+            int catchup = 0;
+            while (voiceTestFrames > 0 && Time.realtimeSinceStartupAsDouble >= nextVoiceTest && catchup++ < 4)
             {
                 for (int i = 0; i < testTone.Length; i++)
                     testTone[i] = (short)(Math.Sin((voiceTestSequence * 320 + i) * Math.PI * 2 * 440 / 16000) * 4000);
                 lan.SendVoice(voiceTestSequence++, testTone);
                 voiceTestFrames--;
-                nextVoiceTest = Time.realtimeSinceStartupAsDouble + .02;
+                nextVoiceTest += .02;
             }
             if (string.IsNullOrEmpty(output) || Time.realtimeSinceStartupAsDouble < nextWrite) return;
             nextWrite = Time.realtimeSinceStartupAsDouble + .1;
@@ -98,7 +100,7 @@ namespace FacilityEscape
                         if (command.action == "host") lan.Host();
                         if (command.action == "screenshot") ScreenCapture.CaptureScreenshot(output + ".png");
                         if (command.action == "voice-mute") lan.Voice.ToggleMute();
-                        if (command.action == "voice-tone") { voiceTestFrames = 50; voiceTestSequence = 0; }
+                        if (command.action == "voice-tone") { voiceTestFrames = 50; voiceTestSequence = 0; nextVoiceTest = Time.realtimeSinceStartupAsDouble; }
                         if (command.action == "campaign") lan.SendCampaignAction(command.controlId);
                         if (command.action == "campaign-hold") heldCampaignAction = command.controlId;
                     }
@@ -108,8 +110,8 @@ namespace FacilityEscape
                 float peak = 0;
                 if (voiceSpeaker != null && voiceSpeaker.isPlaying)
                 {
-                    voiceSpeaker.GetOutputData(voiceOutput, 0);
-                    foreach (float sample in voiceOutput) peak = Mathf.Max(peak, Mathf.Abs(sample));
+                    var playback = voiceSpeaker.GetComponent<MultiEscapeVoicePlayback>();
+                    peak = playback != null ? playback.OutputPeak : 0;
                 }
                 var report = new Report {
                     timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(), connected = lan.Connected, host = lan.IsHost,

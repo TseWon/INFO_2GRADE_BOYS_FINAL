@@ -13,7 +13,7 @@ namespace FacilityEscape
         private int lastRound = -1;
         private readonly MultiEscapeVoiceBuffer buffer = new MultiEscapeVoiceBuffer();
         private readonly short[] packet = new short[MultiEscapeVoiceBuffer.FrameSamples];
-        private AudioClip microphoneClip, playbackClip;
+        private AudioClip microphoneClip;
         private AudioSource speaker;
         private float[] capture;
         private string device;
@@ -21,6 +21,12 @@ namespace FacilityEscape
         private uint sequence;
         private double retryAt, lastCaptureAt, lastPollAt, lastReceivedAt = double.NegativeInfinity;
         private bool recordingStarted, muted;
+        private float highPassInput, highPassOutput;
+        public float InputGain { get; private set; } = 1;
+        public float OutputVolume { get; private set; } = 1;
+        public int PlaybackUnderruns => buffer.Underruns;
+        public int ConcealedFrames => buffer.ConcealedFrames;
+        public int BufferedMilliseconds => buffer.BufferedMilliseconds;
         public string SelectedDevice { get; private set; } = DefaultDevice;
         public bool Muted => muted;
         public float InputLevel { get; private set; }
@@ -31,11 +37,20 @@ namespace FacilityEscape
 
         public void Initialize(MultiEscapeLanSession session, MultiEscapeGame escapeGame)
         {
+            if (lan != null) { lan.VoiceReceived -= Receive; lan.Changed -= ConnectionChanged; }
+            if (game != null) game.StateChanged -= RefreshPermissions;
             lan = session;
             game = escapeGame;
             lan.VoiceReceived += Receive;
             lan.Changed += ConnectionChanged;
             game.StateChanged += RefreshPermissions;
+        }
+
+        public void SetInputGain(float gain) => InputGain = Mathf.Clamp(gain, .5f, 3);
+        public void SetOutputVolume(float volume)
+        {
+            OutputVolume = Mathf.Clamp01(volume);
+            if (speaker != null) speaker.GetComponent<MultiEscapeVoicePlayback>().Gain = OutputVolume;
         }
 
         private void RefreshPermissions()
@@ -82,6 +97,7 @@ namespace FacilityEscape
                 bool recent = Time.realtimeSinceStartupAsDouble - lastReceivedAt < .3;
                 if (!recent) buffer.Clear();
             }
+            else if (speaker != null && speaker.isPlaying) { speaker.Stop(); buffer.Clear(); }
             if (!lan.CanSendVoice)
             {
                 StopMicrophone();
@@ -130,7 +146,11 @@ namespace FacilityEscape
                         first += capture[a * microphoneClip.channels + channel];
                         second += capture[b * microphoneClip.channels + channel];
                     }
-                    float value = Mathf.Clamp(Mathf.Lerp(first, second, offset - a) / microphoneClip.channels, -1, 1);
+                    float raw = Mathf.Lerp(first, second, offset - a) / microphoneClip.channels;
+                    // Remove DC/low rumble without gating quiet syllables.
+                    float filtered = raw - highPassInput + .965f * highPassOutput;
+                    highPassInput = raw; highPassOutput = filtered;
+                    float value = Mathf.Clamp(filtered * InputGain, -.98f, .98f);
                     peak = Mathf.Max(peak, Mathf.Abs(value));
                     packet[i] = (short)Mathf.RoundToInt(value * 32767);
                 }
@@ -144,7 +164,7 @@ namespace FacilityEscape
             if (now - lastCaptureAt > 3)
             { MicrophoneFailed("Microphone stopped producing audio. Check the headset."); return; }
             Status = (lan.VoiceUnlocked ? "FREE / Two-way voice | Mic: " : "EARPLUGS / Cannot hear A | Mic to A: ")
-                + Mathf.RoundToInt(InputLevel * 100) + "%";
+                + Mathf.RoundToInt(InputLevel * 100) + "%" + (lan.CanReceiveVoice ? " | Buffer " + buffer.BufferedMilliseconds + "ms / target " + buffer.TargetMilliseconds + "ms" : "");
         }
 
         private void StartMicrophone()
@@ -195,9 +215,10 @@ namespace FacilityEscape
                 speaker.spatialBlend = 0;
                 speaker.volume = 1;
                 speaker.priority = 0;
-                playbackClip = AudioClip.Create("LAN voice", MultiEscapeVoiceBuffer.SampleRate, 1,
-                    MultiEscapeVoiceBuffer.SampleRate, true, buffer.Read);
-                speaker.clip = playbackClip;
+                // A clipless generator reads network PCM directly in output-device time.
+                var playback = output.AddComponent<MultiEscapeVoicePlayback>();
+                playback.Gain = OutputVolume;
+                playback.Initialize(buffer);
             }
             if (!speaker.isPlaying) speaker.Play();
         }
@@ -220,6 +241,7 @@ namespace FacilityEscape
                 microphoneClip = null;
             }
             recordingStarted = false;
+            highPassInput = highPassOutput = 0;
             capture = null;
             InputLevel = 0;
         }
@@ -239,7 +261,6 @@ namespace FacilityEscape
             if (lan != null) { lan.VoiceReceived -= Receive; lan.Changed -= ConnectionChanged; }
             if (game != null) game.StateChanged -= RefreshPermissions;
             if (speaker != null) Destroy(speaker.gameObject);
-            if (playbackClip != null) Destroy(playbackClip);
         }
     }
 }

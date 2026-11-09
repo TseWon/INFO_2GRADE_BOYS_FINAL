@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-09",
+  "unity": "6000.4.8f1",
+  "independentBuilds": [
+    {
+      "mode": "solo",
+      "profile": "SoloWindows",
+      "result": "Succeeded",
+      "outputPath": "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek.exe",
+      "totalErrors": 0,
+      "totalWarnings": 486,
+      "totalSizeBytes": 272052792,
+      "buildTimeMs": 26520,
+      "sceneFiles": [
+        "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek_Data/level0",
+        "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek_Data/level1",
+        "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek_Data/level2",
+        "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/HollowCreek/HollowCreek_Data/level3"
+      ],
+      "warningSummary": "Pipeline runtime automation disabled; existing Unity Inference shader warnings."
+    },
+    {
+      "mode": "multiplayer",
+      "profile": "MultiplayerWindows",
+      "result": "Succeeded",
+      "outputPath": "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/MultiEscape/MultiEscape.exe",
+      "totalErrors": 0,
+      "totalWarnings": 486,
+      "totalSizeBytes": 130675971,
+      "buildTimeMs": 14922,
+      "sceneFiles": [
+        "C:/Infotherapy Booth Project/MG/INFO_2GRADE_BOYS_FINAL/Builds/MultiEscape/MultiEscape_Data/level0"
+      ],
+      "warningSummary": "Pipeline runtime automation disabled; existing Unity Inference shader warnings."
+    }
+  ]
+}

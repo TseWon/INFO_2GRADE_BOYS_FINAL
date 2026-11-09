@@ -1,0 +1,1 @@
+B2 cage exit=(99.00, 0.02, 0.00); physical research traversal=(64.00, 0.02, 0.00)

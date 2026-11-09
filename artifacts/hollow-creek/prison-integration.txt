@@ -1,0 +1,8 @@
+PASS Letting X window expire takes CASE 2
+PASS B2 landing has collidable floor
+PASS Pushing weak wall removes physical barrier
+PASS Prison branch persists across scene transition
+PASS Existing lab door leaves initially locked
+PASS Sliding flag UI opens
+PASS Legal tile clicks solve board and open original lab doors
+PASS Prison radio converges on final scene

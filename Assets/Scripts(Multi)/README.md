@@ -3,9 +3,11 @@
 현재 프로젝트(Unity 6000.4, Built-in Render Pipeline, Legacy Input)에 맞춘 게임 로직입니다.
 `Assets/Scene/MultiScene1.unity`에 임시 오브젝트와 스크립트 연결을 완료했습니다.
 
+솔로와 독립적으로 실행됩니다. **Game Builds → Multiplayer → Select Scene Group**으로 `MultiplayerWindows` 프로필을 선택합니다. 이 프로필은 전역 씬 목록을 덮어쓰고 `MultiScene1`만 포함합니다. **Game Builds → Multiplayer → Build Windows**로 `Builds/MultiEscape/MultiEscape.exe`를 생성합니다. 솔로 씬 진입이나 솔로 진행 데이터가 필요하지 않습니다.
+
 ## 같은 Wi-Fi에서 두 노트북으로 실행
 
-1. 두 노트북을 같은 Wi-Fi에 연결합니다. 음성 채팅 버전은 `Builds/FacilityEscape-Voice` 폴더 전체를 두 번째 노트북으로 복사하고, 각각 `FacilityEscape.exe`를 실행합니다. exe 파일만 복사하면 실행되지 않습니다. 이전 LAN 빌드와는 연결할 수 없습니다.
+1. 두 노트북을 같은 Wi-Fi에 연결합니다. 최신 멀티 전용 `Builds/MultiEscape` 폴더 전체를 두 번째 노트북으로 복사하고, 각각 `MultiEscape.exe`를 실행합니다. exe 파일만 복사하면 실행되지 않습니다. 양쪽 모두 같은 최신 빌드를 사용하세요.
 2. 첫 번째 노트북은 **HOST / PLAYER A**를 누릅니다. 화면에 표시된 IP 중 Wi-Fi의 IPv4 주소를 친구에게 알려 줍니다. VPN/유선랜이 함께 연결되어 여러 주소가 보이면 Windows Wi-Fi 속성의 IPv4와 일치하는 주소를 사용하세요.
 3. 두 번째 노트북은 **Host IPv4** 칸에 그 주소를 입력하고 **JOIN / PLAYER B**를 누릅니다. `127.0.0.1`은 같은 컴퓨터에서 두 실행을 시험할 때만 사용합니다.
 4. 두 명이 연결되면 방장에게 START 버튼이 표시됩니다. 방장만 Space/START로 시작하고 R/RESTART로 새 라운드를 시작할 수 있습니다.
@@ -26,7 +28,7 @@ Windows 방화벽이 첫 실행 시 묻는 경우 사용하는 사설 네트워�
 - 방을 나가거나 연결이 끊기면 마이크 녹음과 상대 음성 재생을 종료하고 버퍼를 비웁니다. 재접속하면 현재 음소거 설정을 유지합니다. 음성 파일을 저장하지 않습니다.
 - 마이크가 없다면 안내 문구를 표시하고 재시도합니다. 입력이 없으면 Windows 설정 → 개인정보 및 보안 → 마이크에서 데스크톱 앱 접근을 확인하고 헤드셋의 물리 음소거 버튼도 확인하세요.
 - 다른 앱의 통화나 같은 방에서 직접 들리는 목소리는 이 게임이 차단할 수 없습니다. 게임 안의 음성 제약을 시험할 때는 별도 음성 통화를 끄세요.
-- 구현: Unity Microphone → 16 kHz mono PCM16, 20 ms 패킷 → 기존 Netcode LAN 연결 → 수신 가능한 플레이어의 전용 AudioSource. 60 ms 초기 버퍼, 중복/역순/이전 라운드 패킷 거부, 손실 구간 무음, 최대 200 ms 큐를 사용합니다. 헤드셋 사용을 전제로 하며 별도 에코 제거·잡음 제거 코덱은 포함하지 않습니다. 양쪽 PC 모두 양방향 해제가 포함된 동일 빌드를 사용하세요.
+- 구현: Unity Microphone → 16 kHz mono PCM16, 20 ms 패킷 → 기존 Netcode LAN 연결 → 수신 가능한 플레이어의 전용 AudioSource. 기본 80 ms 적응형 버퍼, 재생 전 패킷 재정렬, 손실 프레임 감쇠 보완, DSP 주기에 맞춘 OnAudioFilterRead 출력을 사용합니다. 입력 게인과 상대 음성 볼륨을 조절할 수 있습니다. 헤드셋 사용을 전제로 하며 별도 에코 제거·잡음 제거 코덱은 포함하지 않습니다.
 - 외형: B의 `Avatar_ReplaceVisuals/Head_LookPivot/EarDefenders`. 고개 회전을 따르며 조작을 가리는 Collider는 없습니다.
 - 검증 도구: `artifacts/TestMultiEscapeVoiceBuffer.cs`, `artifacts/TestMultiEscapeVoiceLan.cs`. 두 프로세스 검사는 Development 빌드의 명시적 `-escape-lan-probe`에서만 합성 테스트음을 사용합니다. 실제 두 PC의 헤드셋 음질·지연은 현장 확인이 필요합니다.
 

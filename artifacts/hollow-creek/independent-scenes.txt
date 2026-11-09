@@ -1,0 +1,3 @@
+PASS SoloWindows: Assets/Scene/SoloScene1.unity -> Assets/Scene/SoloScene2.unity -> Assets/Scene/SoloScene3.unity -> Assets/Scene/SoloScene4.unity; no opposite-mode script dependencies
+PASS MultiplayerWindows: Assets/Scene/MultiScene1.unity; no opposite-mode script dependencies
+PASS Global fallback contains only solo scenes; multiplayer profile overrides the global list
