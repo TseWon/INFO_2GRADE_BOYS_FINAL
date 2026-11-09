@@ -1,0 +1,17 @@
+Command_Access__Details__Graphite: removed=4392 triangles; remaining=2440
+Command_stairs__Details__Graphite: removed=1008 triangles; remaining=0
+East_Foundation_Walkway__Details__Graphite: removed=1872 triangles; remaining=0
+East_hab_stairs__Details__Graphite: removed=1008 triangles; remaining=0
+East_Habitat__Details__Graphite: removed=7056 triangles; remaining=1784
+LOD1_Command_Access__Details__Graphite: removed=1434 triangles; remaining=1639
+LOD1_Command_stairs__Details__Graphite: removed=452 triangles; remaining=0
+LOD1_East_Foundation_Walkway__Details__Graphite: removed=842 triangles; remaining=0
+LOD1_East_hab_stairs__Details__Graphite: removed=452 triangles; remaining=0
+LOD1_East_Habitat__Details__Graphite: removed=2972 triangles; remaining=1005
+LOD1_West_Foundation_Walkway__Details__Graphite: removed=842 triangles; remaining=0
+LOD1_West_hab_stairs__Details__Graphite: removed=452 triangles; remaining=0
+LOD1_West_Habitat__Details__Graphite: removed=2936 triangles; remaining=937
+West_Foundation_Walkway__Details__Graphite: removed=1872 triangles; remaining=0
+West_hab_stairs__Details__Graphite: removed=1008 triangles; remaining=0
+West_Habitat__Details__Graphite: removed=6912 triangles; remaining=1696
+Backup=artifacts/backups/Station_before_railing_removal_20261109_231537

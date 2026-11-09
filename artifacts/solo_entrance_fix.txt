@@ -1,0 +1,1 @@
+Entrance panel=(1.50, 2.05, -61.45) raycast distance=1.152683 backup=artifacts/backups/SoloScene1_before_entrance_cleanup_20261109_230852.unity
