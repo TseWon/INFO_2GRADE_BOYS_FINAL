@@ -1,0 +1,1 @@
+{ scene = Assets/Scene/SoloScene2.unity, bounds = Center: (0.00, 5.43, -0.99), Extents: (21.16, 6.68, 26.15), renderers = 14, colliders = 12, ceilings = 3, fogDensity = 0.023, groundY = -0.15, snow = 35000, spawn = (0.00, 0.10, 21.50) }

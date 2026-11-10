@@ -1,0 +1,1 @@
+{ scene = SoloScene2, objects = 14, triangles = 47110, missingMaterials = 0, roofHits = 9, roofProbes = 9, particles = 21753, indoorParticles = 0, worldCollision = World, fog = 0.023, play = True, frames = 1209, gameTime = 29.40125, camera = (0.00, 1.75, 21.50) }

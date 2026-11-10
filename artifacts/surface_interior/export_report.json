@@ -1,0 +1,21 @@
+{
+  "objects": 14,
+  "ceilings": 123,
+  "roof_height": 12,
+  "groups": [
+    "SI_01_Floors__SI_Concrete_Resin_Floor",
+    "SI_02_Walls__SI_Existing_Ivory_Wall",
+    "SI_03_Glazing__SI_Clear_Observation_Glass",
+    "SI_04_Frames__SI_Existing_Graphite_Frame",
+    "SI_05_Central_Cage__UNSAVED | dark ceramic plinth",
+    "SI_05_Central_Cage__UNSAVED | graphite titanium cage steel",
+    "SI_05_Central_Cage__UNSAVED | brushed alloy ribs",
+    "SI_05_Central_Cage__UNSAVED | specimen warning violet",
+    "SI_06_Elevator__SI_Existing_Graphite_Frame",
+    "SI_06_Elevator__SI_Safety_Ochre",
+    "SI_07_Wayfinding__SI_Safety_Ochre",
+    "SI_08_Ceilings__SI_Existing_Ivory_Wall",
+    "SI_08_Ceilings__SI_Clear_Observation_Glass",
+    "SI_08_Ceilings__SI_Existing_Graphite_Frame"
+  ]
+}

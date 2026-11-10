@@ -1,0 +1,4609 @@
+[
+  {
+    "name": "Command_Access__Shell__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -7.755,
+      -19.155,
+      0.8
+    ],
+    "max": [
+      7.755,
+      -10.845,
+      3.535
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_Access__Shell__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -7.655,
+      -19.1,
+      0.85
+    ],
+    "max": [
+      7.655,
+      -10.877,
+      6.15
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Command_Access__Shell__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -7.782,
+      -19.17,
+      0.85
+    ],
+    "max": [
+      7.782,
+      -10.83,
+      4.46
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Command_Access__Shell__SmokedGlazing",
+    "module": "Command_Access",
+    "min": [
+      -7.58,
+      -19.084,
+      2.315
+    ],
+    "max": [
+      7.58,
+      -11.983,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "West_Habitat__Shell__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -14.54,
+      -17.94,
+      0.8
+    ],
+    "max": [
+      -7.06,
+      -10.46,
+      3.195
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Habitat__Shell__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.471,
+      -17.871,
+      0.85
+    ],
+    "max": [
+      -7.129,
+      -10.529,
+      4.21
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Habitat__Shell__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -14.541,
+      -17.941,
+      0.85
+    ],
+    "max": [
+      -7.059,
+      -10.459,
+      4.22
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Habitat__Shell__SmokedGlazing",
+    "module": "West_Habitat",
+    "min": [
+      -14.43,
+      -17.855,
+      2.09
+    ],
+    "max": [
+      -7.407,
+      -10.807,
+      3.21
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "East_Habitat__Shell__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      7.06,
+      -17.94,
+      0.8
+    ],
+    "max": [
+      14.54,
+      -10.46,
+      3.195
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Habitat__Shell__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      7.129,
+      -17.871,
+      0.85
+    ],
+    "max": [
+      14.471,
+      -10.529,
+      4.21
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Habitat__Shell__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      7.059,
+      -17.941,
+      0.85
+    ],
+    "max": [
+      14.541,
+      -10.459,
+      4.22
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Habitat__Shell__SmokedGlazing",
+    "module": "East_Habitat",
+    "min": [
+      7.407,
+      -17.855,
+      2.09
+    ],
+    "max": [
+      14.43,
+      -10.807,
+      3.21
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "Research_Spine__Shell__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -9.124,
+      6.945,
+      0.8
+    ],
+    "max": [
+      9.124,
+      20.855,
+      3.535
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Research_Spine__Shell__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -8.987,
+      7.0,
+      0.85
+    ],
+    "max": [
+      8.987,
+      20.823,
+      6.4
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Research_Spine__Shell__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -9.162,
+      6.93,
+      0.85
+    ],
+    "max": [
+      9.162,
+      20.87,
+      4.66
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Research_Spine__Shell__SmokedGlazing",
+    "module": "Research_Spine",
+    "min": [
+      -8.885,
+      7.016,
+      2.315
+    ],
+    "max": [
+      8.885,
+      18.653,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Shell__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -16.255,
+      9.495,
+      0.8
+    ],
+    "max": [
+      -7.945,
+      16.905,
+      3.235
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Shell__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -16.2,
+      9.55,
+      0.85
+    ],
+    "max": [
+      -8.0,
+      16.85,
+      5.45
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Shell__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.27,
+      9.48,
+      0.85
+    ],
+    "max": [
+      -7.93,
+      16.92,
+      4.36
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Shell__SmokedGlazing",
+    "module": "West_Laboratory",
+    "min": [
+      -16.159,
+      9.566,
+      2.315
+    ],
+    "max": [
+      -8.041,
+      16.809,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Shell__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      7.945,
+      9.495,
+      0.8
+    ],
+    "max": [
+      16.255,
+      16.905,
+      3.235
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Shell__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      8.0,
+      9.55,
+      0.85
+    ],
+    "max": [
+      16.2,
+      16.85,
+      5.45
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Shell__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      7.93,
+      9.48,
+      0.85
+    ],
+    "max": [
+      16.27,
+      16.92,
+      4.36
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Shell__SmokedGlazing",
+    "module": "East_Laboratory",
+    "min": [
+      8.041,
+      9.566,
+      2.315
+    ],
+    "max": [
+      16.159,
+      16.809,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "West_Front_Link__Shell__RoofAlloy",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.85
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Front_Link__Shell__IvoryPaint",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.93
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Rear_Link__Shell__RoofAlloy",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.85
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Rear_Link__Shell__IvoryPaint",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.93
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Front_Link__Shell__RoofAlloy",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.85
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Front_Link__Shell__IvoryPaint",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.93
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Rear_Link__Shell__RoofAlloy",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.85
+    ],
+    "max": [
+      11.95,
+      12.6,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Rear_Link__Shell__IvoryPaint",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.93
+    ],
+    "max": [
+      11.95,
+      12.6,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Command_Access__Roofs__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -8.055,
+      -19.31,
+      4.299
+    ],
+    "max": [
+      8.055,
+      -10.69,
+      6.46
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Command_Access__Roofs__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -8.108,
+      -19.395,
+      4.375
+    ],
+    "max": [
+      8.108,
+      -10.605,
+      6.3
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Habitat__Roofs__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.73,
+      -18.13,
+      4.1
+    ],
+    "max": [
+      -6.87,
+      -10.27,
+      5.88
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Habitat__Roofs__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -14.654,
+      -18.054,
+      4.426
+    ],
+    "max": [
+      -6.946,
+      -10.346,
+      6.15
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Habitat__Roofs__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -11.52,
+      -14.92,
+      5.845
+    ],
+    "max": [
+      -10.08,
+      -13.48,
+      5.995
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Habitat__Roofs__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      6.87,
+      -18.13,
+      4.1
+    ],
+    "max": [
+      14.73,
+      -10.27,
+      5.88
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Habitat__Roofs__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.946,
+      -18.054,
+      4.426
+    ],
+    "max": [
+      14.654,
+      -10.346,
+      6.15
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Habitat__Roofs__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      10.08,
+      -14.92,
+      5.845
+    ],
+    "max": [
+      11.52,
+      -13.48,
+      5.995
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Research_Spine__Roofs__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -9.536,
+      6.79,
+      4.5
+    ],
+    "max": [
+      9.536,
+      21.01,
+      6.66
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Research_Spine__Roofs__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -9.62,
+      6.705,
+      4.577
+    ],
+    "max": [
+      9.62,
+      21.095,
+      6.55
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Roofs__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -16.42,
+      9.34,
+      4.196
+    ],
+    "max": [
+      -7.78,
+      17.06,
+      7.991
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Roofs__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.44,
+      9.255,
+      4.272
+    ],
+    "max": [
+      -7.76,
+      17.145,
+      8.024
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Roofs__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      7.78,
+      9.34,
+      4.196
+    ],
+    "max": [
+      16.42,
+      17.06,
+      6.4
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Roofs__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      7.76,
+      9.255,
+      4.272
+    ],
+    "max": [
+      16.44,
+      17.145,
+      6.5
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Roofs__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -15.62,
+      10.836,
+      4.529
+    ],
+    "max": [
+      -11.17,
+      16.32,
+      7.753
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Roofs__Gaskets",
+    "module": "West_Laboratory",
+    "min": [
+      -12.93,
+      14.23,
+      6.375
+    ],
+    "max": [
+      -11.27,
+      14.97,
+      6.465
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Roofs__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -12.86,
+      14.386,
+      6.43
+    ],
+    "max": [
+      -11.34,
+      14.814,
+      6.532
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Roofs__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      11.17,
+      10.86,
+      4.529
+    ],
+    "max": [
+      15.62,
+      16.32,
+      5.72
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Roofs__Gaskets",
+    "module": "East_Laboratory",
+    "min": [
+      11.27,
+      14.23,
+      6.375
+    ],
+    "max": [
+      12.93,
+      14.97,
+      6.465
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Roofs__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      11.34,
+      14.386,
+      6.43
+    ],
+    "max": [
+      12.86,
+      14.814,
+      6.532
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Command_Access__Roofs__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -4.082,
+      -17.84,
+      5.263
+    ],
+    "max": [
+      3.417,
+      -13.06,
+      6.48
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_Access__Roofs__FadedRed",
+    "module": "Command_Access",
+    "min": [
+      1.549,
+      -14.4,
+      6.5
+    ],
+    "max": [
+      3.736,
+      -13.2,
+      6.84
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "Command_Access__Roofs__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      2.61,
+      -13.817,
+      6.83
+    ],
+    "max": [
+      2.675,
+      -13.783,
+      7.35
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Research_Spine__Roofs__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -5.342,
+      10.46,
+      5.395
+    ],
+    "max": [
+      5.342,
+      17.625,
+      6.68
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Research_Spine__Roofs__FadedRed",
+    "module": "Research_Spine",
+    "min": [
+      0.499,
+      16.6,
+      6.7
+    ],
+    "max": [
+      3.495,
+      17.8,
+      7.04
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "Research_Spine__Roofs__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      1.952,
+      17.183,
+      7.03
+    ],
+    "max": [
+      2.042,
+      17.217,
+      7.55
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Command_Access__Decks__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -8.93,
+      -19.85,
+      0.0
+    ],
+    "max": [
+      8.93,
+      -10.15,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_Access__Decks__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -9.003,
+      -19.89,
+      0.73
+    ],
+    "max": [
+      9.003,
+      -10.11,
+      0.86
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Command_Access__Decks__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      -7.457,
+      -19.887,
+      0.19
+    ],
+    "max": [
+      7.457,
+      -10.113,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "West_Habitat__Decks__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -15.35,
+      -18.75,
+      0.0
+    ],
+    "max": [
+      -6.25,
+      -9.65,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Habitat__Decks__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -15.38,
+      -18.78,
+      0.745
+    ],
+    "max": [
+      -6.22,
+      -9.62,
+      0.875
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Habitat__Decks__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      6.25,
+      -18.75,
+      0.0
+    ],
+    "max": [
+      15.35,
+      -9.65,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Habitat__Decks__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.22,
+      -18.78,
+      0.745
+    ],
+    "max": [
+      15.38,
+      -9.62,
+      0.875
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Research_Spine__Decks__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      -9.216,
+      6.213,
+      0.19
+    ],
+    "max": [
+      9.216,
+      21.587,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Decks__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -16.125,
+      8.762,
+      0.19
+    ],
+    "max": [
+      -8.075,
+      17.637,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Decks__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      8.075,
+      8.762,
+      0.19
+    ],
+    "max": [
+      16.125,
+      17.637,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Command_stairs__Decks__Graphite",
+    "module": "Command_stairs",
+    "min": [
+      -1.0,
+      -21.31,
+      0.0
+    ],
+    "max": [
+      1.0,
+      -19.79,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_stairs__Decks__RoofAlloy",
+    "module": "Command_stairs",
+    "min": [
+      -1.0,
+      -21.307,
+      0.164
+    ],
+    "max": [
+      1.0,
+      -20.073,
+      0.872
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_hab_stairs__Decks__Graphite",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.65,
+      -20.3,
+      0.0
+    ],
+    "max": [
+      -9.95,
+      -18.78,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_hab_stairs__Decks__RoofAlloy",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.65,
+      -20.297,
+      0.164
+    ],
+    "max": [
+      -9.95,
+      -19.062,
+      0.872
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_hab_stairs__Decks__Graphite",
+    "module": "East_hab_stairs",
+    "min": [
+      9.95,
+      -20.3,
+      0.0
+    ],
+    "max": [
+      11.65,
+      -18.78,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_hab_stairs__Decks__RoofAlloy",
+    "module": "East_hab_stairs",
+    "min": [
+      9.95,
+      -20.297,
+      0.164
+    ],
+    "max": [
+      11.65,
+      -19.062,
+      0.872
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Front_Link__Decks__Graphite",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.0
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Rear_Link__Decks__Graphite",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.0
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Front_Link__Decks__Graphite",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.0
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Rear_Link__Decks__Graphite",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.0
+    ],
+    "max": [
+      11.95,
+      12.6,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Rear_Shared_Foundation__Decks__Graphite",
+    "module": "Rear_Shared_Foundation",
+    "min": [
+      -15.68,
+      6.25,
+      0.0
+    ],
+    "max": [
+      15.68,
+      21.55,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Rear_Shared_Foundation__Decks__RoofAlloy",
+    "module": "Rear_Shared_Foundation",
+    "min": [
+      -15.68,
+      6.25,
+      0.78
+    ],
+    "max": [
+      15.68,
+      21.55,
+      0.86
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -7.126,
+      -19.909,
+      0.319
+    ],
+    "max": [
+      7.126,
+      -10.091,
+      5.674
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -7.809,
+      -19.21,
+      1.19
+    ],
+    "max": [
+      7.809,
+      -10.842,
+      5.736
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__Gaskets",
+    "module": "Command_Access",
+    "min": [
+      -7.739,
+      -19.19,
+      1.173
+    ],
+    "max": [
+      7.739,
+      -10.878,
+      4.233
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      -7.844,
+      -19.924,
+      0.358
+    ],
+    "max": [
+      7.844,
+      -10.076,
+      4.164
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__SmokedGlazing",
+    "module": "Command_Access",
+    "min": [
+      -5.358,
+      -19.253,
+      1.72
+    ],
+    "max": [
+      5.358,
+      -19.135,
+      5.674
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.556,
+      -17.981,
+      1.97
+    ],
+    "max": [
+      -7.233,
+      -10.633,
+      3.745
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__Gaskets",
+    "module": "West_Habitat",
+    "min": [
+      -14.54,
+      -17.942,
+      1.16
+    ],
+    "max": [
+      -7.322,
+      -10.722,
+      3.762
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__Fasteners",
+    "module": "West_Habitat",
+    "min": [
+      -15.294,
+      -18.157,
+      0.354
+    ],
+    "max": [
+      -6.306,
+      -10.243,
+      4.282
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -15.279,
+      -18.128,
+      0.312
+    ],
+    "max": [
+      -6.321,
+      -10.272,
+      3.31
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      7.233,
+      -17.981,
+      1.97
+    ],
+    "max": [
+      14.556,
+      -10.633,
+      3.745
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__Gaskets",
+    "module": "East_Habitat",
+    "min": [
+      7.322,
+      -17.942,
+      1.16
+    ],
+    "max": [
+      14.54,
+      -10.722,
+      3.762
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__Fasteners",
+    "module": "East_Habitat",
+    "min": [
+      6.306,
+      -18.157,
+      0.354
+    ],
+    "max": [
+      15.294,
+      -10.243,
+      4.282
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.321,
+      -18.128,
+      0.312
+    ],
+    "max": [
+      15.279,
+      -10.272,
+      3.31
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -6.878,
+      6.191,
+      0.319
+    ],
+    "max": [
+      6.878,
+      21.609,
+      7.72
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -9.199,
+      6.89,
+      2.195
+    ],
+    "max": [
+      9.199,
+      20.858,
+      5.972
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__Gaskets",
+    "module": "Research_Spine",
+    "min": [
+      -9.103,
+      6.929,
+      2.307
+    ],
+    "max": [
+      9.103,
+      20.822,
+      4.433
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      -9.247,
+      6.176,
+      0.358
+    ],
+    "max": [
+      9.247,
+      21.624,
+      5.134
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__SmokedGlazing",
+    "module": "Research_Spine",
+    "min": [
+      -6.291,
+      6.965,
+      4.8
+    ],
+    "max": [
+      6.291,
+      6.965,
+      5.91
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.795,
+      8.741,
+      0.319
+    ],
+    "max": [
+      -8.975,
+      17.659,
+      6.335
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -17.04,
+      9.44,
+      1.075
+    ],
+    "max": [
+      -7.915,
+      16.95,
+      5.368
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__Gaskets",
+    "module": "West_Laboratory",
+    "min": [
+      -16.247,
+      9.478,
+      1.133
+    ],
+    "max": [
+      -7.953,
+      16.896,
+      6.285
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -17.06,
+      8.726,
+      0.358
+    ],
+    "max": [
+      -7.896,
+      17.674,
+      6.62
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__SmokedGlazing",
+    "module": "West_Laboratory",
+    "min": [
+      -14.97,
+      9.515,
+      4.5
+    ],
+    "max": [
+      -9.23,
+      16.885,
+      5.142
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      8.975,
+      8.741,
+      0.319
+    ],
+    "max": [
+      16.795,
+      17.659,
+      6.335
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      7.915,
+      9.44,
+      1.075
+    ],
+    "max": [
+      17.04,
+      16.95,
+      5.368
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__Gaskets",
+    "module": "East_Laboratory",
+    "min": [
+      7.953,
+      9.478,
+      1.133
+    ],
+    "max": [
+      16.247,
+      16.896,
+      6.285
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      7.896,
+      8.726,
+      0.358
+    ],
+    "max": [
+      17.06,
+      17.674,
+      6.62
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__SmokedGlazing",
+    "module": "East_Laboratory",
+    "min": [
+      9.23,
+      9.515,
+      4.5
+    ],
+    "max": [
+      14.97,
+      16.885,
+      5.142
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "Command_stairs__Details__Graphite",
+    "module": "Command_stairs",
+    "min": [
+      -1.155,
+      -21.375,
+      0.0
+    ],
+    "max": [
+      1.155,
+      -19.725,
+      1.919
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_hab_stairs__Details__Graphite",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.805,
+      -20.365,
+      0.0
+    ],
+    "max": [
+      -9.795,
+      -18.715,
+      1.919
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_hab_stairs__Details__Graphite",
+    "module": "East_hab_stairs",
+    "min": [
+      9.795,
+      -20.365,
+      0.0
+    ],
+    "max": [
+      11.805,
+      -18.715,
+      1.919
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Front_Link__Details__RoofAlloy",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.428,
+      1.0
+    ],
+    "max": [
+      -4.105,
+      -12.972,
+      3.927
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Rear_Link__Details__RoofAlloy",
+    "module": "West_Rear_Link",
+    "min": [
+      -12.03,
+      -13.58,
+      1.0
+    ],
+    "max": [
+      -6.47,
+      12.6,
+      3.927
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Front_Link__Details__RoofAlloy",
+    "module": "East_Front_Link",
+    "min": [
+      4.105,
+      -15.428,
+      1.0
+    ],
+    "max": [
+      7.25,
+      -12.972,
+      3.927
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "East_Rear_Link__Details__RoofAlloy",
+    "module": "East_Rear_Link",
+    "min": [
+      6.47,
+      -13.58,
+      1.0
+    ],
+    "max": [
+      12.03,
+      12.6,
+      3.927
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -15.27,
+      -18.335,
+      0.27
+    ],
+    "max": [
+      -6.343,
+      -10.065,
+      3.924
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Habitat__Details__WarmLight",
+    "module": "West_Habitat",
+    "min": [
+      -11.0,
+      -18.025,
+      3.4
+    ],
+    "max": [
+      -10.6,
+      -17.98,
+      3.5
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -17.09,
+      8.762,
+      0.28
+    ],
+    "max": [
+      -8.936,
+      17.638,
+      4.97
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "West_Laboratory__Details__FadedRed",
+    "module": "West_Laboratory",
+    "min": [
+      -16.962,
+      11.579,
+      1.229
+    ],
+    "max": [
+      -16.558,
+      13.321,
+      2.871
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "West_Foundation_Walkway__Details__Graphite",
+    "module": "West_Foundation_Walkway",
+    "min": [
+      -12.37,
+      2.08,
+      0.89
+    ],
+    "max": [
+      -4.28,
+      10.62,
+      1.962
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      6.343,
+      -18.335,
+      0.27
+    ],
+    "max": [
+      15.27,
+      -10.065,
+      3.924
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Habitat__Details__WarmLight",
+    "module": "East_Habitat",
+    "min": [
+      10.6,
+      -18.025,
+      3.4
+    ],
+    "max": [
+      11.0,
+      -17.98,
+      3.5
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      8.936,
+      8.762,
+      0.28
+    ],
+    "max": [
+      17.09,
+      17.638,
+      4.97
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "East_Laboratory__Details__FadedRed",
+    "module": "East_Laboratory",
+    "min": [
+      16.558,
+      11.579,
+      1.229
+    ],
+    "max": [
+      16.962,
+      13.321,
+      2.871
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "East_Foundation_Walkway__Details__Graphite",
+    "module": "East_Foundation_Walkway",
+    "min": [
+      4.28,
+      2.08,
+      0.89
+    ],
+    "max": [
+      12.37,
+      10.62,
+      1.962
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -8.967,
+      -19.888,
+      0.28
+    ],
+    "max": [
+      8.967,
+      -10.113,
+      4.024
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__WarmLight",
+    "module": "Command_Access",
+    "min": [
+      -0.365,
+      -19.306,
+      3.5
+    ],
+    "max": [
+      0.365,
+      -19.26,
+      3.6
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__FadedRed",
+    "module": "Command_Access",
+    "min": [
+      3.891,
+      -19.297,
+      1.425
+    ],
+    "max": [
+      4.019,
+      -19.262,
+      1.495
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "Command_Access__Details__Lettering",
+    "module": "Command_Access",
+    "min": [
+      -2.644,
+      -19.221,
+      1.635
+    ],
+    "max": [
+      -1.908,
+      -19.219,
+      1.819
+    ],
+    "materials": [
+      "SR_Lettering"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -6.975,
+      6.213,
+      0.28
+    ],
+    "max": [
+      6.975,
+      21.587,
+      5.45
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "Research_Spine__Details__WarmLight",
+    "module": "Research_Spine",
+    "min": [
+      -0.499,
+      20.931,
+      3.65
+    ],
+    "max": [
+      0.499,
+      20.976,
+      3.75
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "Preview__Presentation ground",
+    "module": "Preview",
+    "min": [
+      -100.0,
+      -100.0,
+      -0.27
+    ],
+    "max": [
+      100.0,
+      100.0,
+      -0.09
+    ],
+    "materials": [
+      "SR_PreviewGround"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Shell__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -7.75,
+      -19.152,
+      0.8
+    ],
+    "max": [
+      7.75,
+      -10.848,
+      3.537
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Shell__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -7.654,
+      -19.1,
+      0.85
+    ],
+    "max": [
+      7.655,
+      -10.877,
+      6.15
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Shell__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -7.778,
+      -19.168,
+      0.85
+    ],
+    "max": [
+      7.779,
+      -10.832,
+      4.46
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Shell__SmokedGlazing",
+    "module": "Command_Access",
+    "min": [
+      -7.58,
+      -19.084,
+      2.315
+    ],
+    "max": [
+      7.58,
+      -11.985,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Shell__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -14.54,
+      -17.94,
+      0.8
+    ],
+    "max": [
+      -7.06,
+      -10.46,
+      3.197
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Shell__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.471,
+      -17.871,
+      0.85
+    ],
+    "max": [
+      -7.129,
+      -10.529,
+      4.21
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Shell__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -14.539,
+      -17.941,
+      0.85
+    ],
+    "max": [
+      -7.061,
+      -10.461,
+      4.22
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Shell__SmokedGlazing",
+    "module": "West_Habitat",
+    "min": [
+      -14.43,
+      -17.855,
+      2.09
+    ],
+    "max": [
+      -7.408,
+      -10.807,
+      3.21
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Shell__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      7.06,
+      -17.94,
+      0.8
+    ],
+    "max": [
+      14.54,
+      -10.46,
+      3.197
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Shell__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      7.129,
+      -17.871,
+      0.85
+    ],
+    "max": [
+      14.471,
+      -10.529,
+      4.21
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Shell__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      7.062,
+      -17.941,
+      0.85
+    ],
+    "max": [
+      14.539,
+      -10.461,
+      4.22
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Shell__SmokedGlazing",
+    "module": "East_Habitat",
+    "min": [
+      7.408,
+      -17.855,
+      2.09
+    ],
+    "max": [
+      14.43,
+      -10.807,
+      3.21
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Shell__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -9.117,
+      6.948,
+      0.8
+    ],
+    "max": [
+      9.118,
+      20.852,
+      3.537
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Shell__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -8.987,
+      7.0,
+      0.85
+    ],
+    "max": [
+      8.987,
+      20.823,
+      6.4
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Shell__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -9.162,
+      6.932,
+      0.85
+    ],
+    "max": [
+      9.156,
+      20.87,
+      4.66
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Shell__SmokedGlazing",
+    "module": "Research_Spine",
+    "min": [
+      -8.885,
+      7.016,
+      2.315
+    ],
+    "max": [
+      8.885,
+      18.653,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Shell__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -16.255,
+      9.495,
+      0.8
+    ],
+    "max": [
+      -7.946,
+      16.903,
+      3.237
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Shell__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -16.2,
+      9.55,
+      0.85
+    ],
+    "max": [
+      -8.0,
+      16.85,
+      5.45
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Shell__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.268,
+      9.48,
+      0.85
+    ],
+    "max": [
+      -7.932,
+      16.918,
+      4.36
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Shell__SmokedGlazing",
+    "module": "West_Laboratory",
+    "min": [
+      -16.159,
+      9.566,
+      2.317
+    ],
+    "max": [
+      -8.041,
+      16.809,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Shell__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      7.947,
+      9.495,
+      0.8
+    ],
+    "max": [
+      16.254,
+      16.903,
+      3.237
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Shell__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      8.0,
+      9.55,
+      0.85
+    ],
+    "max": [
+      16.2,
+      16.85,
+      5.45
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Shell__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      7.932,
+      9.482,
+      0.85
+    ],
+    "max": [
+      16.268,
+      16.918,
+      4.36
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Shell__SmokedGlazing",
+    "module": "East_Laboratory",
+    "min": [
+      8.041,
+      9.568,
+      2.317
+    ],
+    "max": [
+      16.159,
+      16.809,
+      3.475
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_West_Front_Link__Shell__RoofAlloy",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.85
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Front_Link__Shell__IvoryPaint",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.93
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Rear_Link__Shell__RoofAlloy",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.85
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Rear_Link__Shell__IvoryPaint",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.93
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Front_Link__Shell__RoofAlloy",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.85
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Front_Link__Shell__IvoryPaint",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.93
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Rear_Link__Shell__RoofAlloy",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.85
+    ],
+    "max": [
+      11.95,
+      12.6,
+      0.93
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Rear_Link__Shell__IvoryPaint",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.93
+    ],
+    "max": [
+      11.95,
+      12.6,
+      3.73
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Roofs__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -8.048,
+      -19.306,
+      4.298
+    ],
+    "max": [
+      8.047,
+      -10.694,
+      6.46
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Roofs__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -8.108,
+      -19.395,
+      4.369
+    ],
+    "max": [
+      8.108,
+      -10.605,
+      6.3
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Roofs__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.73,
+      -18.13,
+      4.1
+    ],
+    "max": [
+      -6.87,
+      -10.27,
+      5.88
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Roofs__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -14.654,
+      -18.054,
+      4.426
+    ],
+    "max": [
+      -6.946,
+      -10.346,
+      6.15
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Roofs__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -11.52,
+      -14.92,
+      5.845
+    ],
+    "max": [
+      -10.08,
+      -13.48,
+      5.995
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Roofs__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      6.87,
+      -18.13,
+      4.1
+    ],
+    "max": [
+      14.73,
+      -10.27,
+      5.88
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Roofs__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.946,
+      -18.054,
+      4.426
+    ],
+    "max": [
+      14.654,
+      -10.346,
+      6.15
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Roofs__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      10.08,
+      -14.92,
+      5.845
+    ],
+    "max": [
+      11.52,
+      -13.48,
+      5.995
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Roofs__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -9.525,
+      6.795,
+      4.498
+    ],
+    "max": [
+      9.525,
+      21.005,
+      6.66
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Roofs__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -9.62,
+      6.705,
+      4.571
+    ],
+    "max": [
+      9.62,
+      21.095,
+      6.549
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Roofs__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -16.42,
+      9.34,
+      4.196
+    ],
+    "max": [
+      -7.78,
+      17.06,
+      7.991
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Roofs__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.44,
+      9.255,
+      4.272
+    ],
+    "max": [
+      -7.76,
+      17.145,
+      8.024
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Roofs__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      7.785,
+      9.345,
+      4.199
+    ],
+    "max": [
+      16.415,
+      17.056,
+      6.4
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Roofs__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      7.76,
+      9.255,
+      4.266
+    ],
+    "max": [
+      16.44,
+      17.145,
+      6.505
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Roofs__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -15.62,
+      10.836,
+      4.529
+    ],
+    "max": [
+      -11.17,
+      16.32,
+      7.755
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Roofs__Gaskets",
+    "module": "West_Laboratory",
+    "min": [
+      -12.93,
+      14.231,
+      6.375
+    ],
+    "max": [
+      -11.27,
+      14.974,
+      6.465
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Roofs__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -12.86,
+      14.386,
+      6.43
+    ],
+    "max": [
+      -11.34,
+      14.814,
+      6.534
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Roofs__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      11.17,
+      10.86,
+      4.529
+    ],
+    "max": [
+      15.62,
+      16.32,
+      5.72
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Roofs__Gaskets",
+    "module": "East_Laboratory",
+    "min": [
+      11.27,
+      14.231,
+      6.375
+    ],
+    "max": [
+      12.93,
+      14.974,
+      6.465
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Roofs__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      11.34,
+      14.386,
+      6.43
+    ],
+    "max": [
+      12.86,
+      14.814,
+      6.534
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Roofs__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -4.082,
+      -17.84,
+      5.263
+    ],
+    "max": [
+      3.417,
+      -13.06,
+      6.48
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Roofs__FadedRed",
+    "module": "Command_Access",
+    "min": [
+      1.549,
+      -14.4,
+      6.5
+    ],
+    "max": [
+      3.736,
+      -13.2,
+      6.84
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Roofs__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      2.61,
+      -13.817,
+      6.83
+    ],
+    "max": [
+      2.675,
+      -13.783,
+      7.35
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Roofs__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -5.342,
+      10.46,
+      5.395
+    ],
+    "max": [
+      5.342,
+      17.625,
+      6.68
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Roofs__FadedRed",
+    "module": "Research_Spine",
+    "min": [
+      0.499,
+      16.6,
+      6.7
+    ],
+    "max": [
+      3.495,
+      17.8,
+      7.04
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Roofs__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      1.952,
+      17.183,
+      7.03
+    ],
+    "max": [
+      2.042,
+      17.217,
+      7.55
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Decks__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -8.93,
+      -19.85,
+      0.0
+    ],
+    "max": [
+      8.93,
+      -10.15,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Decks__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -9.003,
+      -19.886,
+      0.73
+    ],
+    "max": [
+      8.995,
+      -10.116,
+      0.856
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Decks__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      -7.457,
+      -19.887,
+      0.19
+    ],
+    "max": [
+      7.457,
+      -10.113,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Decks__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -15.35,
+      -18.75,
+      0.0
+    ],
+    "max": [
+      -6.25,
+      -9.65,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Decks__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -15.38,
+      -18.78,
+      0.745
+    ],
+    "max": [
+      -6.22,
+      -9.62,
+      0.875
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Decks__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      6.25,
+      -18.75,
+      0.0
+    ],
+    "max": [
+      15.35,
+      -9.65,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Decks__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.22,
+      -18.78,
+      0.745
+    ],
+    "max": [
+      15.38,
+      -9.62,
+      0.875
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Decks__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      -9.216,
+      6.213,
+      0.19
+    ],
+    "max": [
+      9.216,
+      21.585,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Decks__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -16.122,
+      8.762,
+      0.19
+    ],
+    "max": [
+      -8.075,
+      17.637,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Decks__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      8.075,
+      8.762,
+      0.19
+    ],
+    "max": [
+      16.122,
+      17.637,
+      0.61
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Command_stairs__Decks__Graphite",
+    "module": "Command_stairs",
+    "min": [
+      -1.0,
+      -21.31,
+      0.0
+    ],
+    "max": [
+      1.0,
+      -19.79,
+      0.847
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_stairs__Decks__RoofAlloy",
+    "module": "Command_stairs",
+    "min": [
+      -1.0,
+      -21.307,
+      0.165
+    ],
+    "max": [
+      1.0,
+      -20.073,
+      0.872
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_hab_stairs__Decks__Graphite",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.65,
+      -20.3,
+      0.0
+    ],
+    "max": [
+      -9.95,
+      -18.783,
+      0.847
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_hab_stairs__Decks__RoofAlloy",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.65,
+      -20.297,
+      0.164
+    ],
+    "max": [
+      -9.95,
+      -19.062,
+      0.872
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_hab_stairs__Decks__Graphite",
+    "module": "East_hab_stairs",
+    "min": [
+      9.95,
+      -20.3,
+      0.0
+    ],
+    "max": [
+      11.65,
+      -18.78,
+      0.847
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_hab_stairs__Decks__RoofAlloy",
+    "module": "East_hab_stairs",
+    "min": [
+      9.95,
+      -20.297,
+      0.164
+    ],
+    "max": [
+      11.65,
+      -19.062,
+      0.871
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Front_Link__Decks__Graphite",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.35,
+      0.0
+    ],
+    "max": [
+      -4.15,
+      -13.05,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Rear_Link__Decks__Graphite",
+    "module": "West_Rear_Link",
+    "min": [
+      -11.95,
+      -13.4,
+      0.0
+    ],
+    "max": [
+      -6.55,
+      12.6,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Front_Link__Decks__Graphite",
+    "module": "East_Front_Link",
+    "min": [
+      4.15,
+      -15.35,
+      0.0
+    ],
+    "max": [
+      7.25,
+      -13.05,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Rear_Link__Decks__Graphite",
+    "module": "East_Rear_Link",
+    "min": [
+      6.55,
+      -13.4,
+      0.0
+    ],
+    "max": [
+      11.95,
+      12.6,
+      0.85
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Rear_Shared_Foundation__Decks__Graphite",
+    "module": "Rear_Shared_Foundation",
+    "min": [
+      -15.68,
+      6.25,
+      0.0
+    ],
+    "max": [
+      15.68,
+      21.55,
+      0.78
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Rear_Shared_Foundation__Decks__RoofAlloy",
+    "module": "Rear_Shared_Foundation",
+    "min": [
+      -15.68,
+      6.25,
+      0.78
+    ],
+    "max": [
+      15.68,
+      21.55,
+      0.86
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__RoofAlloy",
+    "module": "Command_Access",
+    "min": [
+      -7.123,
+      -19.909,
+      0.317
+    ],
+    "max": [
+      7.123,
+      -10.091,
+      5.674
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__IvoryPaint",
+    "module": "Command_Access",
+    "min": [
+      -7.809,
+      -19.21,
+      1.19
+    ],
+    "max": [
+      7.809,
+      -10.842,
+      5.734
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__Gaskets",
+    "module": "Command_Access",
+    "min": [
+      -7.739,
+      -19.186,
+      1.175
+    ],
+    "max": [
+      7.739,
+      -10.878,
+      4.231
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__Fasteners",
+    "module": "Command_Access",
+    "min": [
+      -7.844,
+      -19.924,
+      0.358
+    ],
+    "max": [
+      7.844,
+      -10.076,
+      4.164
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__SmokedGlazing",
+    "module": "Command_Access",
+    "min": [
+      -5.358,
+      -19.253,
+      1.719
+    ],
+    "max": [
+      5.358,
+      -19.135,
+      5.674
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__IvoryPaint",
+    "module": "West_Habitat",
+    "min": [
+      -14.556,
+      -17.981,
+      1.973
+    ],
+    "max": [
+      -7.234,
+      -10.634,
+      3.745
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__Gaskets",
+    "module": "West_Habitat",
+    "min": [
+      -14.537,
+      -17.942,
+      1.157
+    ],
+    "max": [
+      -7.324,
+      -10.724,
+      3.761
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__Fasteners",
+    "module": "West_Habitat",
+    "min": [
+      -15.294,
+      -18.157,
+      0.354
+    ],
+    "max": [
+      -6.306,
+      -10.243,
+      4.282
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__RoofAlloy",
+    "module": "West_Habitat",
+    "min": [
+      -15.279,
+      -18.128,
+      0.311
+    ],
+    "max": [
+      -6.321,
+      -10.271,
+      3.307
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__IvoryPaint",
+    "module": "East_Habitat",
+    "min": [
+      7.234,
+      -17.981,
+      1.973
+    ],
+    "max": [
+      14.556,
+      -10.634,
+      3.745
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__Gaskets",
+    "module": "East_Habitat",
+    "min": [
+      7.324,
+      -17.942,
+      1.157
+    ],
+    "max": [
+      14.537,
+      -10.724,
+      3.761
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__Fasteners",
+    "module": "East_Habitat",
+    "min": [
+      6.306,
+      -18.157,
+      0.354
+    ],
+    "max": [
+      15.294,
+      -10.243,
+      4.282
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__RoofAlloy",
+    "module": "East_Habitat",
+    "min": [
+      6.321,
+      -18.128,
+      0.311
+    ],
+    "max": [
+      15.279,
+      -10.271,
+      3.307
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__RoofAlloy",
+    "module": "Research_Spine",
+    "min": [
+      -6.882,
+      6.191,
+      0.318
+    ],
+    "max": [
+      6.882,
+      21.609,
+      7.72
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__IvoryPaint",
+    "module": "Research_Spine",
+    "min": [
+      -9.199,
+      6.89,
+      2.199
+    ],
+    "max": [
+      9.199,
+      20.858,
+      5.969
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__Gaskets",
+    "module": "Research_Spine",
+    "min": [
+      -9.103,
+      6.929,
+      2.31
+    ],
+    "max": [
+      9.103,
+      20.822,
+      4.431
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__Fasteners",
+    "module": "Research_Spine",
+    "min": [
+      -9.247,
+      6.176,
+      0.355
+    ],
+    "max": [
+      9.247,
+      21.624,
+      5.13
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__SmokedGlazing",
+    "module": "Research_Spine",
+    "min": [
+      -6.291,
+      6.965,
+      4.8
+    ],
+    "max": [
+      6.291,
+      6.965,
+      5.91
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__RoofAlloy",
+    "module": "West_Laboratory",
+    "min": [
+      -16.795,
+      8.741,
+      0.317
+    ],
+    "max": [
+      -8.974,
+      17.659,
+      6.332
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__IvoryPaint",
+    "module": "West_Laboratory",
+    "min": [
+      -17.04,
+      9.44,
+      1.075
+    ],
+    "max": [
+      -7.915,
+      16.95,
+      5.368
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__Gaskets",
+    "module": "West_Laboratory",
+    "min": [
+      -16.247,
+      9.478,
+      1.135
+    ],
+    "max": [
+      -7.953,
+      16.896,
+      6.282
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__Fasteners",
+    "module": "West_Laboratory",
+    "min": [
+      -17.06,
+      8.726,
+      0.355
+    ],
+    "max": [
+      -7.896,
+      17.674,
+      6.62
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__SmokedGlazing",
+    "module": "West_Laboratory",
+    "min": [
+      -14.97,
+      9.515,
+      4.5
+    ],
+    "max": [
+      -9.23,
+      16.885,
+      5.142
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__RoofAlloy",
+    "module": "East_Laboratory",
+    "min": [
+      8.972,
+      8.741,
+      0.318
+    ],
+    "max": [
+      16.795,
+      17.659,
+      6.332
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__IvoryPaint",
+    "module": "East_Laboratory",
+    "min": [
+      7.915,
+      9.44,
+      1.075
+    ],
+    "max": [
+      17.04,
+      16.95,
+      5.368
+    ],
+    "materials": [
+      "SR_IvoryPaint"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__Gaskets",
+    "module": "East_Laboratory",
+    "min": [
+      7.953,
+      9.478,
+      1.135
+    ],
+    "max": [
+      16.247,
+      16.896,
+      6.285
+    ],
+    "materials": [
+      "SR_Gaskets"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__Fasteners",
+    "module": "East_Laboratory",
+    "min": [
+      7.896,
+      8.726,
+      0.355
+    ],
+    "max": [
+      17.06,
+      17.674,
+      6.62
+    ],
+    "materials": [
+      "SR_Fasteners"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__SmokedGlazing",
+    "module": "East_Laboratory",
+    "min": [
+      9.23,
+      9.515,
+      4.5
+    ],
+    "max": [
+      14.97,
+      16.885,
+      5.142
+    ],
+    "materials": [
+      "SR_SmokedGlazing"
+    ]
+  },
+  {
+    "name": "LOD1_Command_stairs__Details__Graphite",
+    "module": "Command_stairs",
+    "min": [
+      -1.154,
+      -21.373,
+      0.0
+    ],
+    "max": [
+      1.153,
+      -19.726,
+      1.919
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_hab_stairs__Details__Graphite",
+    "module": "West_hab_stairs",
+    "min": [
+      -11.804,
+      -20.363,
+      0.0
+    ],
+    "max": [
+      -9.796,
+      -18.716,
+      1.919
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_hab_stairs__Details__Graphite",
+    "module": "East_hab_stairs",
+    "min": [
+      9.796,
+      -20.364,
+      0.0
+    ],
+    "max": [
+      11.804,
+      -18.717,
+      1.921
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Front_Link__Details__RoofAlloy",
+    "module": "West_Front_Link",
+    "min": [
+      -7.25,
+      -15.433,
+      1.0
+    ],
+    "max": [
+      -4.105,
+      -12.972,
+      3.932
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Rear_Link__Details__RoofAlloy",
+    "module": "West_Rear_Link",
+    "min": [
+      -12.03,
+      -13.581,
+      1.0
+    ],
+    "max": [
+      -6.47,
+      12.6,
+      3.932
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Front_Link__Details__RoofAlloy",
+    "module": "East_Front_Link",
+    "min": [
+      4.104,
+      -15.433,
+      1.0
+    ],
+    "max": [
+      7.25,
+      -12.967,
+      3.932
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_East_Rear_Link__Details__RoofAlloy",
+    "module": "East_Rear_Link",
+    "min": [
+      6.47,
+      -13.581,
+      1.0
+    ],
+    "max": [
+      12.03,
+      12.6,
+      3.932
+    ],
+    "materials": [
+      "SR_RoofAlloy"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__Graphite",
+    "module": "West_Habitat",
+    "min": [
+      -15.268,
+      -18.333,
+      0.268
+    ],
+    "max": [
+      -6.343,
+      -10.067,
+      3.924
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Habitat__Details__WarmLight",
+    "module": "West_Habitat",
+    "min": [
+      -11.0,
+      -18.025,
+      3.4
+    ],
+    "max": [
+      -10.6,
+      -17.983,
+      3.5
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__Graphite",
+    "module": "West_Laboratory",
+    "min": [
+      -17.09,
+      8.762,
+      0.277
+    ],
+    "max": [
+      -8.934,
+      17.638,
+      4.97
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_West_Laboratory__Details__FadedRed",
+    "module": "West_Laboratory",
+    "min": [
+      -16.962,
+      11.579,
+      1.229
+    ],
+    "max": [
+      -16.558,
+      13.321,
+      2.871
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "LOD1_West_Foundation_Walkway__Details__Graphite",
+    "module": "West_Foundation_Walkway",
+    "min": [
+      -12.368,
+      2.082,
+      0.89
+    ],
+    "max": [
+      -4.282,
+      10.618,
+      1.962
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__Graphite",
+    "module": "East_Habitat",
+    "min": [
+      6.343,
+      -18.333,
+      0.268
+    ],
+    "max": [
+      15.268,
+      -10.067,
+      3.925
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Habitat__Details__WarmLight",
+    "module": "East_Habitat",
+    "min": [
+      10.6,
+      -18.025,
+      3.4
+    ],
+    "max": [
+      11.0,
+      -17.983,
+      3.5
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__Graphite",
+    "module": "East_Laboratory",
+    "min": [
+      8.934,
+      8.762,
+      0.28
+    ],
+    "max": [
+      17.09,
+      17.638,
+      4.97
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_East_Laboratory__Details__FadedRed",
+    "module": "East_Laboratory",
+    "min": [
+      16.558,
+      11.579,
+      1.229
+    ],
+    "max": [
+      16.962,
+      13.321,
+      2.871
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "LOD1_East_Foundation_Walkway__Details__Graphite",
+    "module": "East_Foundation_Walkway",
+    "min": [
+      4.282,
+      2.082,
+      0.89
+    ],
+    "max": [
+      12.368,
+      10.618,
+      1.962
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__Graphite",
+    "module": "Command_Access",
+    "min": [
+      -8.963,
+      -19.888,
+      0.28
+    ],
+    "max": [
+      8.963,
+      -10.113,
+      4.025
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__WarmLight",
+    "module": "Command_Access",
+    "min": [
+      -0.365,
+      -19.306,
+      3.5
+    ],
+    "max": [
+      0.365,
+      -19.263,
+      3.6
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__FadedRed",
+    "module": "Command_Access",
+    "min": [
+      3.891,
+      -19.297,
+      1.425
+    ],
+    "max": [
+      4.019,
+      -19.262,
+      1.495
+    ],
+    "materials": [
+      "SR_FadedRed"
+    ]
+  },
+  {
+    "name": "LOD1_Command_Access__Details__Lettering",
+    "module": "Command_Access",
+    "min": [
+      -2.644,
+      -19.221,
+      1.634
+    ],
+    "max": [
+      -1.905,
+      -19.219,
+      1.821
+    ],
+    "materials": [
+      "SR_Lettering"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__Graphite",
+    "module": "Research_Spine",
+    "min": [
+      -6.979,
+      6.213,
+      0.28
+    ],
+    "max": [
+      6.982,
+      21.588,
+      5.45
+    ],
+    "materials": [
+      "SR_Graphite"
+    ]
+  },
+  {
+    "name": "LOD1_Research_Spine__Details__WarmLight",
+    "module": "Research_Spine",
+    "min": [
+      -0.5,
+      20.933,
+      3.65
+    ],
+    "max": [
+      0.5,
+      20.976,
+      3.75
+    ],
+    "materials": [
+      "SR_WarmLight"
+    ]
+  },
+  {
+    "name": "UNSAVED | raised hexagonal cage footing",
+    "module": null,
+    "min": [
+      -5.404,
+      -6.644,
+      0.84
+    ],
+    "max": [
+      5.404,
+      2.744,
+      1.12
+    ],
+    "materials": [
+      "UNSAVED | dark ceramic plinth"
+    ]
+  },
+  {
+    "name": "UNSAVED | recessed specimen platform",
+    "module": null,
+    "min": [
+      -4.947,
+      -6.245,
+      1.13
+    ],
+    "max": [
+      4.947,
+      2.345,
+      1.23
+    ],
+    "materials": [
+      "UNSAVED | graphite titanium cage steel"
+    ]
+  },
+  {
+    "name": "UNSAVED | suspended restraint ring",
+    "module": null,
+    "min": [
+      -2.415,
+      -4.365,
+      5.988
+    ],
+    "max": [
+      2.415,
+      0.465,
+      6.112
+    ],
+    "materials": [
+      "UNSAVED | brushed alloy ribs"
+    ]
+  },
+  {
+    "name": "UNSAVED | violet experiment coil",
+    "module": null,
+    "min": [
+      -1.64,
+      -3.59,
+      6.254
+    ],
+    "max": [
+      1.64,
+      -0.31,
+      6.426
+    ],
+    "materials": [
+      "UNSAVED | specimen warning violet"
+    ]
+  },
+  {
+    "name": "UNSAVED | lower restraint ring",
+    "module": null,
+    "min": [
+      -2.39,
+      -4.34,
+      2.512
+    ],
+    "max": [
+      2.39,
+      0.44,
+      2.588
+    ],
+    "materials": [
+      "UNSAVED | graphite titanium cage steel"
+    ]
+  },
+  {
+    "name": "UNSAVED | central experiment lamp",
+    "module": null,
+    "min": [
+      -0.46,
+      -2.41,
+      5.965
+    ],
+    "max": [
+      0.46,
+      -1.49,
+      6.535
+    ],
+    "materials": [
+      "UNSAVED | specimen warning violet"
+    ]
+  },
+  {
+    "name": "UNSAVED | Hexagonal glass dome panels",
+    "module": null,
+    "min": [
+      -11.544,
+      -15.392,
+      6.641
+    ],
+    "max": [
+      11.544,
+      9.904,
+      14.4
+    ],
+    "materials": [
+      "UNSAVED | blue hex glazing"
+    ]
+  },
+  {
+    "name": "UNSAVED | hollow cylindrical glass skirt",
+    "module": null,
+    "min": [
+      -11.544,
+      -15.412,
+      3.5
+    ],
+    "max": [
+      11.544,
+      9.884,
+      6.65
+    ],
+    "materials": [
+      "UNSAVED | blue hex glazing"
+    ]
+  }
+]
