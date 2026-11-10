@@ -25,12 +25,15 @@ MonoBehaviour:
     m_guid: 651c4327feca76c40be335e90e1a392a
   - m_enabled: 1
     m_path: Assets/Scene/SoloScene2.unity
-    m_guid: 7cdd4fb5f4f00c244a7547d583de106f
+    m_guid: b7fef04e6122fc74797f1fadfa0fe2c3
   - m_enabled: 1
     m_path: Assets/Scene/SoloScene3.unity
-    m_guid: 889ee16480c51f24eac3380f7deb1297
+    m_guid: 7cdd4fb5f4f00c244a7547d583de106f
   - m_enabled: 1
     m_path: Assets/Scene/SoloScene4.unity
+    m_guid: 889ee16480c51f24eac3380f7deb1297
+  - m_enabled: 1
+    m_path: Assets/Scene/SoloScene5.unity
     m_guid: 063e1164656ebf9479de7853ec9c83d4
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []

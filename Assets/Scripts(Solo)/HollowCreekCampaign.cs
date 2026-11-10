@@ -11,6 +11,8 @@ namespace HollowCreek
         public int sceneNumber = 1;
         public SnowFirstPerson player;
         public HollowCreekHud hud;
+        public SoloCinematicSlot openingCinematic, finalEscapeCinematic;
+        public SoloCinematicSlot chaseCinematic;
         public Transform start, upperSpawn, prisonSpawn, ventSpawn, endingSpawn;
         public GameObject[] labLeaves;
         public GameObject upperProps, prisonProps, passageBarrier, prisonBarrier, lowerLabDoor, sealDoor, collapsedExit;
@@ -54,14 +56,8 @@ namespace HollowCreek
             ApplyWorld();
             if (sceneNumber == 1 && !HollowCreekSession.Resumed)
             {
-                hud.Welcome(() => {
-                    HollowCreekSession.NewGame(); ApplyWorld(); HollowCreekSession.Save();
-                    hud.Dialogue("HOLLOW CREEK / PROJECT NULL", new[] {
-                        "밀러: 1953년 12월, 미국 북부의 외딴 지대에 건설된 연구소다. 정부 조사망이 좁혀오자 연구진은 모든 기록을 폐쇄하고 철수했지.",
-                        "밀러: 그 무렵 사라진 N을 찾기 위해 우리가 파견됐다. 수색대는 너를 포함해 다섯 명. 허튼 생각 말고 임무에 집중해.",
-                        "리드: 하… 크리스마스 이브인데 왜 이런 곳까지 오는 거야.\n밀러: 징징대지 마. 임무를 끝내고 가족을 볼 생각이나 해.\n\nWASD 이동 / SHIFT 무제한 달리기 / SPACE 점프\n청록색 표시를 바라보고 E를 누르면 조사할 수 있다."
-                    });
-                }, Resume);
+                HollowCreekSession.NewGame(); ApplyWorld(); HollowCreekSession.Save();
+                StartCoroutine(Opening());
             }
             else if (sceneNumber == 2 && Rules.stage == Stage.Lift)
             {
@@ -164,7 +160,7 @@ namespace HollowCreek
             {
                 case Interaction.Profile: Rules.ReadProfile(); hud.Document("밀러: 이 프로필부터 읽어봐", Profile); break;
                 case Interaction.Entrance:
-                    if (Rules.stage == Stage.Entrance) Load(2);
+                    if (Rules.stage == Stage.Entrance) LoadLaboratory();
                     else if (!Rules.profileRead) Say("밀러에게 연구자 프로필을 먼저 받으세요.");
                     else hud.Keypad("연구소 출입 인증", "힌트: 연구자 프로필에 기록된 시설 창설년도.\n프로필은 J 키로 다시 읽을 수 있습니다.", true, Rules.UnlockEntrance);
                     break;
@@ -297,6 +293,11 @@ namespace HollowCreek
         }
         IEnumerator Ambush()
         {
+            // Both CASE routes converge here before the shared pursuit begins.
+            player.InputBlocked = true;
+            hud.SetCinematicHidden(true);
+            if (chaseCinematic != null) yield return chaseCinematic.Play();
+            hud.SetCinematicHidden(false);
             if (monster != null) { monster.position = start.position + Vector3.forward * 4; monster.gameObject.SetActive(true); }
             Impact(); Say("밀러: 뛰어! 우리 신경 쓰지 말고…!", 4);
             if (teammates != null) for (int i = 0; i < teammates.Length; i++) {
@@ -347,6 +348,8 @@ namespace HollowCreek
         IEnumerator Ending()
         {
             Busy = true; player.InputBlocked = true;
+            hud.SetCinematicHidden(true);
+            if (finalEscapeCinematic != null) yield return finalEscapeCinematic.Play();
             if (endingSpawn != null) player.Teleport(endingSpawn.position, endingSpawn.rotation);
             player.SetCrawling(false); Impact();
             Say("N이 출구를 뜯어낸다. 그 순간, 연구소 아래의 지반이 무너지기 시작했다.", 6);
@@ -356,7 +359,16 @@ namespace HollowCreek
                 yield return null;
             }
             if (monster != null) monster.gameObject.SetActive(false);
+            hud.SetCinematicHidden(false);
             Busy = false; hud.EndScreen(true, Retry, ReturnToStart);
+        }
+        IEnumerator Opening()
+        {
+            Busy = true; player.InputBlocked = true;
+            hud.SetCinematicHidden(true);
+            if (openingCinematic != null) yield return openingCinematic.Play();
+            hud.SetCinematicHidden(false);
+            Busy = false; hud.Capture(true);
         }
         public void Die()
         {
@@ -367,16 +379,28 @@ namespace HollowCreek
         public void Retry() { if (HollowCreekSession.Restore()) Load(HollowCreekSession.Scene, false); else ReturnToStart(); }
         public void Resume() { if (HollowCreekSession.Restore()) Load(HollowCreekSession.Scene, false); }
         public void ReturnToStart() { HollowCreekSession.NewGame(); Load(1, false); }
+        void LoadLaboratory()
+        {
+            if (loading) return;
+            if (SoloSceneRoutes.BuildIndex(SoloSceneRoutes.Laboratory) < 0)
+            {
+                Say("씬이 빌드 목록에 없습니다: " + SoloSceneRoutes.Laboratory, 8);
+                Debug.LogError("Missing solo scene: " + SoloSceneRoutes.Laboratory, this);
+                return;
+            }
+            loading = true; Time.timeScale = 1; player.InputBlocked = true;
+            StartCoroutine(LoadScene(SoloSceneRoutes.Laboratory));
+        }
         void Load(int scene, bool advance = true)
         {
             if (loading) return;
-            string name = "SoloScene" + scene;
-            if (!Application.CanStreamedLevelBeLoaded(name)) { Say("씬이 빌드 목록에 없습니다: " + name, 8); Debug.LogError("Missing solo scene: " + name, this); return; }
+            string name = SoloSceneRoutes.CampaignScene(scene);
+            if (SoloSceneRoutes.BuildIndex(name) < 0) { Say("씬이 빌드 목록에 없습니다: " + name, 8); Debug.LogError("Missing solo scene: " + name, this); return; }
             if (advance) HollowCreekSession.Enter(scene);
             loading = true; Time.timeScale = 1; player.InputBlocked = true;
             StartCoroutine(LoadScene(name));
         }
-        IEnumerator LoadScene(string name) { var operation = SceneManager.LoadSceneAsync(name); while (!operation.isDone) yield return null; }
+        IEnumerator LoadScene(string name) { var operation = SceneManager.LoadSceneAsync(SoloSceneRoutes.BuildIndex(name)); while (!operation.isDone) yield return null; }
         public float Speak(string text) => speech != null ? speech.Speak(text) : 0;
         public void StopSpeech() { if (speech != null) speech.Stop(); }
         public void Say(string text, float seconds = 5) { hud.Subtitle(text); subtitleUntil = Time.time + Mathf.Max(seconds, Speak(text)); }

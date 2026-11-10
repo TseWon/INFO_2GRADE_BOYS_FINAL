@@ -1366,6 +1366,7 @@ GameObject:
   - component: {fileID: 820847716}
   - component: {fileID: 820847715}
   - component: {fileID: 820847714}
+  - component: {fileID: 820847718}
   m_Layer: 0
   m_Name: Hollow Creek Campaign
   m_TagString: Untagged
@@ -1403,6 +1404,8 @@ MonoBehaviour:
   sceneNumber: 1
   player: {fileID: 551980401}
   hud: {fileID: 1585329356}
+  openingCinematic: {fileID: 820847718}
+  finalEscapeCinematic: {fileID: 0}
   start: {fileID: 2126744106}
   upperSpawn: {fileID: 0}
   prisonSpawn: {fileID: 0}
@@ -1657,6 +1660,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &820847718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820847710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54ff8db657dc444aa66da06de26bf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HollowCreek.SoloCinematicSlot
+  timeline: {fileID: 0}
+  cinematicCamera: {fileID: 0}
+  gameplayCamera: {fileID: 1926946346}
 --- !u!1 &925989811
 GameObject:
   m_ObjectHideFlags: 0

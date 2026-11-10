@@ -1,8 +1,8 @@
 # HOLLOW CREEK 솔로 캠페인
 
-Unity에서 `Assets/Scene/SoloScene1.unity`를 열고 Play를 누른 뒤 **수색 시작**을 선택합니다. 저장된 진행이 있으면 **체크포인트 계속**이 표시됩니다. 제목은 확정하지 않고 연구시설 이름을 화면 표제로 사용했습니다.
+Unity에서 `Assets/Scene/SoloScene1.unity`를 열고 Play를 누르면 바로 시작합니다. 시작 설명 화면은 향후 오프닝 연출을 위해 제거했습니다. 제목은 확정하지 않고 연구시설 이름을 화면 표제로 사용했습니다.
 
-솔로 전용 Windows 실행 파일은 `Builds/HollowCreek/HollowCreek.exe`입니다. 다른 PC로 옮길 때는 `Builds/HollowCreek` 폴더 전체를 복사하세요. 이 실행 파일은 SoloScene1~4만 포함하며 멀티게임으로 전환하지 않습니다.
+기존 `Builds/HollowCreek/HollowCreek.exe`는 이번 씬 순서 변경 이전에 빌드되었습니다. 현재의 SoloScene1~5 전환을 실행 파일에 반영하려면 `SoloWindows` 프로필로 다시 빌드해야 합니다.
 
 Unity의 **Game Builds → Solo → Select Scene Group**에서 `SoloWindows` 프로필을 선택하고, **Game Builds → Solo → Build Windows**로 솔로만 빌드합니다. Build Profiles 창에서도 `Assets/BuildProfiles/SoloWindows.asset`을 선택할 수 있습니다. 각 프로필은 전역 씬 목록을 별도로 덮어씁니다. 멀티는 `MultiplayerWindows` 프로필과 별도 실행 파일을 사용합니다.
 
@@ -10,12 +10,19 @@ Unity의 **Game Builds → Solo → Select Scene Group**에서 `SoloWindows` 프
 
 | 씬 | 내용 |
 | --- | --- |
-| SoloScene1 | 기존 설원·트럭·철문·군인 이동 유지. 동료 4명, 연구자 프로필, 출입 인증, 한국어 튜토리얼 |
-| SoloScene2 | 기존 B1/B2 연구소 모델 유지, 충돌체 추가. 승강기 사건과 2.5초 X 구조 분기. 상층 서약 퍼즐 또는 지하 부상자·무른 벽 탈출 |
-| SoloScene3 | 기존 지하 모델을 이용한 분기별 수색. 상층 숫자 퍼즐·벽장 놀람, 지하 3×3 성조기 퍼즐. 연구일지 4개, 노트북과 무전 채널 |
-| SoloScene4 | 동료 사망 연출, 장애물 추격, 방화문 잠금, 비상구 붕괴, 낮은 환풍구 추격, 연구시설 침하·생존 엔딩 |
+| SoloScene1 | 설원·트럭·철문·동료 4명, 연구자 프로필과 출입 인증. 인증 후 SoloScene2로 이동 |
+| SoloScene2 | 원형 연구소와 연결 통로 탐색. 승강기 앞에서 E를 누르면 SoloScene3로 이동 |
+| SoloScene3 | 승강기 사건과 2.5초 X 구조 분기. 상층 서약 퍼즐 또는 지하 부상자·무른 벽 탈출. 열린 통로에서 SoloScene4로 이동 |
+| SoloScene4 | 분기별 수색, 숫자·성조기 퍼즐, 연구일지와 무전 채널. 무전 사건 후 SoloScene5로 이동 |
+| SoloScene5 | 동료 사망, 장애물 추격, 방화문, 환풍구, 탈출과 생존 엔딩 |
 
-상층과 지하의 소품·동료·진입 위치는 분기에 맞춰 선택됩니다. B2 관찰 구역으로 향하는 막힌 벽은 SoloScene3에서만 원본 오브젝트를 비활성 오버라이드로 보존하고, 같은 재질의 벽 양쪽과 퍼즐 연동 출입문으로 구성했습니다. 원본 Blender 모델은 수정하지 않았습니다.
+상층과 지하의 소품·동료·진입 위치는 분기에 맞춰 선택됩니다. 캠페인 내부의 챕터 번호 2·3·4는 기존 체크포인트 호환을 위해 유지하고, 실제 씬 파일 SoloScene3·4·5에 매핑합니다. B2 관찰 구역으로 향하는 막힌 벽은 SoloScene4에서만 원본 오브젝트를 비활성 오버라이드로 보존하고, 같은 재질의 벽 양쪽과 퍼즐 연동 출입문으로 구성했습니다. 원본 Blender 모델은 수정하지 않았습니다.
+
+## 이후 애니메이션 작업 지점
+
+`SoloScene1`의 `Hollow Creek Campaign`에는 `openingCinematic`, `SoloScene2`의 `Interior Explorer`에는 `transitionCinematic`, `SoloScene5`의 `Hollow Creek Campaign`에는 `chaseCinematic`과 `finalEscapeCinematic` 슬롯이 연결되어 있습니다. `chaseCinematic`은 CASE 1·2가 합류한 뒤 추격이 시작되기 직전에 실행됩니다. 각 `SoloCinematicSlot`의 `timeline`과 `cinematicCamera`에 나중에 제작할 Timeline 및 카메라를 지정하면 해당 구간에서 UI를 숨기고 플레이어 입력을 막습니다. 현재 Timeline과 카메라 구도는 비워 두었습니다.
+
+SoloScene2에서는 승강기 앞 3m 이내에 들어가면 SoloScene1의 UI Toolkit `.prompt` 스타일을 재사용한 `E  승강기 탑승` 안내가 나타납니다. E를 누르면 안내가 사라지고 SoloScene3으로 이동합니다.
 
 ## 조작
 
@@ -49,6 +56,9 @@ N은 기능 검증용 절차형 모델이며, 동료 사망과 붕괴는 스크�
 - `HollowCreekRules`: 퍼즐 정답 및 단계 전이
 - `HollowCreekSession`: 씬 간 상태와 체크포인트
 - `HollowCreekCampaign`: 사건·상호작용·추격·엔딩
+- `SoloScene2Flow`, `SoloSceneRoutes`: 승강기 E 상호작용과 실제 씬 경로 매핑
+- `SoloScene2InteractionHint`: 승강기 상호작용 범위의 UI Toolkit 안내
+- `SoloCinematicSlot`: 향후 Timeline·카메라 연결 및 연출 중 UI 숨김
 - `HollowCreekHud`: UI Toolkit 화면과 입력
 - `HollowCreekTarget`: 조사 대상과 표시
 - `HollowCreekAtmosphere`, `HollowCreekSpeech`: 환경음과 대사

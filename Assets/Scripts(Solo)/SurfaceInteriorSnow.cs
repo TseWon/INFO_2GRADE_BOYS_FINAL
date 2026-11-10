@@ -9,6 +9,14 @@ public sealed class SurfaceInteriorSnow : MonoBehaviour
     public Transform building;
     ParticleSystem.Particle[] particles;
 
+    void Start()
+    {
+        // Play mode can begin while this emitter is off-camera. Starting it explicitly and
+        // keeping it simulated prevents the exterior snowfall from appearing empty on exit.
+        if (snowfall && !snowfall.isPlaying)
+            snowfall.Play(true);
+    }
+
     static bool Rect(float x, float z, float x0, float x1, float z0, float z1)
         => x >= x0 && x <= x1 && z >= z0 && z <= z1;
 
@@ -34,6 +42,7 @@ public sealed class SurfaceInteriorSnow : MonoBehaviour
     void LateUpdate()
     {
         if (!snowfall || !observer) return;
+        if (!snowfall.isPlaying) snowfall.Play(true);
         Vector3 p = observer.position;
         snowfall.transform.position = new Vector3(p.x - 5f, emissionHeight, p.z + 8f);
         snowfall.transform.rotation = Quaternion.identity;

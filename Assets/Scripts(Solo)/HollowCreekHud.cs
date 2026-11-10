@@ -19,6 +19,10 @@ namespace HollowCreek
         Font font;
         public bool IsOpen => modal != null && modal.style.display == DisplayStyle.Flex;
         public bool Paused => paused;
+        public void SetCinematicHidden(bool hidden)
+        {
+            if (root != null) root.style.display = hidden ? DisplayStyle.None : DisplayStyle.Flex;
+        }
         void Awake()
         {
             root = GetComponent<UIDocument>().rootVisualElement;
@@ -126,6 +130,8 @@ namespace HollowCreek
             var row = Element(content, "puzzle-row");
             var reference = new UnityEngine.UIElements.Image { image = flagPreview }; reference.AddToClassList("flag-reference"); row.Add(reference);
             var board = Element(row, "tile-board");
+            var tileRows = new VisualElement[3];
+            for (int r = 0; r < tileRows.Length; r++) tileRows[r] = Element(board, "tile-board-row");
             var buttons = new Button[9];
             Action refresh = () => {
                 for (int j = 0; j < 9; j++) {
@@ -137,7 +143,7 @@ namespace HollowCreek
             };
             for (int i = 0; i < 9; i++) {
                 int slot = i;
-                buttons[i] = Button(board, "", () => {
+                buttons[i] = Button(tileRows[i / 3], "", () => {
                     if (!puzzle.Move(slot)) return;
                     refresh(); campaign.AudioCue(true);
                     if (SlidingPuzzle.IsSolved(puzzle.Tiles)) { Close(); solved(); }

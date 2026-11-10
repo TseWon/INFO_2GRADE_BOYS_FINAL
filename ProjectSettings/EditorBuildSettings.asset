@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scene/SoloScene1.unity
     guid: 651c4327feca76c40be335e90e1a392a
   - enabled: 1
+    path: Assets/Scene/SoloScene2.unity
+    guid: b7fef04e6122fc74797f1fadfa0fe2c3
+  - enabled: 1
     path: Assets/Scene/SoloScene3.unity
     guid: 7cdd4fb5f4f00c244a7547d583de106f
   - enabled: 1

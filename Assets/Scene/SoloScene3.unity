@@ -8266,6 +8266,7 @@ GameObject:
   - component: {fileID: 1197956408}
   - component: {fileID: 1197956407}
   - component: {fileID: 1197956406}
+  - component: {fileID: 1197956410}
   m_Layer: 0
   m_Name: Hollow Creek Campaign
   m_TagString: Untagged
@@ -8314,6 +8315,9 @@ MonoBehaviour:
   sceneNumber: 2
   player: {fileID: 1631180817}
   hud: {fileID: 2055188147}
+  openingCinematic: {fileID: 0}
+  finalEscapeCinematic: {fileID: 0}
+  nextAreaCinematic: {fileID: 1197956410}
   start: {fileID: 1440781260}
   upperSpawn: {fileID: 436911670}
   prisonSpawn: {fileID: 491219910}
@@ -8596,6 +8600,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1197956410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197956402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54ff8db657dc444aa66da06de26bf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HollowCreek.SoloCinematicSlot
+  timeline: {fileID: 0}
+  cinematicCamera: {fileID: 0}
+  gameplayCamera: {fileID: 1631180819}
 --- !u!64 &1208589061
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11317,6 +11336,11 @@ MonoBehaviour:
 --- !u!4 &1631180818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9195381384487505691, guid: 7b917cc533db9bd459b1352e1b1e3c83, type: 3}
+  m_PrefabInstance: {fileID: 1631180816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1631180819 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4622057290526241145, guid: 7b917cc533db9bd459b1352e1b1e3c83, type: 3}
   m_PrefabInstance: {fileID: 1631180816}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1636805503
