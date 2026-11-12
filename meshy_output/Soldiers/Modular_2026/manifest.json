@@ -1,0 +1,24 @@
+{
+  "asset": "Modular Tactical Soldier",
+  "reference_images": ["References/Soldier_Overall.png", "References/Equipment_Sheet.png"],
+  "parts": [
+    { "name": "Helmet", "source": "References/Helmet.png", "task_id": "01a1c83c-136c-765a-817a-5468ee7e13f8", "model": "meshy-7.1", "texture_model": "meshy-7", "credits": 30, "remesh_task_id": "01a1c84b-0f82-74d9-b067-9466aa331d1c" },
+    { "name": "Vest", "source": "References/Vest.png", "task_id": "01a1c83c-49ff-7628-bdfa-df3b4ea64927", "model": "meshy-7.1", "texture_model": "meshy-7", "credits": 30, "remesh_task_id": "01a1c84b-1edd-7743-9272-28ac86a0f5ff" },
+    { "name": "Goggles", "source": "References/Goggles.png", "task_id": "01a1c83c-5d5f-70da-ada0-ed2ea75a37c7", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Mask", "source": "References/Mask.png", "task_id": "01a1c83c-6d4d-741d-ab09-fbb1b12d7afa", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Gloves", "source": "References/Gloves.png", "task_id": "01a1c83c-9686-71dc-89bf-a109be8a23b6", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Shirt", "source": "References/Shirt.png", "task_id": "01a1c83c-a3cc-73ff-89be-356133b44bb7", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Pants", "source": "References/Pants.png", "task_id": "01a1c83c-b2ba-7435-8eeb-0d6107ab8268", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Boots", "source": "References/Boots.png", "task_id": "01a1c83c-c418-74bb-8801-c72265505b15", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 },
+    { "name": "Kneepads", "source": "References/Kneepads.png", "task_id": "01a1c83c-d1ef-756b-ae25-42489b502760", "model": "meshy-t2.5", "texture_model": "meshy-n1", "credits": 15 }
+  ],
+  "total_generation_credits": 165,
+  "total_remesh_credits": 10,
+  "total_credits": 175,
+  "assembled_blend": "Modular_Tactical_Soldier.blend",
+  "unity_fbx": "Modular_Tactical_Soldier.fbx",
+  "preview": "Modular_Tactical_Soldier_Preview.png",
+  "visible_mesh_objects": 12,
+  "visible_faces": 94064,
+  "rigged": false
+}

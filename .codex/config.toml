@@ -1,7 +1,7 @@
 
 [mcp_servers.unity]
-command = "C:\\Infotherapy Booth Project\\MG\\INFO_2GRADE_BOYS_FINAL\\.tools\\unity-cli\\bin\\unity.exe"
-args = ["mcp","--project-path","C:\\Infotherapy Booth Project\\MG\\INFO_2GRADE_BOYS_FINAL"]
+command = "C:\\Users\\user\\OneDrive\\문서\\GitHub\\INFO_2GRADE_BOYS_FINAL\\.tools\\unity-cli\\bin\\unity.exe"
+args = ["mcp","--project-path","C:\\Users\\user\\OneDrive\\문서\\GitHub\\INFO_2GRADE_BOYS_FINAL"]
 
 [sandbox_workspace_write]
 network_access = true
