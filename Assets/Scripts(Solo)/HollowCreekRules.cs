@@ -84,9 +84,15 @@ namespace HollowCreek
         }
         public bool Move(int index)
         {
+            if (!CanMove(index)) return false;
             int empty = Array.IndexOf(Tiles, 0);
-            if (index < 0 || index >= 9 || !Adjacent(index, empty)) return false;
             Tiles[empty] = Tiles[index]; Tiles[index] = 0; Moves++; return true;
+        }
+        public bool CanMove(int index)
+        {
+            if (Tiles == null || Tiles.Length != 9 || index < 0 || index >= 9 || Tiles[index] == 0) return false;
+            int empty = Array.IndexOf(Tiles, 0);
+            return empty >= 0 && Adjacent(index, empty);
         }
         public static bool Adjacent(int a, int b) => Math.Abs(a / 3 - b / 3) + Math.Abs(a % 3 - b % 3) == 1;
         public static bool IsSolved(int[] tiles)

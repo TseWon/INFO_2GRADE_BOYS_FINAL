@@ -1,0 +1,27 @@
+{
+  "assetName": "ProjectNullMonster",
+  "generator": "Meshy 7.1 Image to 3D",
+  "taskId": "01a1d775-35de-70bc-8cbd-558562ae1f47",
+  "creditsUsed": 30,
+  "sourceImage": "Assets/ConceptArt/Monster_Final_ThickComplexFlower.png",
+  "outputBlend": "Assets/Blender/ProjectNullMonster/ProjectNullMonster_Textured.blend",
+  "scaleMeters": {
+    "width": 4.0099873542785645,
+    "depth": 3.971534848213196,
+    "height": 3.0
+  },
+  "mesh": {
+    "vertices": 1314646,
+    "polygons": 2416387
+  },
+  "material": {
+    "name": "ProjectNullMonster_PBR",
+    "textureResolution": 2048,
+    "textureCount": 3,
+    "texturesPackedInBlend": true
+  },
+  "notes": [
+    "High-poly source model. Create retopology or LODs before using it as a real-time Unity character.",
+    "The Blender file is tracked with Git LFS because it exceeds GitHub's 100 MB file limit."
+  ]
+}

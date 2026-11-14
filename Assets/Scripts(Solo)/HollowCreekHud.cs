@@ -126,25 +126,29 @@ namespace HollowCreek
         }
         public void Sliding(SlidingPuzzle puzzle, Action solved)
         {
-            Open("연구실 문 · 성조기 복원", "빈칸과 맞닿은 조각을 눌러 그림을 완성하세요.\n마지막 빈칸은 오른쪽 아래입니다. 숫자는 원본 조각의 위치를 뜻합니다.");
+            Open("연구실 문 · 성조기 복원", "빈칸과 상하좌우로 맞닿은 조각을 눌러 성조기를 완성하세요.\n완성했을 때 빈칸은 오른쪽 아래에 위치합니다.");
             var row = Element(content, "puzzle-row");
-            var reference = new UnityEngine.UIElements.Image { image = flagPreview }; reference.AddToClassList("flag-reference"); row.Add(reference);
+            var referencePanel = Element(row, "flag-reference-panel");
+            Label(referencePanel, "완성 모습", "puzzle-caption");
+            var reference = new UnityEngine.UIElements.Image { image = flagPreview, scaleMode = ScaleMode.ScaleToFit }; reference.AddToClassList("flag-reference"); referencePanel.Add(reference);
             var board = Element(row, "tile-board");
             var tileRows = new VisualElement[3];
             for (int r = 0; r < tileRows.Length; r++) tileRows[r] = Element(board, "tile-board-row");
             var buttons = new Button[9];
             Action refresh = () => {
                 for (int j = 0; j < 9; j++) {
-                    int value = puzzle.Tiles[j]; var b = buttons[j]; b.text = value == 0 ? "" : value.ToString();
+                    int value = puzzle.Tiles[j]; var b = buttons[j]; b.text = "";
                     b.style.backgroundImage = value == 0 || flagTiles == null || flagTiles.Length < value ? StyleKeyword.None : new StyleBackground(flagTiles[value - 1]);
                     b.EnableInClassList("empty", value == 0);
+                    b.EnableInClassList("movable", puzzle.CanMove(j));
+                    b.tooltip = value == 0 ? "빈칸" : puzzle.CanMove(j) ? "이동 가능한 조각" : "성조기 조각";
                 }
-                feedback.text = "이동 횟수: " + puzzle.Moves;
+                feedback.text = "이동 횟수: " + puzzle.Moves + "   ·   테두리가 밝은 조각만 이동할 수 있습니다.";
             };
             for (int i = 0; i < 9; i++) {
                 int slot = i;
                 buttons[i] = Button(tileRows[i / 3], "", () => {
-                    if (!puzzle.Move(slot)) return;
+                    if (!puzzle.Move(slot)) { feedback.text = "빈칸과 상하좌우로 맞닿은 조각만 움직일 수 있습니다."; campaign.AudioCue(false); return; }
                     refresh(); campaign.AudioCue(true);
                     if (SlidingPuzzle.IsSolved(puzzle.Tiles)) { Close(); solved(); }
                 }); buttons[i].AddToClassList("tile");

@@ -20,12 +20,15 @@ Button:focus { border-color: rgb(241, 211, 144); }
 .qte { font-size: 34px; color: rgb(255, 231, 200); margin-bottom: 16px; -unity-text-align: middle-center; }
 .unity-progress-bar__progress { background-color: rgb(224, 163, 93); }
 .flash { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
-.puzzle-row { flex-direction: row; align-items: center; justify-content: space-around; }
-.flag-reference { width: 225px; height: 225px; }
-.tile-board { width: 300px; height: 300px; flex-direction: column; flex-shrink: 0; }
+.puzzle-row { flex-direction: row; align-items: center; justify-content: space-between; margin-top: 8px; }
+.flag-reference-panel { width: 250px; align-items: center; }
+.puzzle-caption { color: rgb(154, 193, 188); font-size: 15px; margin-bottom: 8px; letter-spacing: 1px; }
+.flag-reference { width: 225px; height: 225px; border-width: 1px; border-color: rgb(84, 112, 115); }
+.tile-board { width: 304px; height: 304px; padding: 2px; flex-direction: column; flex-shrink: 0; background-color: rgb(5, 11, 14); border-width: 2px; border-color: rgb(84, 112, 115); }
 .tile-board-row { width: 300px; height: 100px; flex-direction: row; flex-shrink: 0; }
-.tile { width: 96px; height: 96px; min-width: 96px; min-height: 96px; flex-shrink: 0; margin: 2px; padding: 4px; -unity-text-align: lower-right; color: rgb(255, 231, 115); -unity-font-style: bold; text-shadow: 1px 1px 2px rgb(0, 0, 0); }
-.tile.empty { background-color: rgb(6, 12, 15); border-color: rgb(37, 55, 59); }
+.tile { width: 98px; height: 98px; min-width: 98px; min-height: 98px; flex-shrink: 0; margin: 1px; padding: 0; border-width: 1px; border-color: rgb(37, 55, 59); }
+.tile.movable { border-width: 2px; border-color: rgb(176, 224, 205); }
+.tile.empty { background-color: rgb(3, 8, 11); border-color: rgb(18, 31, 35); }
 .segment-row { flex-direction: row; align-items: center; justify-content: center; margin: 14px 0; }
 .seven-segment { width: 54px; height: 86px; background-color: rgb(4, 12, 13); }
 .segment { position: absolute; background-color: rgb(17, 33, 32); }
